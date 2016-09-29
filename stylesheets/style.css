@@ -1,0 +1,81 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 100px;
+}
+
+header {
+  height: 75vh;
+  width: 100vw;
+  margin-bottom: 12vh;
+  background-image: url('../images/header.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+#overlay {
+  width: 95vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  padding-left: 5vw;
+  -webkit-box-shadow: inset 0px -30px 20px -10px rgba(255,255,255,1);
+  -moz-box-shadow: inset 0px -30px 20px -10px rgba(255,255,255,1);
+  box-shadow: inset 0px -30px 20px -10px rgba(255,255,255,1);
+}
+
+#welcome {
+  font-size: 20vh;
+  padding-top: 15vh;
+  font-family: 'Lalezar', cursive;
+}
+
+#intro {
+   width: 40vw;
+   padding-left: 1vw;
+}
+
+#projects {
+   width: 85vw;
+   margin: 0 auto;
+}
+
+.project {
+  display: inline-block;
+  width: 24vw;
+  margin: 0 2vw 4vh 2vw;
+  vertical-align: top;
+}
+
+.project img {
+  max-width:100%;
+  border: 1px solid #888;
+  margin-bottom: 5px;
+}
+
+.project p {
+  text-align: justify;
+}
+
+h1, h2 {
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 8vh;
+}
+
+h1:after {
+    content: "";
+    height: 1px;
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(147,147,147,1) 50%,rgba(0,0,0,0) 100%);
+    display: block;
+    margin-bottom: 5vh;
+    margin-top: 10px;
+}
+
+h2 {
+  font-size: 3vh;
+  margin-bottom: 5px;
+}
