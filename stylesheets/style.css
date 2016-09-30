@@ -13,7 +13,6 @@ header {
   background-size:cover;
 }
 
-
 #overlay {
   width: 95vw;
   height: 100%;
@@ -45,10 +44,7 @@ header {
   display: inline-block;
   width: 24vw;
   margin: 0 2vw 4vh 2vw;
-  padding-top: 14vw;
-  background-repeat: no-repeat;
   vertical-align: top;
-  background-size:contain;
 }
 
 .project img {
@@ -59,7 +55,6 @@ header {
 
 .project p {
   text-align: justify;
-    color: #777;
 }
 
 h1, h2 {
