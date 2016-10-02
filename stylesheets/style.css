@@ -13,6 +13,11 @@ header {
   background-size:cover;
 }
 
+main {
+     width: 85vw;
+     margin: 0 auto;
+}
+
 #overlay {
   width: 95vw;
   height: 100%;
@@ -35,26 +40,40 @@ header {
    padding-left: 1vw;
 }
 
-#projects {
-   width: 85vw;
-   margin: 0 auto;
-}
-
 .project {
   display: inline-block;
   width: 24vw;
   margin: 0 2vw 4vh 2vw;
   vertical-align: top;
+  position: relative;
+  text-align: center;
 }
 
-.project img {
+.project > img {
   max-width:100%;
-  border: 1px solid #888;
   margin-bottom: 5px;
+  min-height: 18vh;
 }
 
 .project p {
   text-align: justify;
+}
+
+.layover {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0px;
+  top: 3vh;
+  margin-top: 8vh;
+  border: 1px solid #888;
+  text-align: center;
+}
+
+.layover a > img {
+  height: 6vh;
+  margin-top: 2vh;
 }
 
 h1, h2 {
