@@ -10,10 +10,11 @@
 <script>
 $( function() {
   $(".layover").hide();
-  $('.project').hover(function () {
-    $('.layover', this).slideDown(100);
+  $('.hover').hover(function () {
+    $('.layover', this).height($('img', this).height() + 4);
+    $('.layover', this).fadeIn(300);
   }, function () {
-    $('.layover', this).slideUp(100);
+    $('.layover', this).fadeOut(300);
   });
 });
 </script>
@@ -21,118 +22,134 @@ $( function() {
 <body>
 <header>
   <div id='overlay'>
-    <p id='welcome'>Welkom,</p>
-    <p id='intro'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
-  </div>
+    <p id='welcome'>Hallo!</p>
+    <p>Ik ben Rob Van Keilegom, een 3de jaars student aan Thomas More: Campus De Nayer.
+      Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan gewerkt heb.
+      Momenteel ben ik op zoek naar een stageplaats voor mijn bachelorproef.
+    </p>
+    <p class="links"><a href=""> CV </a> | <a href=""> Facebook </a> | <a href=""> LinkedIn </a>  | <a href=""> GitLab </a> | <a href=""> E-Mail </a></p>
+    </div>
 </header>
 <main>
   <div id='projects'>
     <h1>Projecten</h1>
-    <div class='project'>
+    <div class='project hover'>
     <h2>TM: PHP MySQL</h2>
     <img src="images/projects/tm_projectphpmysql.png" />
     <div class="layover">
       <a href="https://gitlab.com/RoobieBoobieee/TM_ProjectPHPMySQL" target="_blank"><img src="images/icons/git.png" /></a>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
+    <p>Dit is een project uit het 2de jaar van mijn bachelor opleiding. Voor het vak PHP - MySQL moest ik een webpagina schrijven voor een restaurant. Personeel kan hier inloggen om menu's en schotels aan te passen. Klanten kunnen inloggen om tafelverdeling te bekijken en te reserveren. In het project is gebruik gemaakt van PHP, HTML, CSS en JS/JQuery en is gekoppeld aan een MySQL database en was gericht op object oriented PHP en het veilig verwerken van data.</p>
     </div>
 
-    <div class='project'>
+    <div class='project hover'>
     <h2>TM: Project 2</h2>
     <img src="images/projects/tm_project2.png" />
     <div class="layover">
       <a href="https://gitlab.com/RoobieBoobieee/tm_project2" target="_blank"><img src="images/icons/git.png" /></a>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
+    <p>Dit is een project samen met Marlon Stoops en werd gemaakt als eindproject voor onze 2de periode van onze bachelor opleiding. Het is een webpagina waarop studenten kunnen inloggen om hun uurrooster te bekijken. De uurrooster wordt opgehaald via de API van KU Leuven. Dan wordt er via de API van google berekend wanneer de student moet vertrekken om tijdig in de les aan te komen. Als de student kiest voor het openbaar vervoer zullen de trein/bus uren mee verschijnen in de route samen met eventuele overstappen en vertragingen.</p>
     </div>
 
     <div class='project'>
     <h2>Total: Receptie</h2>
     <img src="images/projects/total_receptie.png" />
-    <div class="layover">
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
+    <p>Dit is een applicatie geschreven voor het loggen van bezoekers in de Total plant in Schoten. De bezoeker kan met zijn gegeven inloggen om zo veilig toegang te verkrijgen tot de plant. Hier werd voornamelijk HTML en PHP gebruikt. Ook heb ik een script ontwikkeld waarmee data weggeschreven wordt naar een Bartender print server voor het afprinten van ettiquetten met de benodigde informatie om terug uit te checken.</p>
     </div>
 
     <div class='project'>
     <h2>Huiskamer Optredens</h2>
     <img src="images/projects/hko.png" />
-    <div class="layover">
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
+    <p>Huiskamer Optredens is een Joomla! website gemaakt voor het boeken van kleine optredens voor in uw huiskamer. Hiervoor heb ik zelf de Joomla template geschreven. Er werd gekozen voor Joomla zodat de eigenaar eenvoudig zelf artikelen en artiesten kon aanpassen en toevoegen.</p>
     </div>
 
-    <div class='project'>
+    <div class='project hover'>
     <h2>TM: Web Engineering 1</h2>
     <img src="images/projects/tm_projectwebengineering1.png" />
     <div class="layover">
       <a href="https://gitlab.com/RoobieBoobieee/TM_ProjectWebEngineering1" target="_blank"><img src="images/icons/git.png" /></a>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
+    <p>Deze website is geschreven in het eerste jaar van mijn bachelor opleiding voor het vak Web Engineering 1. De website bevat al de info over mijn eindproject van de eerste fase van de bacheloropleiding. De website bevat PHP, HTML, CSS en JS.</p>
     </div>
 
     <div class='project'>
     <h2>Total: Hazards</h2>
     <img src="images/projects/total_hazards.png" />
-    <div class="layover">
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
+    <p>Dit is een applicatie geschreven voor de Total plant in Schoten. Met deze web applicatie worden fiches aangemaakt die de gevaren van een product aanduiden. Voor elke grondstof in het bedrijf wordt een fiche aangemaakt zodat het personeel weet wat er bij onregelmatigheden moet gebeuren (bv: spill, brand). De applicatie is geschreven in PHP met achterliggend een MySQL database.</p>
     </div>
 
-    <div class='project'>
+    <div class='project hover'>
     <h2>Total: Dafi</h2>
     <img src="images/projects/total_dafi.png" />
     <div class="layover">
+      <a href="https://gitlab.com/RoobieBoobieee/Total_Dafi" target="_blank"><img src="images/icons/git.png" /></a>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
+    <p>Dit is een Excel macro geschreven in VB voor de Total plant in Schoten. De macro verwerkt productie data uit een MS SQL database en genereert grafieken voor een duidelijk visuele vertoning van draaitijden en stilstanden. Via de UI kan er ingesteld hoe de data moet weergegeven worden.</p>
     </div>
 
-    <div class='project'>
+    <div class='project hover'>
     <h2>TM: OOP</h2>
     <img src="images/projects/tm_bandencentrale.png" />
     <div class="layover">
       <a href="https://gitlab.com/RoobieBoobieee/TM_ObjectOrientedProgramming" target="_blank"><img src="images/icons/git.png" /></a>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
+    <p>Dit is een command-line applicatie geschreven voor het vak Object Oriented Programming in de 2de fase van mijn bachelor opleiding. Het is volledig geschreven in C en is (uiteraard) gericht op het object georienteerd programmeren. De applicatie simuleert een bandencentrale waar personeel en eigenaar kunnen inloggen om artikelen en klanten toe te voegen, verwijderen en aanpassen.</p>
     </div>
 
-    <div class='project'>
+    <div class='project hover'>
     <h2>TM: Databanken</h2>
     <img src="images/projects/tm_projectdatabanken.png" />
     <div class="layover">
       <a href="https://gitlab.com/RoobieBoobieee/TM_ProjectDatabanken" target="_blank"><img src="images/icons/git.png" /></a>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
+    <p>Deze web applicatie werd geschreven voor het vak Databanken in de eerste fase van mijn bachelor opleiding. Het project dat ik samen met Marlon Stoops heb gedaan is vooral gericht op de achterliggende MySQL database, tabellen en relaties.</p>
     </div>
 
     <div class='project'>
     <h2>Total: LAB3</h2>
     <img src="images/projects/total_lab3.png" />
-    <div class="layover">
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
+    <p>Deze web applicatie voor de Total plant in Schoten werd in C# geschreven met behulp van het ASP.NET MVC framework. De applicatie is gemaakt om template, hoeveelheid en printer in te stellen en zo hele series etiketten af te druken om later in de productie te gebruiken. </p>
     </div>
 
-    <div class='project'>
+    <div class='project hover'>
     <h2>Happening: Ranked Game</h2>
     <img src="images/no_image.png" />
     <div class="layover">
       <a href="https://gitlab.com/RoobieBoobieee/Happening_RankedGame" target="_blank"><img src="images/icons/git.png" /></a>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
+    <p>Dat is een plug-in voor de mobiele app: Happening. Happening is een app waar vrienden in groep kunnen chatten, rekeningen delen en spellen spelen. Een daarvan is Ranked Game, een spel waar een vraag voor komt en dan iedereen kan stemmen wie uit de vrienden groep het meeste past bij deze vraag. In deze aangepaste versie van Ranked Game is er een knop om je eigen vragen toe te voegen aan het spel. De plug-in is geschreven in JS/CoffeeScript.</p>
     </div>
 
-    <div class='project'>
+    <div class='project hover'>
     <h2>Portfolio</h2>
     <img src="images/projects/portfolio.png" />
     <div class="layover">
       <a href="https://gitlab.com/RoobieBoobieee/Portfolio" target="_blank"><img src="images/icons/git.png" /></a>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus erat, ultricies quis libero eget, tristique mollis nulla. Nullam rhoncus ante nisl, ut laoreet arcu pharetra vel. Vivamus sollicitudin felis dui. Donec vel maximus nunc. Curabitur egestas et massa id viverra. Etiam urna mi, gravida at tempus sit amet, cursus in libero. Quisque et est cursus, aliquet enim accumsan, iaculis lectus.</p>
+    <p>Dit is mijn portfolio waar al mijn projecten te vinden zijn, met uitleg en de meeste ook met source code.</p>
     </div>
 
+    <div class='project hover'>
+    <h2>DBH: Solar Tracker</h2>
+    <img src="images/projects/solartracker.png" />
+    <div class="layover">
+      <a href="https://gitlab.com/RoobieBoobieee/DBH_SolarTracker" target="_blank"><img src="images/icons/git.png" /></a>
+    </div>
+    <p>Dit is de website van mijn geintegreerde proef als laatste jaar student in Don Bosco Hoboken. Op de website was te zien in welke positie het zonnepaneel staat en hoeveel het opbrengt. Meer info hierover is te vinden op de GitLab pagina. De website is ontwikkeld in ASP.NET.</p>
+    </div>
+
+    <div class='project hover'>
+    <h2>TM: Project 1</h2>
+    <img src="images/projects/tm_project1.png" />
+    <div class="layover">
+      <a href="https://gitlab.com/RoobieBoobieee/TM_Project1" target="_blank"><img src="images/icons/git.png" /></a>
+    </div>
+    <p>Dit is het eindproject voor het eerste jaar van mijn bacheloropleiding dat ik samen met Marlon Stoops heb gedaan. Het is een website waar gebruikers het bekende spel zeeslag kunnen spelen. De schoten werden dan weergegeven op een LED array aangestuurd door een arduino. De website zelf is geschreven in PHP met een achterliggende MySQL database.</p>
+    </div>
+
+    <h1></h1>
   </div>
 </main>
-<footer>&copy; 2016 - Rob Van Keilegom</footer>
+<footer>&copy; 2016 - Rob Van Keilegom - Vragen of opmerkingen? <a href=""> Mail mij!</a></footer>
 </body>
 </html>
