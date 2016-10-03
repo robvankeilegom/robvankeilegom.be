@@ -46,6 +46,7 @@ footer {
 #overlay p {
    width: 40vw;
    padding-left: 1vw;
+   text-align: justify;
 }
 
 #overlay a {
@@ -54,10 +55,14 @@ footer {
   margin: 0 5px;
 }
 
- .links {
+.links {
    margin-top: 20px;
   color:  #666;
- }
+}
+
+#touchscreen {
+  visibility: hidden;
+}
 
 .project {
   display: inline-block;
@@ -93,6 +98,18 @@ footer {
 .layover a > img {
   height: 6vh;
   margin-top: 6vh;
+}
+
+.layover > p {
+  margin-top: 4vh;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  word-spacing: 8px;
+}
+
+.layover a {
+  color: #777;
 }
 
 h1, h2 {
