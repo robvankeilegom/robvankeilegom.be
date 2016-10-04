@@ -39,14 +39,16 @@ footer {
 #welcome {
   font-size: 20vh;
   padding-top: 15vh;
+  padding-left: 1vw;
   font-family: 'Lalezar', cursive;
-  color: rgba(255, 255, 255, 0.4)
+  color: rgba(255, 255, 255, 0.4);
 }
 
 #overlay p {
    width: 40vw;
    padding-left: 1vw;
    text-align: justify;
+   line-height: 120%;
 }
 
 #overlay a {
@@ -106,6 +108,7 @@ footer {
   text-align: center;
   font-weight: bold;
   word-spacing: 8px;
+  padding: 10px 0;
 }
 
 .layover a {
@@ -132,5 +135,5 @@ h1:after {
 
 h2 {
   font-size: 3vh;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }

@@ -39,7 +39,7 @@
 $( function() {
   $(".layover").hide();
   $('.project').hover(function () {
-    $('.layover', this).height($('img', this).height() + 4);
+    $('.layover', this).height($('img', this).height() + 10);
     $('.layover', this).fadeIn(300);
   }, function () {
     $('.layover', this).fadeOut(300);
@@ -70,9 +70,9 @@ ga('send', 'pageview');
 <body>
 <header>
   <div id='overlay'>
-    <p id='welcome'>Hallo!</p>
+    <div id='welcome'>Hallo!</div>
     <p>Mijn naam is Rob Van Keilegom, een 3de jaars student aan Thomas More: Campus De Nayer.
-      Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan (mee)gewerkt heb.
+      Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan (mee)gewerkt heb.<br />
       Momenteel ben ik op zoek naar een stageplaats voor mijn bachelorproef.
     </p>
     <p class="links">
@@ -148,7 +148,9 @@ ga('send', 'pageview');
     <h2>Total: Hazards</h2>
     <img src="images/projects/total_hazards.png" alt="Total: Hazards"/>
     <div class="layover">
-      <p>HTML PHP MySQL CSS JavaScript JQueryUI Ajax</p>
+      <p>HTML PHP MySQL CSS <br />
+        - <br />
+        JavaScript JQueryUI Ajax</p>
     </div>
     <p>Dit is een applicatie geschreven voor de Total plant in Schoten. Met deze web applicatie worden fiches aangemaakt die de gevaren van een product aanduiden. Voor elke grondstof in het bedrijf wordt een fiche aangemaakt zodat het personeel weet wat er bij onregelmatigheden moet gebeuren (bv: spill, brand). De applicatie is geschreven in PHP met achterliggend een MySQL database.</p>
     </div>
