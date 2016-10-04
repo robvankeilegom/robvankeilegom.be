@@ -1,3 +1,6 @@
+header {
+  background-image: url('../images/header_mobile.png');
+}
 #welcome {
   font-size: 15vh;
   padding-top: 5vh;
