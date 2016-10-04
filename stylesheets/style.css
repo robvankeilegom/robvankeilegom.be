@@ -56,12 +56,12 @@ footer {
 }
 
 .links {
-   margin-top: 20px;
+  margin-top: 20px;
   color:  #666;
 }
 
 #touchscreen {
-  visibility: hidden;
+  display: none;
 }
 
 .project {

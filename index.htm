@@ -1,6 +1,25 @@
 <!doctype html>
 <html>
 <head>
+
+<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <link rel="stylesheet" type="text/css" href="stylesheets/reset.css"/>
@@ -22,7 +41,7 @@ $( function() {
   $('#touchscreen').fadeOut();
 
   $(document).scroll(function() {
-    if ($(this).scrollTop() > 600) {
+    if ($(this).scrollTop() > 600 && $(window).width() < 800) {
       $('#touchscreen').fadeIn();
     } else {
       $('#touchscreen').fadeOut();
@@ -36,10 +55,14 @@ $( function() {
   <div id='overlay'>
     <p id='welcome'>Hallo!</p>
     <p>Ik ben Rob Van Keilegom, een 3de jaars student aan Thomas More: Campus De Nayer.
-      Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan gewerkt heb.
+      Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan (mee)gewerkt heb.
       Momenteel ben ik op zoek naar een stageplaats voor mijn bachelorproef.
     </p>
-    <p class="links"><a href=""> CV </a> | <a href=""> Facebook </a> | <a href=""> LinkedIn </a>  | <a href=""> GitLab </a> | <a href=""> E-Mail </a></p>
+    <p class="links">
+      <a href="cv_robvankeilegom.pdf" target="_blank"> CV </a>
+      | <a href="https://www.facebook.com/RobVanKeilegom" target="_blank"> Facebook </a>
+      | <a href="https://gitlab.com/u/RoobieBoobieee/projects" target="_blank"> GitLab </a>
+      | <a href="mailto:RobVanKeilegom@hotmail.com"> E-Mail </a></p>
     </div>
 </header>
 <main>
@@ -214,6 +237,6 @@ $( function() {
     <h1></h1>
   </div>
 </main>
-<footer>&copy; 2016 - Rob Van Keilegom - Vragen of opmerkingen? <a href=""> Mail mij!</a></footer>
+<footer>&copy; 2016 - Rob Van Keilegom - Vragen of opmerkingen? <a href="mailto:robvankeilegom@hotmail.com"> Mail mij!</a></footer>
 </body>
 </html>
