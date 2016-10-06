@@ -1,1 +1,6 @@
+RewriteEngine On
+
+RewriteRule    ^CV/?$    cv.htm    [NC,L]
+RewriteRule    ^CV_PDF/?$    cv_robvankeilegom.pdf    [NC,L]
+
 ErrorDocument 404 /Portfolio/404.htm
