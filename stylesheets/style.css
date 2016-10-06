@@ -137,3 +137,27 @@ h2 {
   font-size: 3vh;
   margin-bottom: 10px;
 }
+
+#cv {
+  font-family: 'Source Code Pro', monospace;
+  margin: 20px 0 0 20px;
+  background-color: #1D1F21;
+  color: #FFF;
+}
+
+#cv p {
+  margin-bottom: 30px;
+}
+
+.blue {
+  color: #497BD6;
+}
+
+.orange {
+  color: #CC7927;
+}
+
+#cv a {
+  position: absolute;
+  bottom: 10px;
+}
