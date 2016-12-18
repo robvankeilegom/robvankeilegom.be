@@ -1,7 +1,7 @@
 <?php
 	$dbhost = 'localhost';
 	$dbuser = 'root';
-	$dbpass = '';
+	$dbpass = 'VXIUzNUUs6W7ZvJhJAuT';
 	$db = 'robvankeilegom_be';
 	$timeout = 2;
 
