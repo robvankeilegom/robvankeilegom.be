@@ -99,9 +99,13 @@ ga('send', 'pageview');
           echo "<h2>" .$row['title']. "</h2>";
           echo "<img src=\"images/projects/" .$row['img']. "\"  alt=\"TM: PHP MySQL\"/>";
           echo "<div class=\"layover\"><p>";
+          if ($row['description'])
+            echo $row['layover'];
           echo "</p>";
           if ($row['sourcelink'])
-            echo "<a href=\"" .$row['sourcelink']. "\" target=\"_blank\">&lt; Source /&gt;</a>";
+            echo "<p><a href=\"" .$row['sourcelink']. "\" target=\"_blank\">&lt; Source /&gt;</a></p>";
+          if ($row['livelink'])
+            echo "<p><a href=\"" .$row['sourcelink']. "\" target=\"_blank\">Live Link</a></p>";
           echo "</div>";
           echo "<p>" .$row['description']. "</p>";
           echo "</div>";
