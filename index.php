@@ -2,6 +2,7 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="includes/font-awesome/css/font-awesome.min.css">
 <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
@@ -90,7 +91,7 @@ ga('send', 'pageview');
     <?php
       include "includes/connection.php";
 
-      $query = "SELECT * FROM $db.projects;";
+      $query = "SELECT * FROM $db.projects ORDER BY `order`;";
       $result = mysqli_query($conn, $query);
 
       if ($result->num_rows > 0)
