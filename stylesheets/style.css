@@ -44,7 +44,7 @@ footer {
   color: rgba(255, 255, 255, 0.4);
 }
 
-#overlay p {
+#overlay #intro {
    width: 40vw;
    padding-left: 1vw;
    text-align: justify;
@@ -57,9 +57,25 @@ footer {
   margin: 0 5px;
 }
 
-.links {
-  margin-top: 20px;
+#links {
+  position: absolute;
+  right: 4vw;
+  top: 15vh;
   color:  #666;
+  font-size: 25px;
+}
+
+#links > a {
+  display: block;
+  margin-top: 1.5vh;
+}
+
+#links > a:hover {
+  color: white;
+}
+
+#links > a > i {
+  margin-right: 1vh;
 }
 
 #touchscreen {
@@ -89,7 +105,7 @@ footer {
 
 .layover {
   width: 100%;
-  background-color: rgba(242, 242, 242, 0.8);
+  background-color: rgba(242, 242, 242, 1);
   position: absolute;
   left: 0px;
   top: 3vh;

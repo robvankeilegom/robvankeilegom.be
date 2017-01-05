@@ -27,8 +27,8 @@
 <meta name="revisit-after" content="3 month">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta property="og:image" content="images/favicon/ms-icon-310x310.png" />
-<meta property="og:description" content="Ik ben Rob Van Keilegom, een 3de jaars student aan Thomas More: Campus De Nayer. Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan (mee)gewerkt heb. Momenteel ben ik op zoek naar een stageplaats voor mijn bachelorproef." />
-<meta property="og:url"content="http://www.robvankeilegom.be" />
+<meta property="og:description" content="Ik ben Rob Van Keilegom, een 3de jaars student aan Thomas More: Campus De Nayer. Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan (mee)gewerkt heb." />
+<meta property="og:url"content="http://robvankeilegom.be/Portfolio/" />
 <meta property="og:title" content="Portfolio - Rob Van Keilegom" />
 <link rel="stylesheet" type="text/css" href="stylesheets/reset.css"/>
 <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
@@ -54,7 +54,7 @@ $( function() {
     } else {
       $('#touchscreen').fadeOut();
     }
-});
+  });
 });
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -72,15 +72,16 @@ ga('send', 'pageview');
 <header>
   <div id='overlay'>
     <div id='welcome'>Hallo!</div>
-    <p>Mijn naam is Rob Van Keilegom, een 3de jaars student aan Thomas More: Campus De Nayer.
+    <p id="intro">Mijn naam is Rob Van Keilegom, een 3de jaars student aan Thomas More: Campus De Nayer.
       Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan (mee)gewerkt heb.
-      <!-- <span class="line-through">Momenteel ben ik op zoek naar een stageplaats voor mijn bachelorproef.</span> -->
     </p>
-    <p class="links">
-      <a href="CV" target="_blank"> CV </a>
-      | <a href="https://gitlab.com/u/RoobieBoobieee/projects" target="_blank"> GitLab </a>
-      | <a href="https://www.linkedin.com/in/robvankeilegom" target="_blank"> LinkedIn </a>
-      | <a href="mailto:RobVanKeilegom@hotmail.com"> E-Mail </a></p>
+
+    <p id="links">
+       <a href="CV" target="_blank"><i class="fa fa-file-text-o"></i> CV </a>
+       <a href="https://gitlab.com/u/RoobieBoobieee/projects" target="_blank"><i class="fa fa-gitlab"></i>  GitLab </a>
+       <a href="https://www.linkedin.com/in/robvankeilegom" target="_blank"><i class="fa fa-linkedin"></i>  LinkedIn </a>
+       <a href="mailto:RobVanKeilegom@hotmail.com"><i class="fa fa-envelope-o"></i> E-Mail </a>
+     </p>
     </div>
 </header>
 <main>
@@ -104,9 +105,9 @@ ga('send', 'pageview');
             echo $row['layover'];
           echo "</p>";
           if ($row['sourcelink'])
-            echo "<p><a href=\"" .$row['sourcelink']. "\" target=\"_blank\">&lt; Source /&gt;</a></p>";
+            echo "<p><a href=\"" .$row['sourcelink']. "\" target=\"_blank\"><i class=\"fa fa-code\"></i> Source</a></p>";
           if ($row['livelink'])
-            echo "<p><a href=\"" .$row['sourcelink']. "\" target=\"_blank\">Live Link</a></p>";
+            echo "<p><a href=\"" .$row['livelink']. "\" target=\"_blank\">Live Link</a></p>";
           echo "</div>";
           echo "<p>" .$row['description']. "</p>";
           echo "</div>";
