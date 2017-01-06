@@ -30,17 +30,20 @@
 <meta property="og:description" content="Ik ben Rob Van Keilegom, een 3de jaars student aan Thomas More: Campus De Nayer. Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan (mee)gewerkt heb." />
 <meta property="og:url"content="http://robvankeilegom.be/Portfolio/" />
 <meta property="og:title" content="Portfolio - Rob Van Keilegom" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="stylesheets/reset.css"/>
 <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
 <link rel="stylesheet" media="only screen and (max-width: 800px)" href="stylesheets/mobile.css" />
 <link href="https://fonts.googleapis.com/css?family=Lalezar%7CRaleway" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <title>Portfolio - Rob Van Keilegom</title>
+
 <script>
 $( function() {
   $(".layover").hide();
   $('.project').hover(function () {
-    $('.layover', this).height($('img', this).height() + 10);
+    $('.layover', this).height($('.img', this).height() + 10);
     $('.layover', this).fadeIn(300);
   }, function () {
     $('.layover', this).fadeOut(300);
@@ -99,17 +102,27 @@ ga('send', 'pageview');
         while($row = $result->fetch_assoc()) {
           echo "<div class='project'>";
           echo "<h2>" .$row['title']. "</h2>";
-          echo "<img src=\"images/projects/" .$row['img']. "\"  alt=\"TM: PHP MySQL\"/>";
+          echo "<div class=\"img\" style=\"background-image: url('images/projects/" .$row['img']. "');\"></div>";
           echo "<div class=\"layover\"><p>";
-          if ($row['description'])
-            echo $row['layover'];
+          $query = "SELECT `tag` FROM $db.`portfolio_tags_project` INNER JOIN $db.`portfolio_tags` ON `portfolio_tags`.`id` = `portfolio_tags_project`.`tag_id` WHERE `project_id` = " . $row['id'];
+          $tags = mysqli_query($conn, $query);
+          if ($tags->num_rows > 0)
+            while($tag = $tags->fetch_assoc()) {
+              echo "<span class=\"label label-info\">" . $tag['tag'] . "</span>";
+            }
           echo "</p>";
-          if ($row['sourcelink'])
-            echo "<p><a href=\"" .$row['sourcelink']. "\" target=\"_blank\"><i class=\"fa fa-code\"></i> Source</a></p>";
-          if ($row['livelink'])
-            echo "<p><a href=\"" .$row['livelink']. "\" target=\"_blank\">Live Link</a></p>";
           echo "</div>";
           echo "<p>" .$row['description']. "</p>";
+          if (strpos($row['status'], 'Finished') !== false)
+            echo "<span class=\"label label-success\">Finished</span>";
+          if (strpos($row['status'], 'Discontinued') !== false)
+            echo "<span class=\"label label-danger\">Discontinued</span>";
+          if (strpos($row['status'], 'WIP') !== false)
+            echo "<span class=\"label label-warning\">Work in Progress</span>";
+          if ($row['sourcelink'])
+            echo "<a href=\"" .$row['sourcelink']. "\" target=\"_blank\"><span class=\"label label-primary\"><i class=\"fa fa-code\"></i> Source</span></a>";
+          if ($row['livelink'])
+            echo "<a href=\"" .$row['livelink']. "\" target=\"_blank\"><span class=\"label label-primary\"><i class=\"fa fa-globe\"></i> Live Link</span></a>";
           echo "</div>";
         }
 

@@ -26,7 +26,7 @@ footer {
 }
 
 #overlay {
-  width: 95vw;
+  width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   color: #FFF;
@@ -88,13 +88,14 @@ footer {
   margin: 0 2vw 4vh 2vw;
   vertical-align: top;
   position: relative;
-  text-align: center;
 }
 
-.project > img {
-  max-width:100%;
+.project > .img {
+  width: 100%;
   margin-bottom: 5px;
-  min-height: 18vh;
+  height: 25vh;
+  background-position: center;
+  background-size: cover;
 }
 
 .project p {
@@ -180,4 +181,16 @@ h2 {
 
 .line-through {
   text-decoration: line-through;
+}
+
+.label {
+  display: inline-block;
+  margin-right: 2px;
+  margin-top: 2px;
+  font-size: 80%;
+}
+
+.layover .label {
+  font-size: 150%;
+  margin-right: 4px;
 }
