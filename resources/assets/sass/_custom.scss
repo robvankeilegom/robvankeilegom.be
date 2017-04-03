@@ -5,6 +5,7 @@ body {
 }
 
 .welcome {
+
   header {
     background-image: url('../images/header.jpg');
     background-repeat: no-repeat;
@@ -41,11 +42,12 @@ body {
     }
   }
 
-  .welcome {
+  .welcome-title {
     color: $transparent-white;
     font-family: 'Lalezar', cursive;
     font-size: 20vh;
     padding: 15vh 0 0 1vw;
+    animation: tracking-in-contract-bck 1s cubic-bezier(.215, .610, .355, 1.000) both;
   }
 
   .links {

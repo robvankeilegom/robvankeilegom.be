@@ -4,7 +4,7 @@
 <div class="welcome">
   <header>
     <div class='overlay'>
-      <div class='welcome'>Hallo!</div>
+      <div class='welcome-title'>Hallo!</div>
       <p class="intro">Mijn naam is Rob Van Keilegom, een 3de jaars student aan Thomas More: Campus De Nayer.
         Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan (mee)gewerkt heb.
       </p>
