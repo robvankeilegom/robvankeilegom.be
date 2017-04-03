@@ -64,6 +64,7 @@ return [
             'prefix' => '',
             'strict' => true,
             'engine' => null,
+            'unix_socket' => env('DB_SOCKET', false),
         ],
 
         'pgsql' => [
@@ -92,7 +93,7 @@ return [
     |
     */
 
-    'migrations' => 'migrations',
+    'migrations' => '_migrations',
 
     /*
     |--------------------------------------------------------------------------

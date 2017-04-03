@@ -15,5 +15,12 @@ require('laravel-elixir-vue-2');
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js');
+       .webpack('app.js')
+
+       //Brower Sync - Auto Reloading/Injecting
+       /*
+       .browserSync({
+           proxy: 'vhost.dev'
+       })
+       */
 });

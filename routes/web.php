@@ -14,10 +14,13 @@
 
 Auth::routes();
 
-Route::get('/', function() {
-    return view('welcome');
-});
+Route::localizedGroup(function () {
 
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('/home', 'HomeController@index');
+    Route::get('/', function() {
+        return view('welcome');
+    });
+
+    Route::group(['middleware' => 'auth'], function () {
+        Route::get('/home', 'HomeController@index');
+    });
 });

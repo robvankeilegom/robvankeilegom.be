@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
 
+        Arcanedev\Localization\LocalizationServiceProvider::class,
         Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Clockwork\Support\Laravel\ClockworkServiceProvider::class,
@@ -182,6 +183,7 @@ return [
 
         
         Sichikawa\LaravelSendgridDriver\SendgridTransportServiceProvider::class,
+
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     ],

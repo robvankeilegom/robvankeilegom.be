@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--[if IE 10]>    <html class="no-js ie10" lang="en"> <![endif]-->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -24,7 +25,10 @@
     <meta property="og:image" content="@yield('image', '')">
     <meta property="og:description" content="@yield('description')">
     <meta property="og:site_name" content="@yield('title')">
-    <meta property="og:locale" content="{{ App::getLocale() }}">
+    <meta property="og:locale" content="{{ Localization::getCurrentLocaleRegional() }}">
+    @foreach(Localization::getSupportedLocales() as $locale)
+        <meta property="og:locale:alternate" content="{{$locale->regional()}}" />
+    @endforeach
 
     <!-- Twitter cards -->
     <meta name="twitter:card" content="summary">
