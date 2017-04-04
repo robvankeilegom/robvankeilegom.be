@@ -75,6 +75,7 @@ body {
     display: none;
   }
 
+
   .project {
     display: inline-block;
     margin: 0 2vw 4vh;
@@ -85,9 +86,7 @@ body {
     .img {
       background-position: center;
       background-size: cover;
-      height: 25vh;
       margin-bottom: 5px;
-      width: 100%;
     }
 
     p {
@@ -97,14 +96,36 @@ body {
     }
   }
 
+  .project-header {
+    backface-visibility: hidden;
+    display: block;
+    height: 24vh;
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+
+    .layover,
+    .img {
+      display: block;
+      align-items: center;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      backface-visibility: hidden;
+    }
+
+    .layover {
+      transform: rotateX(180deg);
+    }
+  }
+
   .layover {
     background-color: $light-grey;
     left: 0;
     margin-top: 2px;
-    position: absolute;
     text-align: center;
-    top: 3vh;
-    width: 100%;
+    transform: rotateX(180deg);
 
     a {
       color: $dark-grey;
@@ -190,4 +211,31 @@ footer {
   font-size: 10px;
   margin: 15vh auto 10px;
   width: 81vw;
+}
+
+.anim-object {
+    height: 170px;
+    width: 170px;
+    backface-visibility: hidden;
+    display: block;
+    position: relative;
+
+  .face {
+    display: block;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+
+  .front {
+    background: #2dccb8;
+  }
+
+  .back {
+    background: #53a3dc;
+    transform: rotateX(180deg);
+  }
 }
