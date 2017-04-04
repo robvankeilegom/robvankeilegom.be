@@ -11,7 +11,7 @@
 
             <p class="links">
                 @foreach ($links as $link)
-                    <a href="{{$link->href}}" @if($link->target_blank) target="_blank" @endif ><i class="fa {{ $link->icon }}"></i> {{ $link->text }} </a>
+                    <a href="{{ $link->href }}" @if($link->target_blank) target="_blank" @endif ><i class="fa {{ $link->icon }}"></i> {{ $link->text }} </a>
                 @endforeach
             </p>
         </div>
@@ -20,35 +20,35 @@
         <div class="touchscreen"><img src="{{ asset("images/icons/tap.png")}}" alt="tap"/> Tap op een project om extra info te tonen.</div>
         <div class='projects'>
             <h1>Projecten</h1>
-            @foreach($projects as $project)
-            <div class='project'>
-                <h2> {{ $project->title }}</h2>
-                <div class=\"img\" style=\"background-image: url('{{ asset(project->image) }}');\"></div>
-                <div class=\"layover\">
-                    <p>
-                        <span class=\"label label-info\">{{ $tag }}</span>
-                    </p>
+            @foreach ($projects as $project)
+                <div class='project'>
+                    <h2> {{ $project->title }}</h2>
+                    <div class="img" style="background-image: url('{{ $project->tumbnail_image }}');"></div>
+                    <div class="layover">
+                        <p>
+                            <span class="label label-info"></span>
+                        </p>
+                    </div>
+                    <p>{{ $project->description }}</p>
+
+                    @if (strpos($project->title, 'Finished') !== false)
+                        <span class="label label-success">Finished</span>
+                    @endif
+                    @if (strpos($project->title, 'Discontinued') !== false)
+                        <span class="label label-danger">Discontinued</span>
+                    @endif
+                    @if (strpos($project->title, 'WIP') !== false)
+                        <span class="label label-warning">Work in Progress</span>
+                    @endif
+
+                    @if ($project->live_link)
+                    <a href="{{ $project->live_link }}" target="_blank"><span class="label label-primary"><i class="fa fa-code"></i> Source</span></a>
+                    @endif
+                    @if ($project->source_link)
+                    <a href="{{ $project->source_link }}" target="_blank"><span class="label label-primary"><i class="fa fa-globe"></i> Live Link</span></a>
+                    @endif
+
                 </div>
-                <p>{{ $project->description }}</p>
-
-                @if (strpos($row['status'], 'Finished') !== false)
-                    <span class=\"label label-success\">Finished</span>
-                @endif
-                @if (strpos($row['status'], 'Discontinued') !== false)
-                    <span class=\"label label-danger\">Discontinued</span>
-                @endif
-                @if (strpos($row['status'], 'WIP') !== false)
-                    <span class=\"label label-warning\">Work in Progress</span>
-                @endif
-
-                if ($row['sourcelink'])
-                <a href=\"" .$row['sourcelink']. "\" target=\"_blank\"><span class=\"label label-primary\"><i class=\"fa fa-code\"></i> Source</span></a>
-                @endif
-                if ($row['livelink'])
-                <a href=\"" .$row['livelink']. "\" target=\"_blank\"><span class=\"label label-primary\"><i class=\"fa fa-globe\"></i> Live Link</span></a>
-                @endif
-
-            </div>
             @endforeach
             <h1> </h1>
         </div>
