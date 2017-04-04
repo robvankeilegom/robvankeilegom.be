@@ -16,6 +16,7 @@ class Project extends Model
         'image',
         'source_link',
         'live_link',
+        'status',
     ];
 
     protected $dates = ['deleted_at'];
