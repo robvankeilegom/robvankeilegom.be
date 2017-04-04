@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Project extends Model
 {
-    use SoftDeletes;
+    use SoftDeletes,
+    HasTags;
 
     protected $fillable = [
         'title',
