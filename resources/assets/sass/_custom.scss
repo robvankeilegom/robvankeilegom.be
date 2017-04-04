@@ -43,11 +43,11 @@ body {
   }
 
   .welcome-title {
+    animation: tracking-in-contract-bck 1s cubic-bezier(.215, .610, .355, 1) both;
     color: $transparent-white;
     font-family: 'Lalezar', cursive;
     font-size: 20vh;
     padding: 15vh 0 0 1vw;
-    animation: tracking-in-contract-bck 1s cubic-bezier(.215, .610, .355, 1.000) both;
   }
 
   .links {
@@ -57,17 +57,17 @@ body {
     right: 4vw;
     top: 15vh;
 
-    > a {
+    a {
       display: block;
       margin-top: 1.5vh;
-
-      > i {
-        margin-right: 1vh;
-      }
     }
 
-    > a:hover {
+    a:hover {
       color: $white;
+    }
+
+    i {
+      margin-right: 1vh;
     }
   }
 
@@ -82,7 +82,7 @@ body {
     vertical-align: top;
     width: 24vw;
 
-    > .img {
+    .img {
       background-position: center;
       background-size: cover;
       height: 25vh;
@@ -108,14 +108,9 @@ body {
 
     a {
       color: $dark-grey;
-
-      > img {
-        height: 6vh;
-        margin-top: 6vh;
-      }
     }
 
-    > p {
+    p {
       font-weight: bold;
       margin-bottom: 10px;
       margin-top: 4vh;
@@ -134,7 +129,7 @@ body {
   h1 {
     font-size: 8vh;
 
-    ::after {
+    &::after {
       background: linear-gradient(to right, $white 0%, $medium-grey 50%, $black 100%);
       content: '';
       display: block;
