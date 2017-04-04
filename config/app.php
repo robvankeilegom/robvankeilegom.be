@@ -181,9 +181,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        
-        Sichikawa\LaravelSendgridDriver\SendgridTransportServiceProvider::class,
 
+        Sichikawa\LaravelSendgridDriver\SendgridTransportServiceProvider::class,
+        Spatie\Tags\TagsServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     ],
