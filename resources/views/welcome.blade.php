@@ -18,8 +18,8 @@
     </header>
     <main>
         <div class="touchscreen"><img src="{{ asset("images/icons/tap.png")}}" alt="tap"/> Tap op een project om extra info te tonen.</div>
+        <h1>Projecten</h1>
         <div class='projects'>
-            <h1>Projecten</h1>
             @foreach ($projects as $project)
                 <div class='project'>
                     <h2> {{ $project->title }}</h2>
@@ -51,23 +51,39 @@
                       @endif
               </div>
             @endforeach
-            <h1> </h1>
         </div>
-
-        <div class="anim-object" id="card-object-hf">
-          <div class="front face"><div class="text">A</div></div>
-          <div class="back face"><div class="text">B</div></div>
-        </div>
+        <h1> </h1>
     </main>
 </div>
 
 <script>
  $( function() {
-   $(".project-header").mouseenter( function() {
-     $(this).css("animation", "flip-2-hor-top-1 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s 1 normal both");
-   }).mouseleave(function() {
-     $(this).css("animation", "");
-   });
+$('.project h2').matchHeight();
+$('.projects').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
  });
 // $( function() {
 //   $(".layover").hide();

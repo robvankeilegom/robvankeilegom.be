@@ -6,3 +6,5 @@
  */
 
 require('./bootstrap');
+require('jquery-match-height');
+require('slick-carousel');

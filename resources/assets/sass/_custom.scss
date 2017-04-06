@@ -212,30 +212,3 @@ footer {
   margin: 15vh auto 10px;
   width: 81vw;
 }
-
-.anim-object {
-    height: 170px;
-    width: 170px;
-    backface-visibility: hidden;
-    display: block;
-    position: relative;
-
-  .face {
-    display: block;
-    align-items: center;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-  }
-
-  .front {
-    background: #2dccb8;
-  }
-
-  .back {
-    background: #53a3dc;
-    transform: rotateX(180deg);
-  }
-}

@@ -5,6 +5,9 @@
 // Variables
 @import 'variables';
 
+// Functions
+@import 'functions';
+
 // Bourbon
 @import 'node_modules/bourbon/app/assets/stylesheets/bourbon';
 
@@ -13,6 +16,10 @@
 
 // Bootstrap
 @import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+// Slick
+@import 'node_modules/slick-carousel/slick/slick-theme.scss';
+@import 'node_modules/slick-carousel/slick/slick.scss';
 
 // Outdatedbrowser
 @import 'outdatedbrowser';
