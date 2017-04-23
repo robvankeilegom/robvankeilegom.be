@@ -59,3 +59,5 @@ public/css/
 /storage/clockwork
 /_ide_helper.php
 /.phpstorm.meta.php
+
+.vagrant
