@@ -16,7 +16,8 @@
         "s-ichikawa/laravel-sendgrid-driver": "^1.2",
         "illuminate/support": "~5.4",
         "spatie/laravel-tags": "^1.3",
-        "deployer/deployer": "^4.3"
+        "deployer/deployer": "^4.3",
+        "laravel/homestead": "^5.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
