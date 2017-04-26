@@ -72,10 +72,8 @@ body {
 
   .project {
     display: inline-block;
+    height: auto;
     margin: 0 2vw 4vh;
-    position: relative;
-    vertical-align: top;
-    width: 24vw;
 
     .img {
       background-position: center;
@@ -205,6 +203,10 @@ body {
     font-size: 150%;
     margin-right: 4px;
   }
+}
+
+.row {
+    margin-bottom: 10px;
 }
 
 footer {
