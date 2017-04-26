@@ -20,6 +20,7 @@ class CreateLinksTable extends Migration
             $table->string('href');
             $table->boolean('target_blank');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
