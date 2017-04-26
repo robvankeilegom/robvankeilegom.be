@@ -21,5 +21,5 @@ class Project extends Model
         'status',
     ];
 
-    protected $dates = ['deleted_at'];
+    protected $dates = ['created_at', 'updated_at', 'deleted_at'];
 }
