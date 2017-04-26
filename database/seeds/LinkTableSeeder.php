@@ -142,18 +142,21 @@ class LinkTableSeeder extends Seeder
             'title' => 'Source Code',
             'icon' => 'fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/Discord_Log_Bot_Web',
+            'target_blank' => true,
         ]);
 
         App\Link::create([
             'title' => 'Live Link',
             'icon' => 'fa-heartbeat',
             'href' => 'http://portfolio.robvankeilegom.be',
+            'target_blank' => true,
         ]);
 
         App\Link::create([
             'title' => 'Live Link',
             'icon' => 'fa-heartbeat',
             'href' => 'http://sns-productions.be',
+            'target_blank' => true,
         ]);
     }
 }
