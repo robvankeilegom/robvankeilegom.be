@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Eloquent\Model;
 
-class DatabaseSeeder extends Seeder
+class LinkTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(ProjectTableSeeder::class);
-        $this->call(LinkTableSeeder::class);
+        factory(App\Link::class, 6)->create();
     }
 }

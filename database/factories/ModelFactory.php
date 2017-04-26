@@ -18,3 +18,12 @@ $factory->define(App\Project::class, function (Faker\Generator $faker) {
         'tumbnail_image' => 'http://placekitten.com/500/280',
     ];
 });
+
+$factory->define(App\Link::class, function (Faker\Generator $faker) {
+    return [
+        'title' => $faker->sentence($nbWords = 2, $variableNbWords = true),
+        'icon' => '',
+        'href' => '#',
+        'target_blank' => true,
+    ];
+});
