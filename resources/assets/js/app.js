@@ -15,6 +15,7 @@ $( function() {
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 3,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 768,
@@ -36,4 +37,8 @@ $( function() {
             }
         ]
     });
+
+    $('.projects-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        console.log(currentSlide);
+    })
 });

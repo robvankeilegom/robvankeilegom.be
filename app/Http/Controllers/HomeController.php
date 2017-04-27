@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Project;
-use App\Link;
+use App\HeaderData;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        $links = Link::all();
+        $headerData = HeaderData::find(1);
         $projects = Project::all();
         return view('welcome', [
-            'links' => $links,
+            'headerData' => $headerData,
             'projects' => $projects,
         ]);
     }

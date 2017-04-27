@@ -14,8 +14,8 @@
         </div>
     </header>
     <main>
-        <h2>Projecten</h2>
         <a href="#" class='view-more'>See all projects</a>
+        <h2>Projecten</h2>
 
         {{-- Start slider --}}
         <div class='projects-slider'>

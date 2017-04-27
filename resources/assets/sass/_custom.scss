@@ -4,17 +4,37 @@ body {
   overflow-x: hidden;
 }
 
-.welcome {
+header {
+  background-image: url('../images/header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  margin-bottom: 12vh;
+  width: 100vw;
 
-  header {
-    background-image: url('../images/header.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 75vh;
-    margin-bottom: 12vh;
-    width: 100vw;
+  .links {
+    color: $dark-grey;
+    font-size: 25px;
+    position: absolute;
+    right: 4vw;
+    top: 15vh;
+
+    a {
+      display: block;
+      margin-top: 1.5vh;
+    }
+
+    a:hover {
+      color: $white;
+    }
+
+    i {
+      margin-right: 1vh;
+    }
   }
+}
 
+.welcome {
   main {
     margin: 0 auto;
     width: 85vw;
@@ -49,27 +69,6 @@ body {
     padding: 15vh 0 0 1vw;
   }
 
-  .links {
-    color: $dark-grey;
-    font-size: 25px;
-    position: absolute;
-    right: 4vw;
-    top: 15vh;
-
-    a {
-      display: block;
-      margin-top: 1.5vh;
-    }
-
-    a:hover {
-      color: $white;
-    }
-
-    i {
-      margin-right: 1vh;
-    }
-  }
-
   .project {
     display: inline-block;
     height: auto;
@@ -80,23 +79,29 @@ body {
       line-height: 120%;
       text-align: justify;
     }
+
     img {
       display: block;
       max-width: 100%;
     }
 
     .tags,
-    .description {
+    .description,
+    .links {
       display: none;
+    }
+
+    h3 {
+      margin-top: 15px;
     }
   }
 
   .project-content {
-      .tags,
-      .description
-      .links {
-        margin-bottom: 15px;
-      }
+    .tags,
+    .description,
+    .links {
+      margin-bottom: 15px;
+    }
   }
 
   .project-header {
@@ -181,8 +186,16 @@ body {
   }
 }
 
-.row {
-    margin-bottom: 10px;
+.view-more {
+  float: right;
+}
+
+.slick-slide {
+  opacity: .6;
+}
+
+.slick-center {
+  opacity: 1;
 }
 
 footer {
