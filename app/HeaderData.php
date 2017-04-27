@@ -17,4 +17,9 @@ class HeaderData extends Model
     ];
 
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
+
+    public function links()
+    {
+        return $this->belongsToMany('App\Link', 'header_data_links');
+    }
 }

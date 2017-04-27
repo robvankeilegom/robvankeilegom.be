@@ -22,4 +22,9 @@ class Project extends Model
     ];
 
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
+
+    public function links()
+    {
+        return $this->belongsToMany('App\Link', 'links_projects');
+    }
 }
