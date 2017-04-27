@@ -12,9 +12,19 @@ class HeaderDataTableSeeder extends Seeder
     */
     public function run()
     {
-        App\HeaderData::create([
+        $headerData = App\HeaderData::create([
             'title' => 'Hallo!',
             'description' => 'Mijn naam is Rob Van Keilegom, ik ben een 3de jaars student aan Thomas More: Campus De Nayer. Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan (mee)gewerkt heb.'
         ]);
+
+        $links = [
+            'LinkedIn',
+            'Github',
+            'Gitlab',
+            'Bitbucket',
+        ];
+
+        $links = App\Link::whereIn('title', $links)->get();
+        $headerData->links()->attach($links);
     }
 }

@@ -12,12 +12,13 @@ class LinkTableSeeder extends Seeder
     */
     public function run()
     {
-        App\Link::create([
+        $link = App\Link::create([
             'title' => 'Facebook',
             'icon' => 'fa-facebook',
             'href' => 'https://www.facebook.com/RobVanKeilegom',
             'target_blank' => true,
         ]);
+
 
         App\Link::create([
             'title' => 'LinkedIn',
