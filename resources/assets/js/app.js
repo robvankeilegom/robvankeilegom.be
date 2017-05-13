@@ -15,7 +15,7 @@ $( function() {
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 3,
-        autoplay: true,
+        autoplay: false,
         responsive: [
             {
                 breakpoint: 768,
@@ -48,6 +48,13 @@ $( function() {
             projectContent.append(slide.children('.tags').clone());
             projectContent.fadeIn('fast');
         });
+    });
 
-    })
+    $('.projects-slider').on('click', '.slick-slide', function (e) {
+        e.stopPropagation();
+        var index = $(this).data("slick-index");
+        if ($('.projects-slider').slick('slickCurrentSlide') !== index) {
+            $('.projects-slider').slick('slickGoTo', index);
+        }
+    });
 });

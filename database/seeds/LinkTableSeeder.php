@@ -49,7 +49,7 @@ class LinkTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'E-mail',
-            'icon' => 'fa-mail',
+            'icon' => 'fa-envelope-o',
             'href' => 'mailto:robvankeilegom@hotmail.com',
             'target' => '_self',
         ]);

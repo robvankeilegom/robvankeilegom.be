@@ -20,6 +20,8 @@ class ProjectTableSeeder extends Seeder
             "image" => "tm_projectphpmysql.png",
         ]);
 
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'Ajax']);
+
 
         $project = App\Project::create([
             "title" => "TM: Project 2",
@@ -27,6 +29,8 @@ class ProjectTableSeeder extends Seeder
             "tumbnail_image" => "tm_project2.png",
             "image" => "tm_project2.png",
         ]);
+
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'KU Leuven API', 'Google API']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -45,6 +49,8 @@ class ProjectTableSeeder extends Seeder
             "image" => "total_receptie.png",
         ]);
 
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'JQuery UI', 'MySQL']);
+
 
         $project = App\Project::create([
             "title" => "Huiskamer Optredens",
@@ -53,6 +59,8 @@ class ProjectTableSeeder extends Seeder
             "image" => "hko.png",
         ]);
 
+        $project->attachTags(['HTML', 'CSS', 'Joomla!', 'CMS']);
+
 
         $project = App\Project::create([
             "title" => "TM: Web Engineering 1",
@@ -60,6 +68,8 @@ class ProjectTableSeeder extends Seeder
             "tumbnail_image" => "tm_projectwebengineering1.png",
             "image" => "tm_projectwebengineering1.png",
         ]);
+
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -78,6 +88,8 @@ class ProjectTableSeeder extends Seeder
             "image" => "total_hazards.png",
         ]);
 
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'MySQL']);
+
 
         $project = App\Project::create([
             "title" => "Total: Dafi",
@@ -85,6 +97,8 @@ class ProjectTableSeeder extends Seeder
             "tumbnail_image" => "total_dafi.png",
             "image" => "total_dafi.png",
         ]);
+
+        $project->attachTags(['MS-SQL', 'Excel', 'Visual Basic']);
 
         $link = App\Link::create([
                     'title' => 'Source Code',
@@ -101,6 +115,8 @@ class ProjectTableSeeder extends Seeder
             "tumbnail_image" => "tm_bandencentrale.png",
             "image" => "tm_bandencentrale.png",
         ]);
+
+        $project->attachTags(['C++', 'Object Oriented']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -119,6 +135,8 @@ class ProjectTableSeeder extends Seeder
             "image" => "tm_projectdatabanken.png",
         ]);
 
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'JQuery UI']);
+
         $link = App\Link::create([
             'title' => 'Source Code',
             'icon' => 'fa-code',
@@ -135,6 +153,8 @@ class ProjectTableSeeder extends Seeder
             "tumbnail_image" =>"total_lab3.png",
             "image" =>"total_lab3.png",
         ]);
+
+        $project->attachTags(['ASP.NET MVC', 'C#', 'Ajax']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -153,6 +173,8 @@ class ProjectTableSeeder extends Seeder
             "image" => "happening.png",
         ]);
 
+        $project->attachTags(['Javascript', 'CoffeeScript']);
+
         $link = App\Link::create([
             'title' => 'Source Code',
             'icon' => 'fa-code',
@@ -168,6 +190,8 @@ class ProjectTableSeeder extends Seeder
             "tumbnail_image" => "portfolio.png",
             "image" => "portfolio.png",
         ]);
+
+        $project->attachTags(['HTML', 'CSS', 'Javascript', 'JQuery', 'Laravel']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -195,6 +219,8 @@ class ProjectTableSeeder extends Seeder
             "image" => "solartracker.png",
         ]);
 
+        $project->attachTags(['ASP.NET', 'C#']);
+
         $link = App\Link::create([
             'title' => 'Source Code',
             'icon' => 'fa-code',
@@ -211,6 +237,8 @@ class ProjectTableSeeder extends Seeder
             "tumbnail_image" => "tm_project1.png",
             "image" => "tm_project1.png",
         ]);
+
+        $project->attachTags(['HTML', 'PHP', 'MySQL']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -229,6 +257,8 @@ class ProjectTableSeeder extends Seeder
             "image" => "discord.png",
         ]);
 
+        $project->attachTags(['Python', 'Discord.PY']);
+
         $link = App\Link::create([
             'title' => 'Source Code',
             'icon' => 'fa-code',
@@ -245,6 +275,8 @@ class ProjectTableSeeder extends Seeder
             "tumbnail_image" => "sns.png",
             "image" => "sns.png",
         ]);
+
+        $project->attachTags(['HTML', 'CSS', 'Javascript', 'JQuery']);
 
         $link = App\Link::create([
             'title' => 'Live Link',
@@ -263,12 +295,16 @@ class ProjectTableSeeder extends Seeder
             "image" => "fom.png",
         ]);
 
+        $project->attachTags(['PHP', 'MySQL', 'Bot']);
+
         $project = App\Project::create([
             "title" => "CodinGame Hackaton",
             "description" => "Mijn oplossing voor de Codeingame hackaton: The Accountant waarin ik 5de van de 73 belgen eindigde.",
             "tumbnail_image" => "codingame.png",
             "image" => "codingame.png",
         ]);
+
+        $project->attachTags(['C++', 'Hackaton']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -287,6 +323,8 @@ class ProjectTableSeeder extends Seeder
             "image" => "discord.png",
         ]);
 
+        $project->attachTags(['Python', 'Discord.PY', 'Bot']);
+
         $link = App\Link::create([
             'title' => 'Source Code',
             'icon' => 'fa-code',
@@ -304,12 +342,16 @@ class ProjectTableSeeder extends Seeder
             "image" => "fom.png",
         ]);
 
+        $project->attachTags(['Frag-o-Matic API']);
+
         $project = App\Project::create([
             "title" => "Total: Who Is Who",
             "description" => "Eenvoudig personen vinden in andere Arteco plants.",
             "tumbnail_image" => "whoiswho.png",
             "image" => "whoiswho.png",
         ]);
+
+        $project->attachTags([]);
 
         $project = App\Project::create([
             "title" => "Total: SAPReader",
@@ -318,12 +360,16 @@ class ProjectTableSeeder extends Seeder
             "image" => "total_sap.png",
         ]);
 
+        $project->attachTags([]);
+
         $project = App\Project::create([
             "title" => "Discord Log Bot: Web",
             "description" => "Een web interface voor de log bot. De interface geeft alle data weer die in de database zit. Hier kan je bekijken in welke servers de bot zit, welke gebruikers er in zitten, wie er geband is, enz...",
             "tumbnail_image" => "dlb_web.png",
             "image" => "dlb_web.png",
         ]);
+
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'MySQL', 'Object Oriented', 'Laravel']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
