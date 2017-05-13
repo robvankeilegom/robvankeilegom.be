@@ -38,7 +38,16 @@ $( function() {
         ]
     });
 
-    $('.projects-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-        console.log(currentSlide);
+    $('.projects-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        var slide = $(slick.$slides[nextSlide]);
+        var projectContent = $('.project-content');
+        projectContent.fadeOut('fast', function() {
+            projectContent.html('');
+            projectContent.append(slide.children('.links').clone());
+            projectContent.append(slide.children('.description').clone());
+            projectContent.append(slide.children('.tags').clone());
+            projectContent.fadeIn('fast');
+        });
+
     })
 });
