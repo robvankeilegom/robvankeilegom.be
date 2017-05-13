@@ -18,7 +18,7 @@ class CreateLinksTable extends Migration
             $table->string('title');
             $table->string('icon');
             $table->string('href');
-            $table->boolean('target_blank');
+            $table->string('target');
             $table->timestamps();
             $table->softDeletes();
         });

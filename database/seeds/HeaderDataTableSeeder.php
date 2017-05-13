@@ -22,6 +22,7 @@ class HeaderDataTableSeeder extends Seeder
             'Github',
             'Gitlab',
             'Bitbucket',
+            'E-mail',
         ];
 
         $links = App\Link::whereIn('title', $links)->get();
