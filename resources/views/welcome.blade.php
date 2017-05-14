@@ -84,6 +84,16 @@
 
             <h2>Testimonials</h2>
             <h2>Contact</h2>
+            <div class="contact">
+                <label for="name">Naam:</label>
+                <input type="text" />
+                <label for="mail">Mail:</label>
+                <input type="email" />
+                <label for="message">Bericht:</label>
+                <textarea></textarea>
+                {{-- TODO: Captcha --}}
+                <button type="submit">Verzend</button>
+            </div>
             <h2> </h2>
         </main>
     </div>
@@ -99,5 +109,5 @@
 @endsection
 
 @section('footer')
-    <footer>&copy; 2016 - Rob Van Keilegom - Vragen of opmerkingen? <a href="mailto:info@robvankeilegom.be"> Mail mij!</a></footer>
+    <footer>&copy; 2016 - <?php echo date("Y"); ?> Rob Van Keilegom - Vragen of opmerkingen? <a href="mailto:info@robvankeilegom.be"> Mail mij!</a></footer>
 @endsection
