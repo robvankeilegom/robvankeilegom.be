@@ -62,7 +62,8 @@ header {
       text-decoration: none;
     }
 
-    .wrapper, .profile-picture {
+    .wrapper,
+    .profile-picture {
       display: inline-block;
     }
   }
@@ -227,4 +228,39 @@ footer {
   font-size: 10px;
   margin: 15vh auto 10px;
   width: 81vw;
+}
+
+.admin {
+  img {
+    width: 100%;
+  }
+  .add-new {
+    font-size: 150px;
+    text-align: center;
+  }
+
+  .project-data {
+    p {
+      margin: 10px 0;
+    }
+    input,
+    textarea,
+    table {
+      width: 100%;
+      max-width: 100%;
+    }
+    textarea {
+      height: 150px;
+    }
+    td {
+      padding: 3px 5px;
+    }
+    th {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.right {
+  float: right;
 }

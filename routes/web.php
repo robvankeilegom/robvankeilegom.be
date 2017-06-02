@@ -14,3 +14,9 @@
 Route::localizedGroup(function () {
     Route::get('/', 'HomeController@index')->name('home');
 });
+
+Auth::routes();
+
+Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/admin/projects', 'AdminController@projects')->name('admin_projects');
+Route::get('/admin/project/{project_id}', 'AdminController@project')->name('admin_project');

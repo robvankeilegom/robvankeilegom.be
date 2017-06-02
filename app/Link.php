@@ -13,7 +13,7 @@ class Link extends Model
         'title',
         'icon',
         'href',
-        'target_blank',
+        'target',
     ];
 
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];

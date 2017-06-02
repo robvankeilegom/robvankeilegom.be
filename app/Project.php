@@ -16,8 +16,6 @@ class Project extends Model
         'description',
         'tumbnail_image',
         'image',
-        'source_link',
-        'live_link',
         'status',
     ];
 
