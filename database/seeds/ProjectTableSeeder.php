@@ -20,7 +20,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "tm_projectphpmysql.png",
         ]);
 
-        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'Ajax']);
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'Ajax', 'Thomas More']);
 
 
         $project = App\Project::create([
@@ -30,7 +30,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "tm_project2.png",
         ]);
 
-        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'KU Leuven API', 'Google API']);
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'KU Leuven API', 'Google API', 'API', 'Thomas More']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -49,7 +49,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "total_receptie.png",
         ]);
 
-        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'JQuery UI', 'MySQL']);
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'JQuery UI', 'MySQL', 'Total']);
 
 
         $project = App\Project::create([
@@ -69,7 +69,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "tm_projectwebengineering1.png",
         ]);
 
-        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery']);
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'Thomas More']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -88,7 +88,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "total_hazards.png",
         ]);
 
-        $project->attachTags(['HTML', 'PHP', 'CSS', 'MySQL']);
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'MySQL', 'Total']);
 
 
         $project = App\Project::create([
@@ -98,7 +98,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "total_dafi.png",
         ]);
 
-        $project->attachTags(['MS-SQL', 'Excel', 'Visual Basic']);
+        $project->attachTags(['MS-SQL', 'Excel', 'Visual Basic', 'Total']);
 
         $link = App\Link::create([
                     'title' => 'Source Code',
@@ -116,7 +116,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "tm_bandencentrale.png",
         ]);
 
-        $project->attachTags(['C++', 'Object Oriented']);
+        $project->attachTags(['C++', 'Object Oriented', 'Thomas More']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -135,7 +135,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "tm_projectdatabanken.png",
         ]);
 
-        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'JQuery UI']);
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'JQuery UI', 'Thomas More']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -154,7 +154,7 @@ class ProjectTableSeeder extends Seeder
             "image" =>"total_lab3.png",
         ]);
 
-        $project->attachTags(['ASP.NET MVC', 'C#', 'Ajax']);
+        $project->attachTags(['ASP.NET MVC', 'C#', 'Ajax', 'Total']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -238,7 +238,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "tm_project1.png",
         ]);
 
-        $project->attachTags(['HTML', 'PHP', 'MySQL']);
+        $project->attachTags(['HTML', 'PHP', 'MySQL', 'Thomas More']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -257,7 +257,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "discord.png",
         ]);
 
-        $project->attachTags(['Python', 'Discord.PY']);
+        $project->attachTags(['Python', 'Discord.PY', 'Thomas More']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -270,13 +270,13 @@ class ProjectTableSeeder extends Seeder
 
 
         $project = App\Project::create([
-            "title" => "sns-productions.com",
+            "title" => "S&amp;S Productions",
             "description" => "s&amp;s productions is een vereniging die zich bezighoudt met het opstarten van kleine producties. Welke vervolgens op YouTube te zien zijn.",
             "tumbnail_image" => "sns.png",
             "image" => "sns.png",
         ]);
 
-        $project->attachTags(['HTML', 'CSS', 'Javascript', 'JQuery']);
+        $project->attachTags(['HTML', 'CSS', 'Javascript', 'JQuery', 'PHP']);
 
         $link = App\Link::create([
             'title' => 'Live Link',
@@ -295,7 +295,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "fom.png",
         ]);
 
-        $project->attachTags(['PHP', 'MySQL', 'Bot']);
+        $project->attachTags(['PHP', 'MySQL', 'Bot', 'Frag-O-Matic', 'Facebook API', 'Facebook', 'API']);
 
         $project = App\Project::create([
             "title" => "CodinGame Hackaton",
@@ -304,7 +304,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "codingame.png",
         ]);
 
-        $project->attachTags(['C++', 'Hackaton']);
+        $project->attachTags(['C++', 'Hackaton', 'CodinGame']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -342,7 +342,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "fom.png",
         ]);
 
-        $project->attachTags(['Frag-o-Matic API']);
+        $project->attachTags(['Frag-o-Matic API', 'Frag-o-Matic', 'API']);
 
         $project = App\Project::create([
             "title" => "Total: Who Is Who",
@@ -351,7 +351,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "whoiswho.png",
         ]);
 
-        $project->attachTags([]);
+        $project->attachTags(['Total', 'HTML']);
 
         $project = App\Project::create([
             "title" => "Total: SAPReader",
@@ -360,7 +360,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "total_sap.png",
         ]);
 
-        $project->attachTags([]);
+        $project->attachTags(['Total', 'HTML', 'SAP']);
 
         $project = App\Project::create([
             "title" => "Discord Log Bot: Web",

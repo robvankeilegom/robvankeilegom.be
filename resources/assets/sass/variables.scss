@@ -10,7 +10,7 @@ $panel-default-border: $laravel-border-color;
 $panel-inner-border: $laravel-border-color;
 
 // Brands
-$brand-primary: #3097D1;
+$brand-primary: #3097d1;
 $brand-info: #8eb4cb;
 $brand-success: #2ab27b;
 $brand-warning: #cbb956;
@@ -37,7 +37,7 @@ $input-color-placeholder: lighten($text-color, 30%);
 $panel-default-heading-bg: #fff;
 
 // Font Awesome
-$fa-font-path:        "../fonts";
+$fa-font-path:        '../fonts';
 $fa-font-size-base:   $font-size-base;
 $fa-line-height-base: $line-height-base;
 $fa-border-color:     #eee;
@@ -50,10 +50,11 @@ $transparent-black: rgba(0, 0, 0, .8);
 $white: #fff;
 $transparent-white: rgba(255, 255, 255, .4);
 $transparent: rgba(255, 255, 255, 0);
+$grey: #ccc;
 $light-grey: #f2f2f2;
 $medium-grey: #939393;
 $dark-grey: #666;
 
 // CV Colors
-$blue: #497BD6;
-$orange: #CC7927;
+$blue: #497bd6;
+$orange: #cc7927;
