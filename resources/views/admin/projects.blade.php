@@ -53,4 +53,10 @@
             </footer>
         </div>
     </div>
+    <script>
+    $( function() {
+        $('.header').matchHeight();
+        $('.content').matchHeight();
+    });
+    </script>
 @endsection

@@ -22,6 +22,7 @@ class AdminController extends Controller
 
     public function projects()
     {
+        // todo return deleted too
         $projects = Project::all();
         return view('admin.projects', [
             'projects' => $projects,
@@ -34,5 +35,9 @@ class AdminController extends Controller
         return view('admin.project', [
             'project' => $project,
         ]);
+    }
+
+    public function postProject(Request $request)
+    {
     }
 }
