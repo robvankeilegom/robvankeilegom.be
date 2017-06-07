@@ -13,7 +13,8 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-  /*      light colors         */
+/*      light colors         */
+.admin {
   @keyframes spin {
     from {
       transform: rotate(0deg);
@@ -3698,3 +3699,4 @@
       overflow-y: hidden;
     }
   }
+}

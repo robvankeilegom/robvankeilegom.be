@@ -4,7 +4,7 @@
     <div class="welcome">
         <header>
             <div class='overlay'>
-                <img class="matchHeight profile-picture" src='//placehold.it/250x250/4A55EF/FFFFFF'/>
+                <img class="matchHeight profile-picture" src='{{ asset('images/profile_picture.jpg') }}'/>
                 <div class="matchHeight wrapper">
                     <h1>{{ $headerData->title }}</h1>
                     <p class="intro">
@@ -19,9 +19,8 @@
             </div>
         </header>
         <main>
-            <h2>Projecten</h2>
             <a href="#" class='view-more'>See all projects</a>
-
+            <h2>Projects <span class="count">({{ $projects->count() }})</span></h2>
             {{-- Start slider --}}
             <div class='projects-slider'>
                 @foreach ($projects as $project)
@@ -53,61 +52,86 @@
             <div class='project-content'>
 
                 {{-- Start Links --}}
-                <div class='links'>
-                    <a href="" target="_blank"><span class="label label-primary"><i class="fa fa-code"></i> Source</span></a>
-                    <a href="" target="_blank"><span class="label label-primary"><i class="fa fa-globe"></i> Live Link</span></a>
-                    <a href=""><span class="label label-primary"><i class="fa fa-globe"></i> Read More</span></a>
-                </div>
+                @foreach ($projects[0]->links as $link)
+                    <a href="" target="_blank"><i class="fa {{ $link->icon }}"></i> {{ $link->title }}</a>
+                @endforeach
                 {{-- End Links --}}
 
                 {{-- Start Description Text --}}
                 <p class='description'>
-                    Velit ullamco magna nisi non aliqua sunt cillum id aute sit laborum exercitation voluptate do adipisicing cupidatat enim.
-                    Dolor Lorem occaecat ex veniam ad tempor Lorem id eiusmod aliquip do sit Lorem ad deserunt veniam.
-                    Lorem sint aute eiusmod sunt tempor fugiat proident dolor.
+                    {{ $projects[0]->description }}
                 </p>
                 {{-- End Description Text --}}
 
                 {{-- Start Tags --}}
                 <div class='tags'>
-                    Tags:
-                    <span class="label label-info">ipsum</span>
-                    <span class="label label-info">exercitation</span>
-                    <span class="label label-info">duis</span>
-                    <span class="label label-info">consequat</span>
-                    <span class="label label-info">psum</span>
-                    <span class="label label-info">cupidatat</span>
+                    @if ($projects[0]->tags->count())
+                        @foreach ($projects[0]->tags as $tag)
+                            <span class="label label-info">{{ $tag->getTranslation('name', 'en') }}</span>
+                        @endforeach
+                    @endif
                 </div>
                 {{-- End Tags --}}
 
             </div>
 
-            <h2>Testimonials</h2>
-            <h2>Contact</h2>
+            {{-- <h2>Testimonials</h2> --}}
+            <h2 id="contact">Contact</h2>
             <div class="contact">
-                <label for="name">Naam:</label>
-                <input type="text" />
-                <label for="mail">Mail:</label>
-                <input type="email" />
-                <label for="message">Bericht:</label>
-                <textarea></textarea>
-                {{-- TODO: Captcha --}}
-                <button type="submit">Verzend</button>
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                @endif
+                {{ Form::open([
+                    'route' => 'contact',
+                    'id' => 'contactForm',
+                    'name' => 'contactForm',
+                    ]) }}
+                <label for="name">Full name:</label>
+                {{ Form::text('name', old('name'), ['maxlength' => '255']) }}
+                <label for="mail">E-mail:</label>
+                {{ Form::email('email', old('email'), ['maxlength' => '255']) }}
+                <label for="message">Message:</label>
+                {{ Form::textarea ('message', old('message'), ['maxlength' => '500']) }}
+                <button
+                class="g-recaptcha send-contact"
+                data-sitekey="{{ ENV('G_SITE_KEY') }}"
+                data-callback="onSubmit">
+                Send
+                </button>
+                <div class="clear"></div>
+                {{ Form::close() }}
             </div>
             <h2> </h2>
         </main>
     </div>
 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script>
     $( function() {
+        $('h3').matchHeight();
         $('.project').matchHeight();
         $('.overlay .matchHeight').matchHeight({
             target: $('.wrapper')
         });
     });
+
+    function onSubmit(token) {
+        $('#contactForm').submit();
+    }
     </script>
 @endsection
 
 @section('footer')
-    <footer>&copy; 2016 - <?php echo date("Y"); ?> Rob Van Keilegom - Vragen of opmerkingen? <a href="mailto:info@robvankeilegom.be"> Mail mij!</a></footer>
+    <footer class="center">&copy; 2016 - <?php echo date("Y"); ?> Rob Van Keilegom - Questions or Suggestions? <a href="mailto:info@robvankeilegom.be"> Send me a mail!</a></footer>
 @endsection

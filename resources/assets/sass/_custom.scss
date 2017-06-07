@@ -9,6 +9,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 75vh;
+  min-height: 200px;
   margin-bottom: 12vh;
   width: 100vw;
 
@@ -102,14 +103,17 @@ header {
   }
 
   .project-content {
-    margin: 0 auto;
+    margin: 0 auto 40px;
     min-height: 25vh;
     width: 85%;
 
     .tags,
     .description,
     .links {
+      font-size: 130%;
       margin-bottom: 15px;
+      line-height: 130%;
+      text-align: justify;
     }
   }
 
@@ -196,8 +200,13 @@ header {
 }
 
 .view-more {
-  position: absolute;
-  right: 7.5vw;
+  display: block;
+  text-align: right;
+}
+
+.clear {
+  clear: both;
+  height: 10px;
 }
 
 .slick-slide {
@@ -255,7 +264,7 @@ textarea {
 
 footer {
   font-size: 10px;
-  margin: 15vh auto 10px;
+  margin: 0 auto 10px;
   width: 81vw;
 }
 
@@ -292,4 +301,89 @@ footer {
 
 .right {
   float: right;
+}
+
+.grecaptcha-badge {
+  display: none;
+}
+
+.send-contact {
+  float: right;
+  font-size: 150%;
+  padding: 5px 20px;
+}
+
+.count {
+  font-size: 50%;
+  margin-bottom: 10px;
+}
+
+.center {
+  text-align: center
+}
+
+@media (max-width:1281px) {
+  /* hi-res laptops and desktops */
+  .welcome .overlay {
+
+    .profile-picture {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .intro {
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+
+@media (max-width:961px)  {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  header .links {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:961px) and  (orientation:landscape) {
+  header .links a{
+    display: inline-block;
+    font-size: 80%;
+  }
+}
+
+@media (max-width:641px)  {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .welcome .overlay {
+    padding-top: 2vh;
+
+    .intro {
+      width: 90vw;
+    }
+  }
+
+  .contact {
+    width: 100%;
+  }
+}
+
+@media (max-width:481px)  {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .welcome .overlay {
+    h1 {
+      font-size: 15vh;
+    }
+  }
+
+  header .links {
+    font-size: 110%;
+  }
+}
+
+@media (max-width:320px)  {
+  /* smartphones, iPhone, portrait 480x320 phones */
 }

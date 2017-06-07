@@ -12,7 +12,8 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'My Application',
+    'name' => 'Rob Van Keilegom',
+    'title' => 'Rob Van Keilegom',
 
     /*
     |--------------------------------------------------------------------------
