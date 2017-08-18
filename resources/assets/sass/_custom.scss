@@ -66,6 +66,12 @@ header {
     .profile-picture {
       display: inline-block;
     }
+
+    .wrapper,
+    .profile-picture,
+    .intro {
+      max-height: 300px;
+    }
   }
 
   h1 {
@@ -75,10 +81,14 @@ header {
     padding: 0 0 0 1vw;
   }
 
+  .projects-slider .project {
+    margin: 0 2vw 4vh;
+  }
+
   .project {
     display: inline-block;
     height: auto;
-    margin: 0 2vw 4vh;
+    margin: 0 0 4vh;
 
     p {
       color: $dark-grey;
@@ -99,6 +109,10 @@ header {
 
     h3 {
       margin-top: 15px;
+    }
+
+    a {
+      color: $dark-grey;
     }
   }
 

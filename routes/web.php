@@ -13,6 +13,8 @@
 
 Route::localizedGroup(function () {
     Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/projects', 'ProjectsController@index')->name('projects');
+    Route::get('/project/{project_id}', 'ProjectsController@project')->name('project');
 });
 
 Auth::routes();
