@@ -21,6 +21,7 @@
     <meta name="theme-color" content="#E64545">
 
     <!-- Styles -->
+    <link href="{{ asset('css/less.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
