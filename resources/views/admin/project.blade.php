@@ -75,8 +75,9 @@
                                                 <th>
                                                     href
                                                 </th>
+                                                </th>
                                                 <th>
-                                                    actions
+                                                    delete?
                                                 </th>
                                             </tr>
                                         </thead>
@@ -95,12 +96,25 @@
                                                     <td>
                                                         {{ $link->href }}
                                                     </td>
+                                                    </td>
                                                     <td>
+                                                        <a href="{{ route('delete_link', [$project->id, $link->id]) }}" class="remove"><i class="fa fa-remove"></i></a>
                                                     </td>
                                                 </tr>
                                             @endforeach
                                         </tbody>
                                     </table>
+
+                                    <button type="button" class="btn right" data-toggle="modal" data-target="#addLinkModal">Add Link </button>
+
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="content">
+                                    <button type="button" class="btn red">Delete</button>
+                                    <button type="submit" class="btn right green">Save</button>
+                                    <div style="clear:both;"></div>
                                 </div>
                             </div>
                         </div>
@@ -140,4 +154,49 @@
                 </footer>
             </div>
         </div>
+
+<!-- Add Link Modal -->
+<div id="addLinkModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add a link to your project</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="form-group">
+            <label for="title">Title: </label>
+            <input type="text" id="title" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="icon">Icon: </label>
+            <input type="text" id="icon" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="target">Target: </label>
+            <input type="text" id="target" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="href">Href: </label>
+              <select class="form-control" id="href">
+                <option>_self</option>
+                <option>_blank</option>
+                <option>_parent</option>
+                <option>_top</option>
+              </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
     @endsection
