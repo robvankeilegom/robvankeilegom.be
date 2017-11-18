@@ -185,7 +185,6 @@ return [
 
         Sichikawa\LaravelSendgridDriver\SendgridTransportServiceProvider::class,
         Spatie\Tags\TagsServiceProvider::class,
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     ],
 
