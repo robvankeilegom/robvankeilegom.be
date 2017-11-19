@@ -23,10 +23,6 @@ add('shared_dirs', []);
 // Writable dirs by web server
 add('writable_dirs', []);
 
-set('env', [
-    'composer_options' => '--verbose --prefer-dist --no-progress --no-interaction --optimize-autoloader',
-]);
-
 // Hosts
 host('production')
     ->hostname('robvankeilegom.be')
@@ -52,13 +48,6 @@ task('gulp', function () {
 task('gulp:production', function () {
     run("cd {{release_path}} && gulp --production");
 })->onStage('production')->desc("Running gulp");
-
-task('composer:dev', function () {
-    run("cd {{release_path}} && composer install");
-})
-->desc("Running gulp");
-
-before('deploy:vendors', 'composer:dev');
 
 // Run npm install
 after('deploy:update_code', 'npm:install');
