@@ -16,21 +16,25 @@
 
 // Bootstrap
 @import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-
-// Slick
-@import 'node_modules/slick-carousel/slick/slick-theme.scss';
-@import 'node_modules/slick-carousel/slick/slick.scss';
+@import 'node_modules/magnific-popup/src/css/main';
 
 // Outdatedbrowser
 @import 'outdatedbrowser';
-
-// http://animista.net/
-@import 'animista';
 
 // Reset
 @import 'reset';
 
 @import 'admin';
+
+@import 'variables';
+@import 'mixins';
+@import 'global';
+@import 'navbar';
+@import 'masthead';
+@import 'portfolio';
+@import 'contact';
+@import 'footer';
+@import 'bootstrap-overrides';
 
 // Custom SCSS
 @import 'custom';

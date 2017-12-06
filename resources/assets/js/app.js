@@ -8,6 +8,7 @@
 require('./bootstrap');
 require('jquery-match-height');
 require('slick-carousel');
+require('magnific-popup');
 
 $( function() {
     $('.projects-slider').slick({

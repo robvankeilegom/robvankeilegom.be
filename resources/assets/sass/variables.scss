@@ -14,16 +14,16 @@ $brand-primary: #3097d1;
 $brand-info: #8eb4cb;
 $brand-success: #2ab27b;
 $brand-warning: #cbb956;
-$brand-danger:  #bf5329;
+$brand-danger: #bf5329;
 
 // Typography
-$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-sans-serif: 'Raleway', sans-serif;
 $font-size-base: 14px;
 $line-height-base: 1.6;
 $text-color: #636b6f;
 
 // Navbar
-$navbar-default-bg: #fff;
+$navbar-default-bg: #ffffff;
 
 // Buttons
 $btn-default-color: $text-color;
@@ -34,23 +34,23 @@ $input-border-focus: lighten($brand-primary, 25%);
 $input-color-placeholder: lighten($text-color, 30%);
 
 // Panels
-$panel-default-heading-bg: #fff;
+$panel-default-heading-bg: #ffffff;
 
 // Font Awesome
-$fa-font-path:        '../fonts';
-$fa-font-size-base:   $font-size-base;
+$fa-font-path: '../fonts';
+$fa-font-size-base: $font-size-base;
 $fa-line-height-base: $line-height-base;
-$fa-border-color:     #eee;
-$fa-inverse:          #fff;
-$fa-li-width:         (30em / 14);
+$fa-border-color: #eeeeee;
+$fa-inverse: #ffffff;
+$fa-li-width: (30em / 14);
 
 // Custom
-$black: #000;
+$black: #000000;
 $transparent-black: rgba(0, 0, 0, .8);
-$white: #fff;
+$white: #ffffff;
 $transparent-white: rgba(255, 255, 255, .4);
 $transparent: rgba(255, 255, 255, 0);
-$grey: #ccc;
+$grey: #cccccc;
 $light-grey: #f2f2f2;
 $medium-grey: #939393;
 $dark-grey: #454545;
@@ -60,3 +60,16 @@ $green: rgb(26, 153, 0);
 // CV Colors
 $blue: #497bd6;
 $orange: #cc7927;
+$white: #ffffff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000000 !default;
+$primary: #18bc9c !default;
+$secondary: #2c3e50 !default;
