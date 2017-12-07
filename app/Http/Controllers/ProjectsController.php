@@ -16,4 +16,13 @@ class ProjectsController extends Controller
             'projects' => $projects,
         ]);
     }
+
+    public function modal($projectId)
+    {
+        $project = Project::find($projectId);
+        $project->increment('views');
+        return view('parts.projectModal', [
+            'project' => $project,
+        ]);
+    }
 }

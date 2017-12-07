@@ -19,8 +19,8 @@
             <hr class="star-dark mb-5">
             <div class="row">
                 @foreach ($projects as $key => $project)
-                    <div class="col-md-6 col-lg-4">
-                        <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                    <div class="col-md-6 col-lg-4 project">
+                        <a class="portfolio-item d-block mx-auto" href="{{ route('projectModal', [ $project->id ]) }}">
                             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                                     <i class="fa fa-search-plus fa-3x"></i>
@@ -112,37 +112,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Portfolio Modal -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-        <div class="portfolio-modal-dialog bg-white">
-            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-                <i class="fa fa-3x fa-times"></i>
-            </a>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-                        <hr class="star-dark mb-5">
-                        <div class="row">
-                            <div class="col-lg-2">
-                            </div>
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
-                            </div>
-                        </div>
-                        <p class="mb-5">
-                            Take your time. Speed will come later. Nice little fluffy clouds laying around in the sky being lazy. You could sit here for weeks with your one hair brush trying to do that - or you could do it with one stroke with an almighty brush. These trees are so much fun. I get started on them and I have a hard time stopping. With practice comes confidence. We don't have to be concerned about it. We just have to let it fall where it will.
-                        </p>
-                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                            <i class="fa fa-close"></i>
-                            Close Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
 
 @section('footer')

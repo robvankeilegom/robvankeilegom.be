@@ -16,6 +16,7 @@ Route::localizedGroup(function () {
     Route::post('/contact', 'HomeController@contact')->name('contact');
     Route::get('/projects', 'ProjectsController@index')->name('projects');
     Route::get('/project/{project_id}', 'ProjectsController@project')->name('project');
+    Route::get('/project/{project_id}', 'ProjectsController@modal')->name('projectModal');
 });
 
 Auth::routes();

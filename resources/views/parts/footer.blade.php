@@ -4,13 +4,13 @@
             <div class="col-md-4 mb-5 mb-lg-0">
                 <h4 class="text-uppercase mb-4">Location</h4>
                 <p class="lead mb-0">Louis Van Campenhoutstraat 40
-                    <br>2870, Liezele
-                    <br>(Belgium)
+                    <br>2870 Liezele
+                    <br>Belgium
                 </p>
             </div>
-            <div class="col-md-4 mb-5 mb-lg-0">
+            <div class="col-md-4 mb-0 mb-lg-0">
                 <h4 class="text-uppercase mb-4">Around the Web</h4>
-                <ul class="list-inline mb-0">
+                <ul class="list-inline mb-1">
                     <li class="list-inline-item">
                         <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
                             <i class="fa fa-fw fa-facebook"></i>
@@ -18,12 +18,22 @@
                     </li>
                     <li class="list-inline-item">
                         <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                            <i class="fa fa-fw fa-twitter"></i>
+                            <i class="fa fa-fw fa-linkedin"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                            <i class="fa fa-fw fa-linkedin"></i>
+                            <i class="fa fa-fw fa-gitlab"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                            <i class="fa fa-fw fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                            <i class="fa fa-fw fa-bitbucket"></i>
                         </a>
                     </li>
                 </ul>
@@ -32,7 +42,7 @@
                 <h4 class="text-uppercase mb-4">Contact</h4>
                 <p class="lead mb-0">
                     robvankeilegom@hotmail.com
-                    <br>00432 79 26 39 23
+                    <br>+324 79 26 39 23
                 </p>
             </div>
         </div>
