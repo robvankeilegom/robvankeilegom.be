@@ -12,6 +12,7 @@ header.masthead {
   img {
     max-width: 52vw;
     border-radius: 50%;
+    border: 5px solid $white;
   }
 }
 @media (min-width: 992px) {
