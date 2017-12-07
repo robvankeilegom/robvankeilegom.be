@@ -18,66 +18,24 @@
             <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
             <hr class="star-dark mb-5">
             <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                @foreach ($projects as $key => $project)
+                    <div class="col-md-6 col-lg-4">
+                        <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
                             </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/game.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-                    </a>
-                </div>
+                            <img class="img-fluid" src="{{ $project->tumbnail_image }}" alt="">
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-primary" href="#">
+                    <i class="fa fa-list mr-2"></i>
+                    See All Projects!
+                </a>
             </div>
         </div>
     </section>
@@ -96,9 +54,14 @@
                 <div class="col-lg-4 mr-auto">
                     <p class="lead">
                         You can do anything here - the only pre-requisite is that it makes you happy. Just relax and let it flow. That easy. We'll put all the little clouds in and let them dance around and have fun. There are no mistakes.
-
                     </p>
                 </div>
+            </div>
+            <div class="text-center mt-4">
+              <a class="btn btn-xl btn-outline-light" href="#">
+                <i class="fa fa-download mr-2"></i>
+                Download Resume!
+              </a>
             </div>
         </div>
     </section>
@@ -150,9 +113,7 @@
         </div>
     </section>
 
-    <!-- Portfolio Modals -->
-
-    <!-- Portfolio Modal 1 -->
+    <!-- Portfolio Modal -->
     <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
         <div class="portfolio-modal-dialog bg-white">
             <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
@@ -182,130 +143,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-        <div class="portfolio-modal-dialog bg-white">
-            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-                <i class="fa fa-3x fa-times"></i>
-            </a>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-                        <hr class="star-dark mb-5">
-                        <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-                        <p class="mb-5">
-                            Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. We have no limits to our world. We're only limited by our imagination. Let's make a nice big leafy tree. And just raise cain. This is the time to get out all your flustrations, much better than kicking the dog around the house or taking it out on your spouse. But they're very easily killed. Clouds are delicate. I will take some magic white, and a little bit of Vandyke brown and a little touch of yellow.
-                        </p>
-                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                            <i class="fa fa-close"></i>
-                            Close Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-        <div class="portfolio-modal-dialog bg-white">
-            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-                <i class="fa fa-3x fa-times"></i>
-            </a>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-                        <hr class="star-dark mb-5">
-                        <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-                        <p class="mb-5">
-                            Remember how free clouds are. They just lay around in the sky all day long. All you need to paint is a few tools, a little instruction, and a vision in your mind. Isn't that fantastic that you can create an almighty tree that fast? All you have to do is let your imagination go wild. Now let's put some happy little clouds in here. Don't hurry. Take your time and enjoy.
-                        </p>
-                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                            <i class="fa fa-close"></i>
-                            Close Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
-        <div class="portfolio-modal-dialog bg-white">
-            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-                <i class="fa fa-3x fa-times"></i>
-            </a>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-                        <hr class="star-dark mb-5">
-                        <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-                        <p class="mb-5">
-                            Put it in, leave it alone. I really recommend you use odorless thinner or your spouse is gonna run you right out into the yard and you'll be working by yourself. Get tough with it, get strong. Sometimes you learn more from your mistakes than you do from your masterpieces. Trees cover up a multitude of sins. You're the greatest thing that has ever been or ever will be. You're special. You're so very special.
-                        </p>
-                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                            <i class="fa fa-close"></i>
-                            Close Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
-        <div class="portfolio-modal-dialog bg-white">
-            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-                <i class="fa fa-3x fa-times"></i>
-            </a>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-                        <hr class="star-dark mb-5">
-                        <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                            <i class="fa fa-close"></i>
-                            Close Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-        <div class="portfolio-modal-dialog bg-white">
-            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-                <i class="fa fa-3x fa-times"></i>
-            </a>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-                        <hr class="star-dark mb-5">
-                        <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-                        <p class="mb-5">
-                            What the devil. You got your heavy coat out yet? It's getting colder. We don't really know where this goes - and I'm not sure we really care. We'll do another happy little painting. They say everything looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics. You have to make those little noises or it won't work. All kinds of happy little splashes. Let's have a little bit of fun today.
-                        </p>
-                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                            <i class="fa fa-close"></i>
-                            Close Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="{{ asset('js/app.js') }}"></script>
 @endsection
 
 @section('footer')

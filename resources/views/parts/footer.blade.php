@@ -29,9 +29,10 @@
                 </ul>
             </div>
             <div class="col-md-4">
-                <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-                    <a href="http://startbootstrap.com">Start Bootstrap</a>.
+                <h4 class="text-uppercase mb-4">Contact</h4>
+                <p class="lead mb-0">
+                    robvankeilegom@hotmail.com
+                    <br>00432 79 26 39 23
                 </p>
             </div>
         </div>

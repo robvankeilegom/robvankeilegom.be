@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function index()
     {
         $headerData = HeaderData::with('links')->find(1);
-        $projects = Project::with('links')->get();
+        $projects = Project::with('links')->take(6)->get()->sortBy('views');
         return view('welcome', [
             'headerData' => $headerData,
             'projects' => $projects,
