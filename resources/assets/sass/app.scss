@@ -2,6 +2,9 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Istok+Web|Lora|Lalezar');
 
+// Reset
+@import 'reset';
+
 // Variables
 @import 'variables';
 
@@ -15,22 +18,23 @@
 @import 'node_modules/font-awesome/scss/font-awesome';
 
 // Bootstrap
-@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'bootstrap/bootstrap';
 
-// Slick
-@import 'node_modules/slick-carousel/slick/slick-theme.scss';
-@import 'node_modules/slick-carousel/slick/slick.scss';
+// Template
+@import 'node_modules/magnific-popup/src/css/main';
 
 // Outdatedbrowser
 @import 'outdatedbrowser';
 
-// http://animista.net/
-@import 'animista';
-
-// Reset
-@import 'reset';
-
-@import 'admin';
+// Template
+@import 'template/mixins';
+@import 'template/global';
+@import 'template/navbar';
+@import 'template/masthead';
+@import 'template/portfolio';
+@import 'template/contact';
+@import 'template/footer';
+@import 'template/bootstrap-overrides';
 
 // Custom SCSS
 @import 'custom';
