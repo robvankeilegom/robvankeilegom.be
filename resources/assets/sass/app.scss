@@ -2,6 +2,9 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Istok+Web|Lora|Lalezar');
 
+// Reset
+@import 'reset';
+
 // Variables
 @import 'variables';
 
@@ -15,26 +18,23 @@
 @import 'node_modules/font-awesome/scss/font-awesome';
 
 // Bootstrap
-@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'bootstrap/bootstrap';
+
+// Template
 @import 'node_modules/magnific-popup/src/css/main';
 
 // Outdatedbrowser
 @import 'outdatedbrowser';
 
-// Reset
-@import 'reset';
-
-@import 'admin';
-
-@import 'variables';
-@import 'mixins';
-@import 'global';
-@import 'navbar';
-@import 'masthead';
-@import 'portfolio';
-@import 'contact';
-@import 'footer';
-@import 'bootstrap-overrides';
+// Template
+@import 'template/mixins';
+@import 'template/global';
+@import 'template/navbar';
+@import 'template/masthead';
+@import 'template/portfolio';
+@import 'template/contact';
+@import 'template/footer';
+@import 'template/bootstrap-overrides';
 
 // Custom SCSS
 @import 'custom';
