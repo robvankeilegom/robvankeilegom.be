@@ -23,7 +23,7 @@
                                         <h4 class="title">{{ $project->title }}</h4>
                                     </div>
                                     <div class="content">
-                                        <img src='//placehold.it/600x400/10A5C6/FFFFFF'/>
+                                        <img class="img-fluid" src='//placehold.it/600x400/10A5C6/FFFFFF'/>
                                         {{-- <img src="{{ asset($project->tumbnail_image) }}" /> --}}
                                     </div>
                                 </div>
