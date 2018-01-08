@@ -7,13 +7,22 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class HeaderData extends Model
 {
-    use SoftDeletes;
+    use SoftDeletes,
+    HasTranslations;
+
+    public $translatable = [
+        'description1',
+        'description2',
+    ];
 
     protected $table = 'header_data';
 
     protected $fillable = [
-        'title',
-        'description',
+        'code',
+        'image',
+        'subtitle',
+        'description1',
+        'description2',
     ];
 
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];

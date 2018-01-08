@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-lg-4 ml-auto">
                     <p class="lead">
-                        A tree cannot be straight if it has a crooked trunk. Anytime you learn something your time and energy are not wasted. Just make a decision and let it go. In nature, dead trees are just as normal as live trees. The only thing worse than yellow snow is green snow.
+                        {{ $headerData->description1 }}
                     </p>
                 </div>
                 <div class="col-lg-4 mr-auto">
