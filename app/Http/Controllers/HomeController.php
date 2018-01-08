@@ -7,16 +7,13 @@ use Validator;
 use GuzzleHttp\Client;
 
 use App\Project;
-use App\HeaderData;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        $headerData = HeaderData::with('links')->find(1);
-        $projects = Project::with('links')->take(6)->get()->sortBy('views');
+        $projects = Project::with('links')->take(6)->orderBy('weight')->get();
         return view('welcome', [
-            'headerData' => $headerData,
             'projects' => $projects,
         ]);
     }

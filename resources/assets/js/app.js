@@ -10,3 +10,10 @@ require( 'jquery-match-height' );
 require( './template/jquery.easing' );
 require( 'magnific-popup' );
 require( './template/freelancer' );
+
+
+$( function() {
+    console.log( "check" );
+    $( '.project img' )
+        .matchHeight();
+} );
