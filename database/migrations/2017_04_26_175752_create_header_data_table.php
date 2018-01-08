@@ -15,8 +15,11 @@ class CreateHeaderDataTable extends Migration
     {
         Schema::create('header_data', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
-            $table->text('description');
+            $table->string('code', 4);
+            $table->string('subtitle');
+            $table->string('image');
+            $table->text('description1');
+            $table->text('description2');
             $table->timestamps();
             $table->softDeletes();
         });
