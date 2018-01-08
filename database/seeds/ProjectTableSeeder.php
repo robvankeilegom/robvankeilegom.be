@@ -20,7 +20,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/tm_projectphpmysql.png",
         ]);
 
-        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'Ajax', 'Thomas More']);
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'Ajax', 'Thomas More', 'Finished']);
 
 
         $project = App\Project::create([
@@ -30,7 +30,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/tm_project2.png",
         ]);
 
-        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'KU Leuven API', 'Google API', 'API', 'Thomas More']);
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'KU Leuven API', 'Google API', 'API', 'Thomas More', 'Finished']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -49,7 +49,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/total_receptie.png",
         ]);
 
-        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'JQuery UI', 'MySQL', 'Total']);
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'JQuery UI', 'MySQL', 'Total', 'Finished']);
 
 
         $project = App\Project::create([
@@ -59,7 +59,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/hko.png",
         ]);
 
-        $project->attachTags(['HTML', 'CSS', 'Joomla!', 'CMS']);
+        $project->attachTags(['HTML', 'CSS', 'Joomla!', 'CMS', 'Finished']);
 
 
         $project = App\Project::create([
@@ -116,7 +116,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/tm_bandencentrale.png",
         ]);
 
-        $project->attachTags(['C++', 'Object Oriented', 'Thomas More']);
+        $project->attachTags(['C++', 'Object Oriented', 'Thomas More', 'Finished']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -173,7 +173,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/tm_projectphpmysql.png",
         ]);
 
-        $project->attachTags(['Javascript', 'CoffeeScript']);
+        $project->attachTags(['Javascript', 'CoffeeScript', 'Finished', 'Abandoned']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -191,7 +191,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/happening.png",
         ]);
 
-        $project->attachTags(['HTML', 'CSS', 'Javascript', 'JQuery', 'Laravel']);
+        $project->attachTags(['HTML', 'CSS', 'Javascript', 'JQuery', 'Laravel', 'Work in Progress']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -219,7 +219,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/solartracker.png",
         ]);
 
-        $project->attachTags(['ASP.NET', 'C#']);
+        $project->attachTags(['ASP.NET MVC', 'C#', 'Finished']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -238,7 +238,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/tm_project1.png",
         ]);
 
-        $project->attachTags(['HTML', 'PHP', 'MySQL', 'Thomas More']);
+        $project->attachTags(['HTML', 'PHP', 'MySQL', 'Thomas More', 'Finished']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -257,7 +257,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/discord.png",
         ]);
 
-        $project->attachTags(['Python', 'Discord.PY', 'Thomas More']);
+        $project->attachTags(['Python', 'Discord.PY', 'Thomas More','Discord', 'Finished']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -276,7 +276,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/sns.png",
         ]);
 
-        $project->attachTags(['HTML', 'CSS', 'Javascript', 'JQuery', 'PHP']);
+        $project->attachTags(['HTML', 'CSS', 'Javascript', 'JQuery', 'PHP', 'Finished']);
 
         $link = App\Link::create([
             'title' => 'Live Link',
@@ -295,7 +295,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/fom.png",
         ]);
 
-        $project->attachTags(['PHP', 'MySQL', 'Bot', 'Frag-O-Matic', 'Facebook API', 'Facebook', 'API']);
+        $project->attachTags(['PHP', 'MySQL', 'Bot', 'Frag-O-Matic', 'Facebook API', 'Facebook', 'API', 'Finished', 'Proof of concept']);
 
         $project = App\Project::create([
             "title" => "CodinGame Hackaton",
@@ -304,7 +304,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/codingame.png",
         ]);
 
-        $project->attachTags(['C++', 'Hackaton', 'CodinGame']);
+        $project->attachTags(['C++', 'Hackaton', 'CodinGame', 'Finished']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -323,7 +323,7 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/discord.png",
         ]);
 
-        $project->attachTags(['Python', 'Discord.PY', 'Bot']);
+        $project->attachTags(['Python', 'Discord.PY', 'Bot', 'Finished', 'Abandoned']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
@@ -379,5 +379,68 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
+        
+        $project = App\Project::create([
+            "title" => "Atom: Language OpenEdge ABL",
+            "description" => "",
+            "tumbnail_image" => $tumb,
+            "image" => $image,
+        ]);
+
+        $project->attachTags(['PHP']);
+
+        $link = App\Link::create([
+            'title' => 'Source Code',
+            'icon' => 'fa-code',
+            'href' => 'https://github.com/RoobieBoobieee/language-openedge-abl',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+        
+        $project = App\Project::create([
+            "title" => "Push to screen",
+            "description" => "",
+            "tumbnail_image" => $tumb,
+            "image" => $image,
+        ]);
+
+        $project->attachTags(['HTML', 'PHP', 'CSS']);
+
+        $link = App\Link::create([
+            'title' => 'Source Code (node)',
+            'icon' => 'fa-code',
+            'href' => 'https://gitlab.com/RoobieBoobieee/PushToScreen_node',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+
+        $link = App\Link::create([
+            'title' => 'Source Code (master)',
+            'icon' => 'fa-code',
+            'href' => 'https://gitlab.com/RoobieBoobieee/PushToScreen_master',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+        
+        $project = App\Project::create([
+            "title" => "Citypolis",
+            "description" => "",
+            "tumbnail_image" => $tumb,
+            "image" => $image,
+        ]);
+
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel']);
+        
+        $project = App\Project::create([
+            "title" => "Snowsports",
+            "description" => "",
+            "tumbnail_image" => $tumb,
+            "image" => $image,
+        ]);
+
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel']);
     }
 }
