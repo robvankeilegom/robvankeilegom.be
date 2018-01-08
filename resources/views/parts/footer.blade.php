@@ -52,6 +52,6 @@
 
 <div class="copyright py-4 text-center text-white">
     <div class="container">
-        <small>Copyright &copy; robvankeilegom.be 2017</small>
+        <small>Copyright &copy; robvankeilegom.be 2016 - {{ today("Y") }}</small>
     </div>
 </div>

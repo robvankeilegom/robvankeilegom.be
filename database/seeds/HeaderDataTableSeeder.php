@@ -13,8 +13,11 @@ class HeaderDataTableSeeder extends Seeder
     public function run()
     {
         $headerData = App\HeaderData::create([
-            'title' => 'Hallo!',
-            'description' => 'Mijn naam is Rob Van Keilegom, ik ben een 3de jaars student aan Thomas More: Campus De Nayer. Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan (mee)gewerkt heb.'
+            'code' => 'MAIN',
+            'image' => 'images/profile_picture.jpg',
+            'subtitle' => 'Full Stack Developer',
+            'description1' => 'Mijn naam is Rob Van Keilegom, ik ben een 3de jaars student aan Thomas More: Campus De Nayer. Als student ICT ontwikkel ik software. Verder op de pagina kan u al de projecten bekijken waar ik al aan (mee)gewerkt heb.',
+            'description2' => '',
         ]);
 
         $links = [
@@ -22,7 +25,7 @@ class HeaderDataTableSeeder extends Seeder
             'Github',
             'Gitlab',
             'Bitbucket',
-            'E-mail',
+            'Facebook',
         ];
 
         $links = App\Link::whereIn('title', $links)->get();

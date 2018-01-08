@@ -217,6 +217,7 @@ class ProjectTableSeeder extends Seeder
             "description" => "Voor mijn geintegreerde proef als laatste jaar student in Don Bosco Hoboken werd deze website gemaakt. Op de website was te zien in welke positie het zonnepaneel stond en hoeveel het opbracht. Meer info hierover is te vinden op de GitLab pagina. De website is ontwikkeld in ASP.NET.",
             "tumbnail_image" => "images/projects/solartracker.png",
             "image" => "images/projects/solartracker.png",
+            "weight" => 4,
         ]);
 
         $project->attachTags(['ASP.NET MVC', 'C#', 'Finished']);
@@ -289,10 +290,11 @@ class ProjectTableSeeder extends Seeder
 
 
         $project = App\Project::create([
-            "title" => "FOM: Bot",
+            "title" => "FoM: Facebook chatbot",
             "description" => "Een POC voor het aanspreken van deelnemers op het Frag-o-Matic evenement via facebook. Deze bot wordt aan een pagina gelinkt, zodat deelnemers via een facebook chat FOM data kunnen uitlezen en updates kunnen krijgen over compos.",
             "tumbnail_image" => "images/projects/fom.png",
             "image" => "images/projects/fom.png",
+            "weight" => 3,
         ]);
 
         $project->attachTags(['PHP', 'MySQL', 'Bot', 'Frag-O-Matic', 'Facebook API', 'Facebook', 'API', 'Finished', 'Proof of concept']);
@@ -302,6 +304,7 @@ class ProjectTableSeeder extends Seeder
             "description" => "Mijn oplossing voor de Codeingame hackaton: The Accountant waarin ik 5de van de 73 belgen eindigde.",
             "tumbnail_image" => "images/projects/codingame.png",
             "image" => "images/projects/codingame.png",
+            "weight" => 5,
         ]);
 
         $project->attachTags(['C++', 'Hackaton', 'CodinGame', 'Finished']);
@@ -379,12 +382,12 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-        
+
         $project = App\Project::create([
             "title" => "Atom: Language OpenEdge ABL",
             "description" => "",
-            "tumbnail_image" => $tumb,
-            "image" => $image,
+            "tumbnail_image" => "images/projects/discord.png",
+            "image" => "images/projects/discord.png",
         ]);
 
         $project->attachTags(['PHP']);
@@ -397,12 +400,12 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-        
+
         $project = App\Project::create([
             "title" => "Push to screen",
             "description" => "",
-            "tumbnail_image" => $tumb,
-            "image" => $image,
+            "tumbnail_image" => "images/projects/discord.png",
+            "image" => "images/projects/discord.png",
         ]);
 
         $project->attachTags(['HTML', 'PHP', 'CSS']);
@@ -424,21 +427,23 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-        
+
         $project = App\Project::create([
             "title" => "Citypolis",
             "description" => "",
-            "tumbnail_image" => $tumb,
-            "image" => $image,
+            "tumbnail_image" => "images/projects/citypolis_tumb.png",
+            "image" => "images/projects/citypolis.png",
+            "weight" => 2,
         ]);
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel']);
-        
+
         $project = App\Project::create([
             "title" => "Snowsports",
             "description" => "",
-            "tumbnail_image" => $tumb,
-            "image" => $image,
+            "tumbnail_image" => "images/projects/snowsports_tumb.png",
+            "image" => "images/projects/snowsports.png",
+            "weight" => 1,
         ]);
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel']);

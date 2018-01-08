@@ -13,7 +13,6 @@ require( './template/freelancer' );
 
 
 $( function() {
-    console.log( "check" );
     $( '.project img' )
         .matchHeight();
 } );

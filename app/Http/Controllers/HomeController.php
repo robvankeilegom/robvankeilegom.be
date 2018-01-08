@@ -43,20 +43,21 @@ class HomeController extends Controller
 
         $response = $client->request('POST', 'https://www.google.com/recaptcha/api/siteverify', [
             'form_params' => [
-                'secret' => ENV('G_SECRET_KEY'),
+                'secret' => ENV('GOOGLE_SECRET_KEY'),
                 'response' => $request->input('g-recaptcha-response', null),
             ],
         ]);
         $response = json_decode($response->getBody());
         if ($response->success) {
-            mail('info@robvankeilegom.be', 'contact form: ' . $request->email, $request->message);
+            mail('info@robvankeilegom.be', 'robvankeilegom.be form: ' . $request->email . ' ' . $request->phone, $request->message);
             return redirect()
                     ->route('home', ['#contact'])
-                    ->with('status', 'Successfully sent!');
+                    ->with('success', 'Successfully sent!');
         } else {
+            $validator->errors()->add('invalid_captcha', 'Apparently, you are a robot?!');
             return redirect()
                     ->route('home', ['#contact'])
-                    ->withErrors(['invalid_captcha' => 'Apparently, you are a robot?!'])
+                    ->withErrors($validator)
                     ->withInput();
         }
     }
