@@ -53,7 +53,7 @@
                 </div>
                 <div class="col-lg-4 mr-auto">
                     <p class="lead">
-                        You can do anything here - the only pre-requisite is that it makes you happy. Just relax and let it flow. That easy. We'll put all the little clouds in and let them dance around and have fun. There are no mistakes.
+                        {{ $headerData->description2 }}
                     </p>
                 </div>
             </div>

@@ -390,12 +390,19 @@ class ProjectTableSeeder extends Seeder
             "image" => "images/projects/discord.png",
         ]);
 
-        $project->attachTags(['PHP']);
+        $project->attachTags(['Progress', 'OpenEdge', 'ABL', 'Atom', 'Package']);
 
         $link = App\Link::create([
             'title' => 'Source Code',
             'icon' => 'fa-code',
             'href' => 'https://github.com/RoobieBoobieee/language-openedge-abl',
+            'target' => '_blank',
+        ]);
+
+        $link = App\Link::create([
+            'title' => 'Atom Package',
+            'icon' => 'fa-archive',
+            'href' => 'https://atom.io/packages/language-openedge-abl',
             'target' => '_blank',
         ]);
 
