@@ -89,10 +89,6 @@
                         </div>
                         @endif
                         {{ csrf_field() }}
-                         <div id='recaptcha' class="g-recaptcha"
-                              data-sitekey="{{ \Config::get('custom.GA.site_key')}}"
-                              data-callback="onSubmit"
-                              data-size="invisible"></div>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Name</label>
@@ -122,9 +118,9 @@
                             </div>
                         </div>
                         <br>
-                        <div id="success"></div>
                         <div class="form-group">
-                            <input class='btn btn-primary btn-xl submit-contact' type="button" class="btn btn-primary btn-xl" id="sendMessageButton" value="Send" />
+                            <div class="g-recaptcha" data-sitekey="{{ \Config::get('custom.GA.site_key')}}"></div>
+                            <input class='btn btn-primary btn-xl submit-contact pull-right' type="submit" class="btn btn-primary btn-xl" id="sendMessageButton" value="Send" />
                         </div>
                     </form>
                 </div>
@@ -134,16 +130,7 @@
 @endsection
 
 @section('scripts')
-    <script>
-        $( '.submit-contact' ).on('click', function() {
-            grecaptcha.execute();
-        });
-
-        function onSubmit(token) {
-            $('#contactForm').submit();
-        }
-    </script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 @endsection
 
 @section('footer')
