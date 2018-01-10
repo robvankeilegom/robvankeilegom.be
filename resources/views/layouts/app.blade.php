@@ -13,7 +13,7 @@
     <!-- Meta -->
     <link rel="author" href="{{ asset('humans.txt') }}">
 
-    <meta name="description" content="@yield('description')">
+    <meta name="description" content="My name is Rob. I'm a 22 year old developer graduated in June 2017. I currently work as a Progress developer over at Organi (Wilrijk, Belgium). In my free time I work on personal or open source projects. When I'm not programming I'm probably busy volunteering at Frag-o-Matic, playing video- and boardgames or out snowboarding.">
     <meta name="url" content="{{ Request::url() }}">
 
     <!-- Open Graph -->
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="@yield('title', 'robvankeilegom.be')">
     <meta property="og:image" content="@yield('image', asset('images/profile_picture.jpg'))">
-    <meta property="og:description" content="@yield('description')">
+    <meta property="og:description" content="My name is Rob. I'm a 22 year old developer graduated in June 2017. I currently work as a Progress developer over at Organi (Wilrijk, Belgium). In my free time I work on personal or open source projects. When I'm not programming I'm probably busy volunteering at Frag-o-Matic, playing video- and boardgames or out snowboarding.">
     <meta property="og:site_name" content="@yield('title', 'robvankeilegom.be')">
     <meta property="og:locale" content="{{ Localization::getCurrentLocaleRegional() }}">
     @foreach(Localization::getSupportedLocales() as $locale)
