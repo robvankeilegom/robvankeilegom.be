@@ -6,7 +6,15 @@
     <div class="row">
         <div class="col-lg-5">
             <div class="mx-auto text-center">
-                <h2 class="text-secondary text-uppercase mb-5 project-name">{{ $project->title }}</h2>
+                <h2 class="text-secondary text-uppercase mb-0 project-name">{{ $project->title }}</h2>
+                <p>
+                    @foreach ($project->links as $key => $link)
+                        @if ($key <> 0)
+                            |
+                        @endif
+                        <a href="{{ $link->href }}" target="{{ $link->target }}">{{ $link->title }}</a>
+                    @endforeach
+                </p>
                 {{-- <hr class="star-dark mb-5"> --}}
             </div>
             <p class="mb-5 project-description text-justify">

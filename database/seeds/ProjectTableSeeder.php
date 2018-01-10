@@ -297,7 +297,7 @@ class ProjectTableSeeder extends Seeder
             "weight" => 3,
         ]);
 
-        $project->attachTags(['PHP', 'MySQL', 'Bot', 'Frag-O-Matic', 'Facebook API', 'Facebook', 'API', 'Finished', 'Proof of concept']);
+        $project->attachTags(['PHP', 'MySQL', 'Bot', 'Frag-O-Matic', 'Facebook API', 'Facebook', 'API', 'Finished', 'POC']);
 
         $project = App\Project::create([
             "title" => "CodinGame Hackaton",
@@ -454,5 +454,14 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel']);
+
+        $link = App\Link::create([
+            'title' => 'Live link',
+            'icon' => 'fa-globe',
+            'href' => 'https://planning.snowsports.be/',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
     }
 }

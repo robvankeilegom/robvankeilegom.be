@@ -127,6 +127,17 @@
             </div>
         </div>
     </section>
+
+    {{-- <!-- Numbers Section -->
+    <section class="bg-primary text-white mb-0" id="numbers">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-white">Numbers</h2>
+            <hr class="star-light mb-5">
+            <div class="row">
+
+            </div>
+        </div>
+    </section> --}}
 @endsection
 
 @section('scripts')

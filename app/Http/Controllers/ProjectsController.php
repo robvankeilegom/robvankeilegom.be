@@ -19,7 +19,7 @@ class ProjectsController extends Controller
 
     public function modal($projectId)
     {
-        $project = Project::with('tags')->find($projectId);
+        $project = Project::with('links')->find($projectId);
         $project->increment('views');
         return view('parts.projectModal', [
             'project' => $project,
