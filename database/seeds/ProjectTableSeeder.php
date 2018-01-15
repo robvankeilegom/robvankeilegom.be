@@ -553,12 +553,48 @@ class ProjectTableSeeder extends Seeder
             "weight" => 1,
         ]);
 
+        $project
+           ->setTranslation('description', 'en', "")
+           ->setTranslation('description', 'nl', "").
+
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel']);
 
         $link = App\Link::create([
             'title' => 'Live link',
             'icon' => 'fa-globe',
             'href' => 'https://planning.snowsports.be/',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+
+        $project = App\Project::create([
+            "title" => "Gemaco Connect",
+            "description" => "",
+            "tumbnail_image" => "images/projects/connect_tumb.png",
+            "image" => "images/projects/connect.png",
+            "weight" => 6,
+        ]);
+
+        $project
+           ->setTranslation('description', 'en', "")
+           ->setTranslation('description', 'nl', "").
+
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel']);
+
+        $link = App\Link::create([
+            'title' => 'Gemaco',
+            'icon' => 'fa-globe',
+            'href' => 'https://www.gemacoglobal.com/',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+
+        $link = App\Link::create([
+            'title' => 'Full Thesis',
+            'icon' => 'fa-book',
+            'href' => 'https://roobieboobieee.gitlab.io/thesis/',
             'target' => '_blank',
         ]);
 
