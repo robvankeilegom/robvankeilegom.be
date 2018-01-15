@@ -599,5 +599,18 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
+
+        $project = App\Project::create([
+            "title" => "FoM: Compo TV",
+            "description" => "",
+            "tumbnail_image" => "//placehold.it/600x400/E76430/000000",
+            "image" => "//placehold.it/1920x1080/E76430/000000",
+        ]);
+
+        $project
+           ->setTranslation('description', 'en', "")
+           ->setTranslation('description', 'nl', "").
+
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'React.js', 'Frag-o-Matic API', 'Frag-o-Matic', 'API']);
     }
 }
