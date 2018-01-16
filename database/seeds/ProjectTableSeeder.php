@@ -540,10 +540,17 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "")
+           ->setTranslation('description', 'en', "CITYPOLIS takes place in a 300m² space which is arranged into a large imaginary city and which is filled with interactive tasks. The participants will be divided into sub-teams which shall take on each other in “the city”. This is a unique indoor team game filled with action and strategy, innovation and technology.")
            ->setTranslation('description', 'nl', "").
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel']);
+
+        $link = App\Link::create([
+            'title' => 'Citypolis',
+            'icon' => 'fa-globe',
+            'href' => 'https://www.citypolis.be/',
+            'target' => '_blank',
+        ]);
 
         $project = App\Project::create([
             "title" => "Snowsports",
