@@ -554,15 +554,15 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "")
+           ->setTranslation('description', 'en', "The snowsports application is a website I wrote for a skiclub. It's made to make it easier for monitors and members to connect. Monitors can easily add lessons. The members can indicate whether the will be present. Everyone has a profile where they can add familiy members who are to young to create an account themselves. The website is written on top of the Laravel framework and is completely mobile friendly.")
            ->setTranslation('description', 'nl', "").
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel']);
 
         $link = App\Link::create([
-            'title' => 'Live link',
+            'title' => 'Demo (nl)',
             'icon' => 'fa-globe',
-            'href' => 'https://planning.snowsports.be/',
+            'href' => 'https://snowsports.robvankeilegom.be',
             'target' => '_blank',
         ]);
 
