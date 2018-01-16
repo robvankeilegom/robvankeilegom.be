@@ -31,7 +31,7 @@
 .portfolio-modal-dialog {
   padding: 3rem 1rem;
   min-height: calc(80vh - 2rem);
-  margin: 1rem calc(1rem - 8px);
+  margin: 1rem auto;
   position: relative;
   z-index: 2;
   -moz-box-shadow: 0 0 3rem 1rem fade-out(black, .5);
@@ -53,7 +53,8 @@
   .portfolio-modal-dialog {
     min-height: 80vh;
     padding: 5rem;
-    margin: 3rem calc(3rem - 8px);
+    max-width: 1200px;
+    margin: 3rem auto;
     h2 {
       font-size: 3rem;
     }
