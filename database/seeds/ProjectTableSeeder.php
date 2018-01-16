@@ -372,8 +372,8 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "")
-           ->setTranslation('description', 'nl', "Mijn oplossing voor de Codeingame hackaton: The Accountant waarin ik 5de van de 73 belgen eindigde.").
+           ->setTranslation('description', 'en', "This is the solution i came up with for the Codingame hackaton: The Accountant. I ended 5th of the 73 belgian people.")
+           ->setTranslation('description', 'nl', "Mijn oplossing voor de Codingame hackaton: The Accountant waarin ik 5de van de 73 belgen eindigde.").
 
         $project->attachTags(['C++', 'Hackaton', 'CodinGame', 'Finished']);
 
