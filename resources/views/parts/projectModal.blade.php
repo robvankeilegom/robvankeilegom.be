@@ -33,7 +33,7 @@
              --}}
         </div>
         <div class="col-lg-7">
-            <img class="img-fluid mb-5 project-picture" src="{{ $project->image }}" alt="">
+            <img class="img-fluid mb-5 project-picture" src="{{ asset($project->image) }}" alt="">
         </div>
     </div>
 </div>
