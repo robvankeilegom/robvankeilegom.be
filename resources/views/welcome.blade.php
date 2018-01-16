@@ -31,12 +31,12 @@
                     </div>
                 @endforeach
             </div>
-            {{-- <div class="text-center mt-4">
-                <a class="btn btn-xl btn-primary" href="#">
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-primary" href="{{ route('projects') }}">
                     <i class="fa fa-list mr-2"></i>
                     See All Projects!
                 </a>
-            </div> --}}
+            </div>
         </div>
     </section>
 
