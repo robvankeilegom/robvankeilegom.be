@@ -577,15 +577,25 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "")
-           ->setTranslation('description', 'nl', "").
+           ->setTranslation('description', 'en', "This project is the final work I had to do before graduating college. I did my internship at Uni-t which is part of the Gemaco group. Because of the fast growing staff number Uni-t decided a who is who application would be a great idea to reconnect the people at Gemaco. This application would make is easier to find out personal and useful information about the company and the staff. This would make it easier for existing and new staff members to fit in. This is how Gemaco Connect was born a online Laravel application with an API behind it. The API, which is also a Laravel application and uses the passport package for authentication, is used to store all data and as a single sign-on provider. This way the API can be easily integrated in other (existing) application.")
+           ->setTranslation('description', 'nl', "Door het snel groeiende personeelsaantal zou Uni-t graag een who is who/intranet app hebben. Deze app kan gebruikt worden voor het terug vinden van gegevens over personeel in het bedrijf en belangrijke/nuttige info voor nieuw personeel. Hierdoor kan iemand gemakkelijk gecontacteerd of terug gevonden worden. Als antwoord op dat probleem is Uni-t met Gemaco Connect gekomen. Een online tool waarbij personeel kan inloggen om professionele info, alsook persoonlijke info over collega’s, belangrijke en handige weetjes terug te vinden. Ook zal de Gemaco Connect app als centrale login dienen. Zo kunnen gebruikers bij de verschillende andere applicaties in één klik inloggen.").
 
-        $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel']);
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel', 'Laravel Passport', 'Single Sign-On', 'API', 'Thomas More']);
 
         $link = App\Link::create([
             'title' => 'Gemaco',
             'icon' => 'fa-globe',
             'href' => 'https://www.gemacoglobal.com/',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+        
+        
+        $link = App\Link::create([
+            'title' => 'Uni-t',
+            'icon' => 'fa-globe',
+            'href' => 'https://uni-t.be/',
             'target' => '_blank',
         ]);
 
