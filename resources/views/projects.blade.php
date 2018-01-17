@@ -3,7 +3,15 @@
 
 @section('navigation')
     <!-- Navigation -->
-    @include('parts.nav')
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">robvankeilegom.be</a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 @endsection
 
 @section('content')
@@ -13,39 +21,44 @@
             <h2 class="text-center text-uppercase text-white">Portfolio</h2>
             <hr class="star-light mb-5">
             @foreach ($projects as $key => $project)
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 project">
-                        <a class="portfolio-item d-block mx-auto" href="{{ route('projectModal', [ $project->id ]) }}">
+                <div class="row project-list">
+                    <div class="col-md-6 col-lg-4">
+                        <a class="d-block mx-auto portfolio-item" href="{{ route('projectModal', [ $project->id ]) }}">
                             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                                     <i class="fa fa-search-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{{ asset($project->tumbnail_image) }}" alt="">
+                            <img class="img-fluid" src="{{ asset($project->tumbnail_image) }}" alt="{{ $project->title }}">
                         </a>
                     </div>
-                    <div class="col-md-6 col-lg-8 project">
-                        <h3 class="mb-2">{{ $project->title }}</h3>
-                        {{-- <p>
-                            @foreach ($project->links as $key => $link)
-                                @if ($key <> 0)
-                                     |
-                                @endif
-                                <a href="{{ $link->href }}" target="{{ $link->target }}" class="text-white">{{ $link->title }}</a>
-                            @endforeach
-                        </p> --}}
-                        <p class="description">
-                            @if (strlen($project->description) > 500)
-                                {{ substr($project->description, 0,  500) }}...
+                    <div class="col-md-6 col-lg-8">
+                        <h3 class="mb-1">
+                            {{ $project->title }}
+                        </h3>
+                        <p class="description text-justify">
+                            @if (strlen($project->description) > 350)
+                                {{ substr($project->description, 0,  350) }}...
                             @else
                                 {{ $project->description }}
                             @endif
                         </p>
-                        <p class="mb-5 project-description text-justify">
-                            @foreach ($project->tags as $key => $tag)
-                                <span class="badge badge-primary">{{ $tag->name }}</span>
+                        <div class="mb-1">
+                            @foreach ($project->links as $key => $link)
+                                @if ($key == 0)
+                                @else
+                                    |
+                                @endif
+                                <a href="{{ $link->href }}" target="{{ $link->target }}" class="text-white ml-1 mr-1">{{ strtolower($link->title) }}</a>
                             @endforeach
-                        </p>
+                        </div>
+                        <div class="mb-5">
+                            @foreach ($project->tags as $key => $tag)
+                                <span class="badge badge-outline">{{ $tag->name }}</span>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-12 mb-5">
                     </div>
                 </div>
             @endforeach
