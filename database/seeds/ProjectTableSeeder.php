@@ -129,8 +129,8 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "To calculate running times of the products at the Total Plant I wrote this Excel Macro. It’s written in VB and it processes data from a My SQL database. It then generates charts for a clear visual representation of running times or pauses. Through the UI they can make changes to how the data has to be visualized.")
-           ->setTranslation('description', 'nl', "Om draaitijden te berekenen voor de Total plant in Schoten is deze Excel macro geschreven. De macro, geschreven in VB, verwerkt productie data uit een My SQL database en genereert grafieken voor een duidelijk visuele vertoning van draaitijden en stilstanden. Via de UI kan men instellen hoe de data moet weergegeven worden.")
+           ->setTranslation('description', 'en', "To calculate running times of the products at the Total Plant I wrote this Excel Macro. It’s written in VB and it processes data from a MS SQL database. It then generates charts for a clear visual representation of running times or pauses. Through the UI they can make changes to how the data has to be visualized.")
+           ->setTranslation('description', 'nl', "Om draaitijden te berekenen voor de Total plant in Schoten is deze Excel macro geschreven. De macro, geschreven in VB, verwerkt productie data uit een MS SQL database en genereert grafieken voor een duidelijk visuele vertoning van draaitijden en stilstanden. Via de UI kan men instellen hoe de data moet weergegeven worden.")
            ->save().
 
         $project->attachTags(['MS-SQL', 'Excel', 'Visual Basic', 'Total']);
