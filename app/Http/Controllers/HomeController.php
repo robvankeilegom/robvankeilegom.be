@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Validator;
 use GuzzleHttp\Client;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 use App\Project;
 
@@ -49,7 +50,11 @@ class HomeController extends Controller
         ]);
         $response = json_decode($response->getBody());
         if ($response->success) {
-            mail('info@robvankeilegom.be', 'robvankeilegom.be form: ' . $request->email . ' ' . $request->phone, $request->message);
+            Mail::raw('This is the content of mail body', function ($message) {
+                $message->from($request->email, 'Website Contact Form');
+                $message->to('info@robvankeilegom.be');
+                $message->subject(implode("\n", $request->all()));
+            });
             return redirect()
                     ->route('home', ['#contact'])
                     ->with('success', 'Successfully sent!');
