@@ -16,10 +16,10 @@
 
 @section('content')
     <!-- Portfolio Grid Section -->
-    <section class="portfolio bg-primary text-white mt-5" id="portfolio">
+    <section class="portfolio mt-5" id="portfolio">
         <div class="container">
-            <h2 class="text-center text-uppercase text-white">Portfolio</h2>
-            <hr class="star-light mb-5">
+            <h2 class="text-center text-uppercase">Portfolio</h2>
+            <hr class="star-dark mb-5">
             @foreach ($projects as $key => $project)
                 <div class="row project-list">
                     <div class="col-md-6 col-lg-4">
@@ -49,7 +49,7 @@
                                 @else
                                     |
                                 @endif
-                                <a href="{{ $link->href }}" target="{{ $link->target }}" class="text-white ml-1 mr-1">{{ strtolower($link->title) }}</a>
+                                <a href="{{ $link->href }}" target="{{ $link->target }}" class="ml-1 mr-1">{{ strtolower($link->title) }}</a>
                             @endforeach
                         </div>
                         <div class="mb-5">
