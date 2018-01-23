@@ -10,7 +10,7 @@ class ProjectsController extends Controller
     public function index()
     {
         $headerData = HeaderData::with('links')->find(1);
-        $projects = Project::with('links')->orderBy('views')->get();
+        $projects = Project::with('links')->orderBy('views', 'DESC')->get();
         return view('projects', [
             'headerData' => $headerData,
             'projects' => $projects,
