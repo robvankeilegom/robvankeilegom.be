@@ -50,7 +50,15 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
+        
+        $link = App\Link::create([
+            'title' => 'Marlon Stoops',
+            'icon' => 'fa-linkedin',
+            'href' => 'https://www.linkedin.com/in/marlonstoops/',
+            'target' => '_blank',
+        ]);
 
+        $project->links()->attach($link);
 
         $project = App\Project::create([
             "title" => "Total: Receptie",
@@ -190,7 +198,15 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
+        
+        $link = App\Link::create([
+            'title' => 'Marlon Stoops',
+            'icon' => 'fa-linkedin',
+            'href' => 'https://www.linkedin.com/in/marlonstoops/',
+            'target' => '_blank',
+        ]);
 
+        $project->links()->attach($link);
 
         $project = App\Project::create([
             "title" =>"Total: LAB3",
@@ -314,7 +330,15 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
+        
+        $link = App\Link::create([
+            'title' => 'Marlon Stoops',
+            'icon' => 'fa-linkedin',
+            'href' => 'https://www.linkedin.com/in/marlonstoops/',
+            'target' => '_blank',
+        ]);
 
+        $project->links()->attach($link);
 
         $project = App\Project::create([
             "title" => "TM: Python",
@@ -324,7 +348,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "Discord is an all-in-one voice and text chat for gamers. For the course Python in the 2nd fase of my bachelor education we wrote a bot for Discord. You can add the bot to one of you channels with a command. The bot then plays music of your choosing in the channel.")
+           ->setTranslation('description', 'en', "Discord is an all-in-one voice and text chat for gamers. For the course Python in the 2nd fase of my bachelor education we (Marlon Stoops and I) wrote a bot for Discord. You can add the bot to one of you channels with a command. The bot then plays music of your choosing in the channel.")
            ->setTranslation('description', 'nl', "Discord is een All-in-one voice and text chat voor gamers. Voor het vak Python in de tweede fase van mijn bacheloropleiding hebben Marlon Stoops en ik een bot geschreven. De bot kan aan een kanaal toegevoegd worden met een commando en speelt daar dan muziek af.")
            ->save().
 
@@ -334,6 +358,15 @@ class ProjectTableSeeder extends Seeder
             'title' => 'Source Code',
             'icon' => 'fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/TM_Python',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+        
+        $link = App\Link::create([
+            'title' => 'Marlon Stoops',
+            'icon' => 'fa-linkedin',
+            'href' => 'https://www.linkedin.com/in/marlonstoops/',
             'target' => '_blank',
         ]);
 
@@ -348,11 +381,11 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "s&amp;s productions is an association who make small productions and post these on YouTube.")
+           ->setTranslation('description', 'en', "s&amp;s productions is an association who make small productions and post these on YouTube. This simple site is written in plain PHP and addresses Facebook's, Youtube's and Flickr's API to keep itself up-to-date.")
            ->setTranslation('description', 'nl', "s&amp;s productions is een vereniging die zich bezighoudt met het opstarten van kleine producties. Welke vervolgens op YouTube te zien zijn.")
            ->save().
 
-        $project->attachTags(['HTML', 'CSS', 'Javascript', 'JQuery', 'PHP', 'Finished']);
+        $project->attachTags(['HTML', 'CSS', 'Javascript', 'JQuery', 'PHP', 'Facebook API', 'Youtube API', 'Flickr API', 'Finished']);
 
         $link = App\Link::create([
             'title' => 'Live Link',
@@ -373,11 +406,11 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "This is a POC to reach out to contestant of the Frag-O-Matic event on Facebook. This bot is linked to a page, so contestants could receive information about the ongoing compo's.")
-           ->setTranslation('description', 'nl', "Een POC voor het aanspreken van deelnemers op het Frag-O-Matic evenement via facebook. Deze bot wordt aan een pagina gelinkt, zodat deelnemers via een facebook chat FOM data kunnen uitlezen en updates kunnen krijgen over compos.")
+           ->setTranslation('description', 'en', "This is a POC to reach out to contestants of the Frag-o-Matic event via Facebook. This bot is linked to a Facebook page, so contestants could receive information about the ongoing tournaments in messenger. After linking your Frag-o-Matic profile to your Facebook profile, the bot would pull data from the Frag-o-Matic API and send it to the user.")
+           ->setTranslation('description', 'nl', "Een POC voor het aanspreken van deelnemers op het Frag-o-Matic evenement via facebook. Deze bot wordt aan een pagina gelinkt, zodat deelnemers via een facebook chat FOM data kunnen uitlezen en updates kunnen krijgen over compos.")
            ->save().
 
-        $project->attachTags(['PHP', 'MySQL', 'Bot', 'Frag-O-Matic', 'Facebook API', 'Facebook', 'API', 'Finished', 'POC']);
+        $project->attachTags(['PHP', 'MySQL', 'Bot', 'Frag-O-Matic', 'Frag-O-Matic API', 'Facebook API', 'Facebook', 'API', 'Finished', 'POC']);
 
         $project = App\Project::create([
             "title" => "CodinGame Hackaton",
@@ -388,7 +421,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "This is the solution I came up with for the Codingame hackaton: The Accountant. I ended 5th of the 73 belgian people.")
+           ->setTranslation('description', 'en', "This is the solution I came up with for the Codingame hackaton: The Accountant. Codingame is a creat way to combine programming and gaming. I ended 5th of the 73 belgian people. Hackaton description: For this mission, you take the role of Christian Wolff, an unconventional accountant who has lived as a double agent for years. He has gathered highly sensitive data while working for the most dangerous criminal organizations of the world. As things are starting to unravel, it is expected that Wolff’s enemies will attempt to get their hands on these files. As Wolff cannot risk to blow his cover up, we need you to make sure the data is secure.")
            ->setTranslation('description', 'nl', "Mijn oplossing voor de Codingame hackaton: The Accountant waarin ik 5de van de 73 belgen eindigde.")
            ->save().
 
@@ -402,7 +435,15 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
+        
+        $link = App\Link::create([
+            'title' => 'Codingame hackaton: The Accountant',
+            'icon' => 'fa-globe',
+            'href' => 'https://www.codingame.com/blog/launch-of-accountant-hackathon/',
+            'target' => '_blank',
+        ]);
 
+        $project->links()->attach($link);
 
         $project = App\Project::create([
             "title" => "Discord Log Bot",
@@ -412,7 +453,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "This bot can be included in a Discord server and log almost all data. It writes off all data to a MySQL database. The bot is written on top of a Discord.PY layer, which makes it simpler to address the API.")
+           ->setTranslation('description', 'en', "This bot can be included in a Discord server and log almost all data. It writes off all data to a MySQL database. The bot is written on top of a Discord.PY layer, which makes it simpler to address the API. There is a seperate Laravel project to display all data in a webpage. I stopped supporting this project since Discord implemented its own audit log.")
            ->setTranslation('description', 'nl', "Een bot die in Discord servers kan gestoken worden voor het loggen van bijna alle data. Hij schrijft alle data naar een MySQL database. De bot is geschreven bovenop de Discord.PY laag, die het aanspreken van de API eenvoudiger maakt.")
            ->save().
 
@@ -422,6 +463,15 @@ class ProjectTableSeeder extends Seeder
             'title' => 'Source Code',
             'icon' => 'fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/Discord_Bot',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+        
+        $link = App\Link::create([
+            'title' => 'Source Code (Web interface)',
+            'icon' => 'fa-code',
+            'href' => 'https://gitlab.com/RoobieBoobieee/Discord_Log_Bot_Web',
             'target' => '_blank',
         ]);
 
@@ -436,7 +486,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "A PHP wrapper for the Frag-O-Matic API, this makes it simpler to address the API.")
+           ->setTranslation('description', 'en', "A PHP wrapper for the Frag-O-Matic API, which makes it easier to address the API.")
            ->setTranslation('description', 'nl', "Een PHP wrapper voor de Frag-o-Matic API. Vergemakkelijkt het aanspreken van de API.")
            ->save().
 
@@ -478,7 +528,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "A web interface for the log bot. The interface shows all data of who is in the database. You can see in which servers the bot is added, what users are in the channels, who was banned, etc... ")
+           ->setTranslation('description', 'en', "A web interface for the log bot. The interface shows all data the bot logged to the database. You can see in which servers the bot is added, what users are in the channels, who was banned, etc... ")
            ->setTranslation('description', 'nl', "Een web interface voor de log bot. De interface geeft alle data weer die in de database zit. Hier kan je bekijken in welke servers de bot zit, welke gebruikers er in zitten, wie er geband is, enz...")
            ->save().
 
@@ -492,6 +542,15 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
+        
+        $link = App\Link::create([
+            'title' => 'Source Code (bot)',
+            'icon' => 'fa-code',
+            'href' => 'https://gitlab.com/RoobieBoobieee/Discord_Bot',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
 
         $project = App\Project::create([
             "title" => "Atom: Language OpenEdge ABL",
@@ -501,7 +560,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "")
+           ->setTranslation('description', 'en', "A package I wrote to support the OpenEdge ABL language in Atom.")
            ->setTranslation('description', 'nl', "")
            ->save().
 
@@ -531,7 +590,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "")
+           ->setTranslation('description', 'en', "This originally writen to use in escape rooms. The node-code is a Python script running on Raspberry Pi's in de boxes. The master is used from the outside to push to the different nodes. The text pushed by the master will be captured by the node's web server and put in a file. The Python script will pick up this file and use the Raspberry Pi's Python module to display it fullscreen.")
            ->setTranslation('description', 'nl', "")
            ->save().
 
@@ -564,11 +623,11 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "CITYPOLIS takes place in a 300m² space which is arranged into a large imaginary city and which is filled with interactive tasks. The participants will be divided into sub-teams which shall compete with each other in “the city”. This is a unique indoor team game filled with action and strategy, innovation and technology.")
-           ->setTranslation('description', 'nl', "CITYPOLIS vindt plaats in een ruimte van 300m² die gelijkt op een echte stad met daarin interactieve opdrachten. De deelnemers zullen het tegen elkaar opnemen in dit uniek indoor team-spel. Het is gevuld met actie, strategie, innovatie en technologie.")
+           ->setTranslation('description', 'en', "A web application I wrote for a teambuilding event in Antwerp. It is the interface for a real-life interactive group game. Citypolis description: Citypolis takes place in a 300m² space which is arranged into a large imaginary city and which is filled with interactive tasks. The participants will be divided into sub-teams which shall compete with each other in “the city”. This is a unique indoor team game filled with action and strategy, innovation and technology.")
+           ->setTranslation('description', 'nl', "Citypolis vindt plaats in een ruimte van 300m² die gelijkt op een echte stad met daarin interactieve opdrachten. De deelnemers zullen het tegen elkaar opnemen in dit uniek indoor team-spel. Het is gevuld met actie, strategie, innovatie en technologie.")
            ->save().
 
-        $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel']);
+        $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel', 'Vue.JS']);
 
         $link = App\Link::create([
             'title' => 'Citypolis',
@@ -602,7 +661,7 @@ class ProjectTableSeeder extends Seeder
         $project->links()->attach($link);
 
         $project = App\Project::create([
-            "title" => "Gemaco Connect",
+            "title" => "Gemaco Connect (Thesis)",
             "description" => "",
             "tumbnail_image" => "images/projects/connect_tumb.png",
             "image" => "images/projects/connect.png",
@@ -652,10 +711,20 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "")
+           ->setTranslation('description', 'en', "A React web application which displays ongoing tournaments on Frag-o-Matic. All data is retrieved from the Frag-o-Matic API. Styling done by Elke Moras.")
            ->setTranslation('description', 'nl', "")
            ->save().
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'React.js', 'Frag-o-Matic API', 'Frag-o-Matic', 'API']);
+        
+        $link = App\Link::create([
+            'title' => 'Elke Moras',
+            'icon' => 'fa-globe',
+            'href' => 'http://elkemoras.be/',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+        
     }
 }
