@@ -35,7 +35,7 @@
         <div class="col-lg-12">
             <p class="mb-5 project-description text-justify">
                 @foreach ($project->tags as $key => $tag)
-                    <span class="badge badge-primary">{{ $tag->name }}</span>
+                    <span class="badge badge-outline">{{ $tag->name }}</span>
                 @endforeach
             </p>
         </div>

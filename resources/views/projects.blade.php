@@ -5,7 +5,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">robvankeilegom.be</a>
+            <a class="navbar-brand js-scroll-trigger" href="{{ \URL::to('/en') }}">robvankeilegom.be</a>
             <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fa fa-bars"></i>
@@ -21,7 +21,7 @@
             <h2 class="text-center text-uppercase">Portfolio</h2>
             <hr class="star-dark mb-5">
             @foreach ($projects as $key => $project)
-                <div class="row project-list">
+                <div class="row project-list mb-5">
                     <div class="col-md-6 col-lg-4">
                         <a class="d-block mx-auto portfolio-item" href="{{ route('projectModal', [ $project->id ]) }}">
                             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -43,7 +43,7 @@
                                 {{ $project->description }}
                             @endif
                         </p>
-                        <div class="mb-1">
+                        <div class="mb-2">
                             @foreach ($project->links as $key => $link)
                                 @if ($key == 0)
                                 @else
