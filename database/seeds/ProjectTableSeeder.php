@@ -50,7 +50,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-        
+
         $link = App\Link::create([
             'title' => 'Marlon Stoops',
             'icon' => 'fa-linkedin',
@@ -198,7 +198,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-        
+
         $link = App\Link::create([
             'title' => 'Marlon Stoops',
             'icon' => 'fa-linkedin',
@@ -258,8 +258,8 @@ class ProjectTableSeeder extends Seeder
 
         $project = App\Project::create([
             "title" => "Portfolio",
-            "tumbnail_image" => "//placehold.it/600x340/E76430/000000",
-            "image" => "//placehold.it/1920x1080/E76430/000000",
+            "tumbnail_image" => "images/projects/portfolio_tumb.png",
+            "image" => "images/projects/portfolio_new.png",
         ]);
 
         $project->attachTags(['HTML', 'CSS', 'Javascript', 'JQuery', 'Laravel', 'Work in Progress']);
@@ -330,7 +330,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-        
+
         $link = App\Link::create([
             'title' => 'Marlon Stoops',
             'icon' => 'fa-linkedin',
@@ -362,7 +362,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-        
+
         $link = App\Link::create([
             'title' => 'Marlon Stoops',
             'icon' => 'fa-linkedin',
@@ -435,7 +435,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-        
+
         $link = App\Link::create([
             'title' => 'Codingame hackaton: The Accountant',
             'icon' => 'fa-globe',
@@ -467,7 +467,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-        
+
         $link = App\Link::create([
             'title' => 'Source Code (Web interface)',
             'icon' => 'fa-code',
@@ -523,8 +523,8 @@ class ProjectTableSeeder extends Seeder
         $project = App\Project::create([
             "title" => "Discord Log Bot: Web",
             "description" => "",
-            "tumbnail_image" => "images/projects/discord.png",
-            "image" => "images/projects/discord.png",
+            "tumbnail_image" => "images/projects/discord_log_bot_web_tumb.png",
+            "image" => "images/projects/discord_log_bot_web.png",
         ]);
 
         $project
@@ -542,7 +542,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-        
+
         $link = App\Link::create([
             'title' => 'Source Code (bot)',
             'icon' => 'fa-code',
@@ -555,8 +555,8 @@ class ProjectTableSeeder extends Seeder
         $project = App\Project::create([
             "title" => "Atom: Language OpenEdge ABL",
             "description" => "",
-            "tumbnail_image" => "images/projects/discord.png",
-            "image" => "images/projects/discord.png",
+            "tumbnail_image" => "images/projects/atom_tumb.png",
+            "image" => "images/projects/atom.png",
         ]);
 
         $project
@@ -706,8 +706,8 @@ class ProjectTableSeeder extends Seeder
         $project = App\Project::create([
             "title" => "FoM: Compo TV",
             "description" => "",
-            "tumbnail_image" => "//placehold.it/600x340/E76430/000000",
-            "image" => "//placehold.it/1920x1080/E76430/000000",
+            "tumbnail_image" => "images/projects/compo_tv_tumb.png",
+            "image" => "images/projects/compo_tv.png",
         ]);
 
         $project
@@ -716,7 +716,7 @@ class ProjectTableSeeder extends Seeder
            ->save().
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'React.js', 'Frag-o-Matic API', 'Frag-o-Matic', 'API']);
-        
+
         $link = App\Link::create([
             'title' => 'Elke Moras',
             'icon' => 'fa-globe',
@@ -725,6 +725,6 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-        
+
     }
 }
