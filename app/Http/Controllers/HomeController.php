@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 use App\Project;
+use App\Contact;
 
 class HomeController extends Controller
 {
@@ -41,7 +42,6 @@ class HomeController extends Controller
         }
         // Validate Captcha
         $client = new Client();
-
         $response = $client->request('POST', 'https://www.google.com/recaptcha/api/siteverify', [
             'form_params' => [
                 'secret' => config('custom.GA.secret_key'),
@@ -50,11 +50,17 @@ class HomeController extends Controller
         ]);
         $response = json_decode($response->getBody());
         if ($response->success) {
-            Mail::raw('This is the content of mail body', function ($message) use ($request) {
-                $message->from($request->email, 'Website Contact Form');
-                $message->to('info@robvankeilegom.be');
-                $message->subject(implode("\n", $request->all()));
-            });
+            // Mail::raw('This is the content of mail body', function ($message) use ($request) {
+            //     $message->from($request->email, 'Website Contact Form');
+            //     $message->to('info@robvankeilegom.be');
+            //     $message->subject(implode("\n", $request->all()));
+            // });
+            Contact::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'phone' => $request->phone,
+                'message' => $request->message,
+            ]);
             return redirect()
                     ->route('home', ['#contact'])
                     ->with('success', 'Successfully sent!');
