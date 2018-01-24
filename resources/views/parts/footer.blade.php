@@ -11,38 +11,22 @@
             <div class="col-md-4 mb-0 mb-lg-0">
                 <h4 class="text-uppercase mb-4">Around the Web</h4>
                 <ul class="list-inline mb-1">
-                    <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                            <i class="fa fa-fw fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                            <i class="fa fa-fw fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                            <i class="fa fa-fw fa-gitlab"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                            <i class="fa fa-fw fa-github"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                            <i class="fa fa-fw fa-bitbucket"></i>
-                        </a>
-                    </li>
+                    @foreach ($headerData->links as $key => $link)
+                        <li class="list-inline-item">
+                            <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                                href="{{ $link->href }}" target="{{ $link->target }}" alt="{{ $link->title}}">
+                                <i class="fa fa-fw {{ $link->icon }}"></i>
+                            </a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
             <div class="col-md-4">
                 <h4 class="text-uppercase mb-4">Contact</h4>
                 <p class="lead mb-0">
-                    robvankeilegom@hotmail.com
-                    <br>+324 79 26 39 23
+                    <a href="mailto:info@robvankeilegom.be">info@robvankeilegom.be</a>
+                    <br>
+                    <a href="tel:0032479263923">+324 79 26 39 23</a>
                 </p>
             </div>
         </div>
