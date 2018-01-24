@@ -44,7 +44,7 @@ class HomeController extends Controller
 
         $response = $client->request('POST', 'https://www.google.com/recaptcha/api/siteverify', [
             'form_params' => [
-                'secret' => ENV('GOOGLE_SECRET_KEY'),
+                'secret' => config('custom.GA.secret_key'),
                 'response' => $request->input('g-recaptcha-response', null),
             ],
         ]);
@@ -59,7 +59,7 @@ class HomeController extends Controller
                     ->route('home', ['#contact'])
                     ->with('success', 'Successfully sent!');
         } else {
-            $validator->errors()->add('invalid_captcha', (env('APP_DEBUG') == 'TRUE') ? (implode(', ', $response->{'error-codes'})) : 'Apparently, you are a robot?!' );
+            $validator->errors()->add('invalid_captcha', (config('app.debug') == 'TRUE') ? (implode(', ', $response->{'error-codes'})) : 'Apparently, you are a robot?!' );
             return redirect()
                     ->route('home', ['#contact'])
                     ->withErrors($validator)
