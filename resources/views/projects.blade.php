@@ -21,7 +21,7 @@
             <h2 class="text-center text-uppercase">Portfolio</h2>
             <hr class="star-dark mb-5">
             @foreach ($projects as $key => $project)
-                <div class="row project-list mb-5">
+                <div class="row project-list mb-5 mt-2">
                     <div class="col-md-6 col-lg-4">
                         <a class="d-block mx-auto portfolio-item" href="{{ route('projectModal', [ $project->id ]) }}">
                             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
