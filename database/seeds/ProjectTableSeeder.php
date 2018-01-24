@@ -282,6 +282,15 @@ class ProjectTableSeeder extends Seeder
         $project->links()->attach($link);
 
         $link = App\Link::create([
+            'title' => 'Source Code (legacy)',
+            'icon' => 'fa-code',
+            'href' => 'https://gitlab.com/RoobieBoobieee/Portfolio/tree/legacy_code',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+
+        $link = App\Link::create([
             'title' => 'Live Link',
             'icon' => 'fa-heartbeat',
             'href' => 'http://portfolio.robvankeilegom.be',
