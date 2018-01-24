@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="text-center mt-4">
-              <a class="btn btn-xl btn-outline-light" href="#">
+              <a class="btn btn-xl btn-outline-light" href="{{ asset('cv.pdf') }}" target="_blank">
                 <i class="fa fa-download mr-2"></i>
                 Download Resume!
               </a>
