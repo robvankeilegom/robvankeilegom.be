@@ -29,7 +29,7 @@
             </a>
              --}}
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-7 text-center">
             <img class="img-fluid mb-5 project-picture" src="{{ asset($project->image) }}" alt="">
         </div>
         <div class="col-lg-12">
@@ -41,3 +41,9 @@
         </div>
     </div>
 </div>
+<script>
+    // Fix for anoying magnificPopup bug https://github.com/dimsemenov/Magnific-Popup/issues/34
+    $( function() {
+        $(".mfp-content").find("*").addClass("mfp-prevent-close");
+    } );
+</script>

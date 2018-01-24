@@ -69,7 +69,9 @@
         .magnificPopup( {
             type: 'ajax',
             preloader: false,
-            modal: true,
+            closeOnBgClick: true,
+            enableEscapeKey: true,
+            showCloseBtn: false,
             ajax: {
                 settings: null,
                 cursor: 'mfp-ajax-cur',
