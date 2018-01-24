@@ -1,0 +1,39 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Istok+Web|Lora|Lalezar');
+
+// Reset
+@import 'reset';
+
+// Variables
+@import 'variables';
+
+// Functions
+@import 'functions';
+
+// Bourbon
+@import 'node_modules/bourbon/app/assets/stylesheets/bourbon';
+
+// Font awesome
+@import 'node_modules/font-awesome/scss/font-awesome';
+
+// Bootstrap
+@import 'bootstrap/bootstrap';
+
+// Template
+@import 'node_modules/magnific-popup/src/css/main';
+
+// Template
+@import 'template/mixins';
+@import 'template/global';
+@import 'template/navbar';
+@import 'template/masthead';
+@import 'template/portfolio';
+@import 'template/contact';
+@import 'template/footer';
+@import 'template/bootstrap-overrides';
+
+// Custom SCSS
+@import 'custom';
+@import 'admin';
+@import 'admin_custom';

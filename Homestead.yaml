@@ -1,0 +1,19 @@
+ip: 192.168.10.10
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: ./
+        to: /home/vagrant/Code/robvankeilegom.be
+sites:
+    -
+        map: Portfolio.app
+        to: /home/vagrant/Code/robvankeilegom.be/public
+databases:
+    - homestead
+name: robvankeilegom.be
+hostname: robvankeilegom.be
