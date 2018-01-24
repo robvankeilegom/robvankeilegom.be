@@ -27,6 +27,14 @@ class ProjectTableSeeder extends Seeder
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'Ajax', 'Thomas More', 'Finished']);
 
+        $link = App\Link::create([
+            'title' => 'Source Code',
+            'icon' => 'fa-code',
+            'href' => 'https://gitlab.com/RoobieBoobieee/TM_ProjectPHPMySQL',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
 
         $project = App\Project::create([
             "title" => "TM: Project 2",
@@ -585,8 +593,8 @@ class ProjectTableSeeder extends Seeder
         $project = App\Project::create([
             "title" => "Push to screen",
             "description" => "",
-            "tumbnail_image" => "images/projects/discord.png",
-            "image" => "images/projects/discord.png",
+            "tumbnail_image" => "images/projects/pushtoscreen_tumb.png",
+            "image" => "images/projects/pushtoscreen.png",
         ]);
 
         $project
@@ -721,6 +729,61 @@ class ProjectTableSeeder extends Seeder
             'title' => 'Elke Moras',
             'icon' => 'fa-globe',
             'href' => 'http://elkemoras.be/',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+
+        $project = App\Project::create([
+            "title" => "EID Reader",
+            "description" => "",
+            "tumbnail_image" => "images/projects/eid_tumb.png",
+            "image" => "images/projects/eid_tumb.png",
+        ]);
+
+        $project
+           ->setTranslation('description', 'en', "A very small Java application I wrote to read data from a Belgian electronic passport.")
+           ->setTranslation('description', 'nl', "")
+           ->save().
+
+        $project->attachTags(['Java', 'eID']);
+
+        $link = App\Link::create([
+            'title' => 'Source Code',
+            'icon' => 'fa-code',
+            'href' => 'https://gitlab.com/RoobieBoobieee/eID_Reader',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+
+        $project = App\Project::create([
+            "title" => "Discord Daily Dose Bot",
+            "description" => "",
+            "tumbnail_image" => "images/projects/discord.png",
+            "image" => "images/projects/discord.png",
+        ]);
+
+        $project
+           ->setTranslation('description', 'en', "Another Discord bot. This bot pulls data from social platform Reddit. Every day another link is used from the config. The bot waits x time, then reaches out to reddit to get a random post and posts it in Discord. I made this in co-operation with Marlon Stoops.")
+           ->setTranslation('description', 'nl', "")
+           ->save().
+
+        $project->attachTags(['Python', 'Discord.PY', 'Bot', 'Finished', 'Reddit API', 'API']);
+
+        $link = App\Link::create([
+            'title' => 'Source Code',
+            'icon' => 'fa-code',
+            'href' => 'https://gitlab.com/RoobieBoobieee/Daily_Dose',
+            'target' => '_blank',
+        ]);
+
+        $project->links()->attach($link);
+
+        $link = App\Link::create([
+            'title' => 'Marlon Stoops',
+            'icon' => 'fa-linkedin',
+            'href' => 'https://www.linkedin.com/in/marlonstoops/',
             'target' => '_blank',
         ]);
 
