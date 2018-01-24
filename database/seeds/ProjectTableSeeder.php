@@ -23,7 +23,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "In the 2nd year of my bachelor education I had to make this website for the course PHP - MYSQL. We had to make a website so that the staff of the restaurant could log in to make adjustments to the menu and dishes. Customers could login to make reservations and select a table. In this project I used PHP, HTML, CSS and JS/JQuery. It's linked to a MYSQL database and was focused on object oriented PHP and safely processing data.")
            ->setTranslation('description', 'nl', "In het 2de jaar van mijn bacheloropleiding maakte ik deze website. Voor het vak PHP - MySQL moest ik een webpagina schrijven voor een restaurant. Personeel kan hier inloggen om menu's en gerechten aan te passen. Klanten kunnen inloggen om de tafelverdeling te bekijken en een plaatsje te reserveren. In het project is gebruik gemaakt van PHP, HTML, CSS en JS/JQuery, is gekoppeld aan een MySQL database en was gericht op object oriented PHP en het veilig verwerken van data.")
-           ->save().
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'Ajax', 'Thomas More', 'Finished']);
 
@@ -44,9 +44,9 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "Together with Marlon Stoops we made this project as a final project for the second period of our education. It’s a webpage where students could login to see their schedule. This was pulled through the API of KU Leuven. Then a google API calculates when the student should leave to be on time for his/her class. If the student travels by public transport, the schedule of the bus/train appear in the directions.")
+           ->setTranslation('description', 'en', "Together with Marlon Stoops we made this project as a final project for the second period of our education. It's a webpage where students could login to see their schedule. This was pulled through the API of KU Leuven. Then a google API calculates when the student should leave to be on time for his/her class. If the student travels by public transport, the schedule of the bus/train appear in the directions.")
            ->setTranslation('description', 'nl', "Samen met Marlon Stoops heb ik dit project gemaakt als eindproject voor de tweede periode van onze bacheloropleiding. Het is een webpagina waarop studenten kunnen inloggen om hun uurrooster te bekijken. Het uurrooster wordt opgehaald via de API van KU Leuven. Dan wordt er via de API van google berekend wanneer de student moet vertrekken om tijdig in de les aan te komen. Als de student kiest voor het openbaar vervoer zullen de trein/bus uren mee verschijnen in de routeomschrijving samen met eventuele overstappen en vertragingen.")
-           ->save().
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'KU Leuven API', 'Google API', 'API', 'Thomas More', 'Finished']);
 
@@ -78,7 +78,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "This application is written to log all the visitors of the Total Plant in Schoten. The visitors can use their credentials to login and gain safe access to the plant. I mostly used HTML and PHP for this. I also developed a script, which wrote data off to a Bartender print server. This prints a label with the visitors credentials so they can easily checkout.")
            ->setTranslation('description', 'nl', "Dit is een applicatie geschreven voor het loggen van bezoekers in de Total plant in Schoten. De bezoeker kan met zijn gegevens inloggen om zo veilig toegang te verkrijgen tot de plant. Hier werd voornamelijk HTML en PHP gebruikt. Ook heb ik een script ontwikkeld, waarmee data weggeschreven wordt naar een Bartender print-server. Zo wordt dan een etiket afgedrukt met de nodige informatie om terug uit te checken.")
-           ->save().
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'JQuery UI', 'MySQL', 'Total', 'Finished']);
 
@@ -93,7 +93,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "'Huiskamer Optredens' (performances in your living room) is a Joomla! website build to book small performances in your living room. I wrote my own Joomla template for this website. We used Joomla so that the owner could easily made changes, such as changing artists.")
            ->setTranslation('description', 'nl', "Huiskamer Optredens is een Joomla! website gemaakt voor het boeken van kleine optredens in uw huiskamer. Hiervoor heb ik zelf de Joomla template geschreven. Er werd gekozen voor Joomla zodat de eigenaar eenvoudig zelf artikelen en artiesten kon aanpassen en toevoegen.")
-           ->save().
+           ->save();
 
         $project->attachTags(['HTML', 'CSS', 'Joomla!', 'CMS', 'Finished']);
 
@@ -108,7 +108,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "This website was written in the first year of my education for the course Web Engineering 1. This website contains all the information about my final project of my first year. The website is build with PHP, HTML, CSS and JS.")
            ->setTranslation('description', 'nl', "Deze website is geschreven in het eerste jaar van mijn bacheloropleiding voor het vak Web Engineering 1. De website bevat alle info over mijn eindproject van de eerste fase van de bacheloropleiding. De website bestaat uit PHP, HTML, CSS en JS.")
-           ->save().
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'Thomas More']);
 
@@ -131,11 +131,10 @@ class ProjectTableSeeder extends Seeder
 
         $project
            ->setTranslation('description', 'en', "This is also an application written for the Total Plant in Schoten. This web application makes labels to show the dangers of products. Each base material has to have a label so that the staff knows what to do when something happens, such as a fire or a leakage. The application is written in PHP with a MySQL database.")
-           ->setTranslation('description', 'nl', "Dit is een applicatie geschreven voor de Total plant in Schoten. Met deze web applicatie worden fiches aangemaakt die de gevaren van een product aanduiden. Voor elke grondstof in het bedrijf wordt een fiche aangemaakt zodat het personeel weet wat er bij onregelmatigheden moet gebeuren (bv: spill, brand). De applicatie is geschreven in PHP met achterliggend een MySQL database.")
-           ->save().
+           ->setTranslation('description', 'nl', "Dit is een applicatie geschreven voor de Total plant in Schoten. Met deze web applicatie worden fiches aangemaakt die de gevaren van een product aanduiden. Voor elke grondstof in het bedrijf wordt een fiche aangemaakt zodat het personeel weet wat er bij onregelmatigheden moet gebeuren (bv: spill, brand); De applicatie is geschreven in PHP met achterliggend een MySQL database.")
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'MySQL', 'Total']);
-
 
         $project = App\Project::create([
             "title" => "Total: Dafi",
@@ -145,9 +144,9 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "To calculate running times of the products at the Total Plant I wrote this Excel Macro. It’s written in VB and it processes data from a MS SQL database. It then generates charts for a clear visual representation of running times or pauses. Through the UI they can make changes to how the data has to be visualized.")
+           ->setTranslation('description', 'en', "To calculate running times of the products at the Total Plant I wrote this Excel Macro. It's written in VB and it processes data from a MS SQL database. It then generates charts for a clear visual representation of running times or pauses. Through the UI they can make changes to how the data has to be visualized.")
            ->setTranslation('description', 'nl', "Om draaitijden te berekenen voor de Total plant in Schoten is deze Excel macro geschreven. De macro, geschreven in VB, verwerkt productie data uit een MS SQL database en genereert grafieken voor een duidelijk visuele vertoning van draaitijden en stilstanden. Via de UI kan men instellen hoe de data moet weergegeven worden.")
-           ->save().
+           ->save();
 
         $project->attachTags(['MS-SQL', 'Excel', 'Visual Basic', 'Total']);
 
@@ -168,9 +167,9 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "This is a command line application written for the course Object Oriented Programming in the 2nd year of my bachelor education. It’s completely written in C and is (obviously) focused on the object oriented programming. The application simulates a tire center where staff and owner can login to add, delete or adjust clients and articles.")
+           ->setTranslation('description', 'en', "This is a command line application written for the course Object Oriented Programming in the 2nd year of my bachelor education. It's completely written in C and is (obviously) focused on the object oriented programming. The application simulates a tire center where staff and owner can login to add, delete or adjust clients and articles.")
            ->setTranslation('description', 'nl', "Dit is een command-line applicatie geschreven voor het vak Object Oriented Programming in de 2de fase van mijn bacheloropleiding. Het is volledig geschreven in C en is (uiteraard) gericht op het object georienteerd programmeren. De applicatie simuleert een bandencentrale waar personeel en eigenaar kunnen inloggen om artikelen en klanten toe te voegen, verwijderen en aan te passen.")
-           ->save().
+           ->save();
 
         $project->attachTags(['C++', 'Object Oriented', 'Thomas More', 'Finished']);
 
@@ -183,7 +182,6 @@ class ProjectTableSeeder extends Seeder
 
         $project->links()->attach($link);
 
-
         $project = App\Project::create([
             "title" => "TM: Databanken",
             "description" => "",
@@ -194,7 +192,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "This web application was written for the course Databanken in the first fase of my education. I made this project together with Marlon Stoops and it's mainly focusd on the underlying MySQL database, tabels and relations.")
            ->setTranslation('description', 'nl', "Deze web applicatie werd geschreven voor het vak Databanken in de eerste fase van mijn bacheloropleiding. Het project dat ik samen met Marlon Stoops heb gedaan is vooral gericht op de achterliggende MySQL database, tabellen en relaties.")
-           ->save().
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'JQuery UI', 'Thomas More']);
 
@@ -226,7 +224,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "This web application for the Total Plant in Schoten was written in C# with help from ASP.NET MVC framework. This application was made to adjust a template, quantity and printer, so they could print a whole series of labels, to later use in production. ")
            ->setTranslation('description', 'nl', "Deze web applicatie voor de Total plant in Schoten werd in C# geschreven met behulp van het ASP.NET MVC framework. De applicatie is gemaakt om een template, hoeveelheid en printer in te stellen en zo hele series etiketten af te drukken om later in de productie te gebruiken.")
-           ->save().
+           ->save();
 
         $project->attachTags(['ASP.NET MVC', 'C#', 'Ajax', 'Total']);
 
@@ -239,7 +237,6 @@ class ProjectTableSeeder extends Seeder
 
         $project->links()->attach($link);
 
-
         $project = App\Project::create([
             "title" => "Happening: Ranked Game",
             "description" => "",
@@ -250,7 +247,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "This is a plugin for a mobile app: Happening. This is an app where friends can chat, split bills and play games together in group. One of these games is Ranked game. You can vote on which friend is more compatible with the question. I wrote this plugin so we could add our own questions to the game. I wrote this in JS/CoffeeScript.")
            ->setTranslation('description', 'nl', "Dit is een plug-in voor de mobiele app: Happening. Happening is een app waar vrienden in groep kunnen chatten, rekeningen delen en spellen spelen. Een daarvan is Ranked Game, een spel waar je kan stemmen wie uit je vriendengroep het meest past bij de opgegeven vraag. In deze aangepaste versie van Ranked Game is er een knop om je eigen vragen toe te voegen aan het spel. De plug-in is geschreven in JS/CoffeeScript.")
-           ->save().
+           ->save();
 
         $project->attachTags(['Javascript', 'CoffeeScript', 'Finished', 'Abandoned']);
 
@@ -262,7 +259,6 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-
 
         $project = App\Project::create([
             "title" => "Portfolio",
@@ -311,7 +307,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "For my integrated test as a student in the last year of Don Bosco Hoboken I made this website. On this website you could see in with position the solar panel was standing and how much it was generating. You can find more information about this on my GitLab page. This website was developed in ASP.NET.")
            ->setTranslation('description', 'nl', "Voor mijn geintegreerde proef als laatste jaar student in Don Bosco Hoboken werd deze website gemaakt. Op de website was te zien in welke positie het zonnepaneel stond en hoeveel het opbracht. Meer info hierover is te vinden op de GitLab pagina. De website is ontwikkeld in ASP.NET.")
-           ->save().
+           ->save();
 
         $project->attachTags(['ASP.NET MVC', 'C#', 'Finished']);
 
@@ -324,7 +320,6 @@ class ProjectTableSeeder extends Seeder
 
         $project->links()->attach($link);
 
-
         $project = App\Project::create([
             "title" => "TM: Project 1",
             "description" => "",
@@ -335,7 +330,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "As final project in my first year I wrote this website together with Marlon Stoops. Users could play the famous game Battleship. The shots where shown on a LED array powered through an Arduino. The website itself is written in PHP with an underlying MySQL database.")
            ->setTranslation('description', 'nl', "Als eindproject voor het eerste jaar van mijn bacheloropleiding heb ik samen met Marlon Stoops een website geschreven. Hierop kunnen gebruikers het bekende spel zeeslag spelen. De schoten werden dan weergegeven op een LED array aangestuurd door een arduino. De website zelf is geschreven in PHP met een achterliggende MySQL database.")
-           ->save().
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'MySQL', 'Thomas More', 'Finished']);
 
@@ -367,7 +362,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "Discord is an all-in-one voice and text chat for gamers. For the course Python in the 2nd fase of my bachelor education we (Marlon Stoops and I) wrote a bot for Discord. You can add the bot to one of you channels with a command. The bot then plays music of your choosing in the channel.")
            ->setTranslation('description', 'nl', "Discord is een All-in-one voice and text chat voor gamers. Voor het vak Python in de tweede fase van mijn bacheloropleiding hebben Marlon Stoops en ik een bot geschreven. De bot kan aan een kanaal toegevoegd worden met een commando en speelt daar dan muziek af.")
-           ->save().
+           ->save();
 
         $project->attachTags(['Python', 'Discord.PY', 'Thomas More','Discord', 'Finished']);
 
@@ -389,7 +384,6 @@ class ProjectTableSeeder extends Seeder
 
         $project->links()->attach($link);
 
-
         $project = App\Project::create([
             "title" => "S&amp;S Productions",
             "description" => "",
@@ -400,7 +394,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "s&amp;s productions is an association who make small productions and post these on YouTube. This simple site is written in plain PHP and addresses Facebook's, Youtube's and Flickr's API to keep itself up-to-date.")
            ->setTranslation('description', 'nl', "s&amp;s productions is een vereniging die zich bezighoudt met het opstarten van kleine producties. Welke vervolgens op YouTube te zien zijn.")
-           ->save().
+           ->save();
 
         $project->attachTags(['HTML', 'CSS', 'Javascript', 'JQuery', 'PHP', 'Facebook API', 'Youtube API', 'Flickr API', 'Finished']);
 
@@ -413,7 +407,6 @@ class ProjectTableSeeder extends Seeder
 
         $project->links()->attach($link);
 
-
         $project = App\Project::create([
             "title" => "FoM: Facebook chatbot",
             "description" => "",
@@ -425,7 +418,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "This is a POC to reach out to contestants of the Frag-o-Matic event via Facebook. This bot is linked to a Facebook page, so contestants could receive information about the ongoing tournaments in messenger. After linking your Frag-o-Matic profile to your Facebook profile, the bot would pull data from the Frag-o-Matic API and send it to the user.")
            ->setTranslation('description', 'nl', "Een POC voor het aanspreken van deelnemers op het Frag-o-Matic evenement via facebook. Deze bot wordt aan een pagina gelinkt, zodat deelnemers via een facebook chat FOM data kunnen uitlezen en updates kunnen krijgen over compos.")
-           ->save().
+           ->save();
 
         $project->attachTags(['PHP', 'MySQL', 'Bot', 'Frag-O-Matic', 'Frag-O-Matic API', 'Facebook API', 'Facebook', 'API', 'Finished', 'POC']);
 
@@ -438,9 +431,9 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "This is the solution I came up with for the Codingame hackaton: The Accountant. Codingame is a creat way to combine programming and gaming. I ended 5th of the 73 belgian people. Hackaton description: For this mission, you take the role of Christian Wolff, an unconventional accountant who has lived as a double agent for years. He has gathered highly sensitive data while working for the most dangerous criminal organizations of the world. As things are starting to unravel, it is expected that Wolff’s enemies will attempt to get their hands on these files. As Wolff cannot risk to blow his cover up, we need you to make sure the data is secure.")
+           ->setTranslation('description', 'en', "This is the solution I came up with for the Codingame hackaton: The Accountant. Codingame is a creat way to combine programming and gaming. I ended 5th of the 73 belgian people. Hackaton description: For this mission, you take the role of Christian Wolff, an unconventional accountant who has lived as a double agent for years. He has gathered highly sensitive data while working for the most dangerous criminal organizations of the world. As things are starting to unravel, it is expected that Wolff's enemies will attempt to get their hands on these files. As Wolff cannot risk to blow his cover up, we need you to make sure the data is secure.")
            ->setTranslation('description', 'nl', "Mijn oplossing voor de Codingame hackaton: The Accountant waarin ik 5de van de 73 belgen eindigde.")
-           ->save().
+           ->save();
 
         $project->attachTags(['C++', 'Hackaton', 'CodinGame', 'Finished']);
 
@@ -472,7 +465,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "This bot can be included in a Discord server and log almost all data. It writes off all data to a MySQL database. The bot is written on top of a Discord.PY layer, which makes it simpler to address the API. There is a seperate Laravel project to display all data in a webpage. I stopped supporting this project since Discord implemented its own audit log.")
            ->setTranslation('description', 'nl', "Een bot die in Discord servers kan gestoken worden voor het loggen van bijna alle data. Hij schrijft alle data naar een MySQL database. De bot is geschreven bovenop de Discord.PY laag, die het aanspreken van de API eenvoudiger maakt.")
-           ->save().
+           ->save();
 
         $project->attachTags(['Python', 'Discord.PY', 'Bot', 'Finished', 'Abandoned']);
 
@@ -505,7 +498,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "A PHP wrapper for the Frag-O-Matic API, which makes it easier to address the API.")
            ->setTranslation('description', 'nl', "Een PHP wrapper voor de Frag-o-Matic API. Vergemakkelijkt het aanspreken van de API.")
-           ->save().
+           ->save();
 
         $project->attachTags(['Frag-o-Matic API', 'Frag-o-Matic', 'API']);
 
@@ -519,7 +512,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "Written to easily find a person in the other Arteco Plants.")
            ->setTranslation('description', 'nl', "Eenvoudig personen vinden in andere Arteco plants.")
-           ->save().
+           ->save();
 
         $project->attachTags(['Total', 'HTML']);
 
@@ -533,7 +526,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "This web application reads data from the SAP systems.")
            ->setTranslation('description', 'nl', "Deze webapp leest data uit uit de SAP systemen.")
-           ->save().
+           ->save();
 
         $project->attachTags(['Total', 'HTML', 'SAP']);
 
@@ -547,7 +540,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "A web interface for the log bot. The interface shows all data the bot logged to the database. You can see in which servers the bot is added, what users are in the channels, who was banned, etc... ")
            ->setTranslation('description', 'nl', "Een web interface voor de log bot. De interface geeft alle data weer die in de database zit. Hier kan je bekijken in welke servers de bot zit, welke gebruikers er in zitten, wie er geband is, enz...")
-           ->save().
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Javascript', 'MySQL', 'Object Oriented', 'Laravel']);
 
@@ -579,7 +572,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "A package I wrote to support the OpenEdge ABL language in Atom.")
            ->setTranslation('description', 'nl', "")
-           ->save().
+           ->save();
 
         $project->attachTags(['Progress', 'OpenEdge', 'ABL', 'Atom', 'Package']);
 
@@ -609,7 +602,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "This originally writen to use in escape rooms. The node-code is a Python script running on Raspberry Pi's in de boxes. The master is used from the outside to push to the different nodes. The text pushed by the master will be captured by the node's web server and put in a file. The Python script will pick up this file and use the Raspberry Pi's Python module to display it fullscreen.")
            ->setTranslation('description', 'nl', "")
-           ->save().
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS']);
 
@@ -640,9 +633,9 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "A web application I wrote for a teambuilding event in Antwerp. It is the interface for a real-life interactive group game. Citypolis description: Citypolis takes place in a 300m² space which is arranged into a large imaginary city and which is filled with interactive tasks. The participants will be divided into sub-teams which shall compete with each other in “the city”. This is a unique indoor team game filled with action and strategy, innovation and technology.")
-           ->setTranslation('description', 'nl', "Citypolis vindt plaats in een ruimte van 300m² die gelijkt op een echte stad met daarin interactieve opdrachten. De deelnemers zullen het tegen elkaar opnemen in dit uniek indoor team-spel. Het is gevuld met actie, strategie, innovatie en technologie.")
-           ->save().
+           ->setTranslation('description', 'en', "A web application I wrote for a teambuilding event in Antwerp. It is the interface for a real-life interactive group game. Citypolis description: Citypolis takes place in a 300mÂ² space which is arranged into a large imaginary city and which is filled with interactive tasks. The participants will be divided into sub-teams which shall compete with each other in â€œthe cityâ€. This is a unique indoor team game filled with action and strategy, innovation and technology.")
+           ->setTranslation('description', 'nl', "Citypolis vindt plaats in een ruimte van 300mÂ² die gelijkt op een echte stad met daarin interactieve opdrachten. De deelnemers zullen het tegen elkaar opnemen in dit uniek indoor team-spel. Het is gevuld met actie, strategie, innovatie en technologie.")
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel', 'Vue.JS']);
 
@@ -652,6 +645,8 @@ class ProjectTableSeeder extends Seeder
             'href' => 'https://www.citypolis.be/',
             'target' => '_blank',
         ]);
+
+        $project->links()->attach($link);
 
         $project = App\Project::create([
             "title" => "Snowsports",
@@ -664,7 +659,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "The snowsports application is a website I wrote for a skiclub. It's made so that monitors and members can easily connect. Monitors can easily add lessons. The members can indicate whether they will be present. Everyone has a profile where they can add familiy members who are too young to create an account themselves. The website is written on top of the Laravel framework and is completely mobile friendly.")
            ->setTranslation('description', 'nl', "De Snowsports applicatie is een website die ik geschreven heb voor een skiclub. Hierop kunnen monitoren en gebruikers heel gemakkelijk connecteren. Monitoren kunnen lessen toevoegen en deelnemers kunnen meteen zeggen of ze aanwezig kunnen zijn of niet. Iedereen heeft een profiel waar ze ook familieleden kunnen toevoegen, denk maar aan kinderen die te jong zijn voor hun eigen account. De website is geschreven op een Laravel Framework en is helemaal mobiel vriendelijk.")
-           ->save().
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel']);
 
@@ -687,8 +682,8 @@ class ProjectTableSeeder extends Seeder
 
         $project
            ->setTranslation('description', 'en', "This project is the final work I had to do before graduating college. I did my internship at Uni-t which is part of the Gemaco group. Because of the fast growing staff number Uni-t decided a 'who is who application' would be a great idea to reconnect the people at Gemaco. This application would make it easier to find out personal and useful information about the company and the staff. This would make it easier for existing and new staff members to fit in. This is how Gemaco Connect was born: an online Laravel application with an API behind it. The API, which is also a Laravel application and uses the passport package for authentication, is used to store all data as a single sign-on provider. This way the API can be easily integrated in other (existing) applications.")
-           ->setTranslation('description', 'nl', "Door het snel groeiende personeelsaantal zou Uni-t graag een who is who/intranet app hebben. Deze app kan gebruikt worden voor het terug vinden van gegevens over personeel in het bedrijf en belangrijke/nuttige info voor nieuw personeel. Hierdoor kan iemand gemakkelijk gecontacteerd of terug gevonden worden. Als antwoord op dat probleem is Uni-t met Gemaco Connect gekomen. Een online tool waarbij personeel kan inloggen om professionele info, alsook persoonlijke info over collega’s, belangrijke en handige weetjes terug te vinden. Ook zal de Gemaco Connect app als centrale login dienen. Zo kunnen gebruikers bij de verschillende andere applicaties in één klik inloggen.")
-           ->save().
+           ->setTranslation('description', 'nl', "Door het snel groeiende personeelsaantal zou Uni-t graag een who is who/intranet app hebben. Deze app kan gebruikt worden voor het terug vinden van gegevens over personeel in het bedrijf en belangrijke/nuttige info voor nieuw personeel. Hierdoor kan iemand gemakkelijk gecontacteerd of terug gevonden worden. Als antwoord op dat probleem is Uni-t met Gemaco Connect gekomen. Een online tool waarbij personeel kan inloggen om professionele info, alsook persoonlijke info over collega's, belangrijke en handige weetjes terug te vinden. Ook zal de Gemaco Connect app als centrale login dienen. Zo kunnen gebruikers bij de verschillende andere applicaties in een klik inloggen.")
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel', 'Laravel Passport', 'Single Sign-On', 'API', 'Thomas More']);
 
@@ -700,7 +695,6 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-
 
         $link = App\Link::create([
             'title' => 'Uni-t',
@@ -730,7 +724,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "A React web application which displays ongoing tournaments on Frag-o-Matic. All data is retrieved from the Frag-o-Matic API. Styling done by Elke Moras.")
            ->setTranslation('description', 'nl', "")
-           ->save().
+           ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'React.js', 'Frag-o-Matic API', 'Frag-o-Matic', 'API']);
 
@@ -753,7 +747,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "A very small Java application I wrote to read data from a Belgian electronic passport.")
            ->setTranslation('description', 'nl', "")
-           ->save().
+           ->save();
 
         $project->attachTags(['Java', 'eID']);
 
@@ -776,7 +770,7 @@ class ProjectTableSeeder extends Seeder
         $project
            ->setTranslation('description', 'en', "Another Discord bot. This bot pulls data from social platform Reddit. Every day another link is used from the config. The bot waits x time, then reaches out to reddit to get a random post and posts it in Discord. I made this in co-operation with Marlon Stoops.")
            ->setTranslation('description', 'nl', "")
-           ->save().
+           ->save();
 
         $project->attachTags(['Python', 'Discord.PY', 'Bot', 'Finished', 'Reddit API', 'API']);
 
