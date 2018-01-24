@@ -22,12 +22,6 @@
             <p class="mb-5 project-description text-justify">
                 {{ $project->description }}
             </p>
-            {{--
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-            <i class="fa fa-close"></i>
-            Close Project
-            </a>
-             --}}
         </div>
         <div class="col-lg-7 text-center">
             <img class="img-fluid mb-5 project-picture" src="{{ asset($project->image) }}" alt="">
@@ -38,6 +32,12 @@
                     <span class="badge badge-outline">{{ $tag->name }}</span>
                 @endforeach
             </p>
+        </div>
+        <div class="col-lg-12 text-center d-block d-sm-none">
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+            <i class="fa fa-close"></i>
+            Close Project
+            </a>
         </div>
     </div>
 </div>
