@@ -50,7 +50,7 @@ class HomeController extends Controller
         ]);
         $response = json_decode($response->getBody());
         if ($response->success) {
-            Mail::raw('This is the content of mail body', function ($message) {
+            Mail::raw('This is the content of mail body', function ($message) use ($request) {
                 $message->from($request->email, 'Website Contact Form');
                 $message->to('info@robvankeilegom.be');
                 $message->subject(implode("\n", $request->all()));
