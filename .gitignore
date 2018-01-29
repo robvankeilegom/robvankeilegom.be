@@ -52,6 +52,7 @@ Temporary Items
 .apdisk
 
 # Compiled files
+public/images/projects/*
 public/css/
 /public/js/*
 !/public/js/vendor

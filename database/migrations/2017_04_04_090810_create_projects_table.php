@@ -19,6 +19,8 @@ class CreateProjectsTable extends Migration
             $table->text('description')->nullable();
             $table->string('tumbnail_image')->nullable();
             $table->string('image')->nullable();
+            $table->integer('weight')->default(1000);
+            $table->integer('views')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

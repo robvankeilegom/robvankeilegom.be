@@ -2,21 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Validator;
 use GuzzleHttp\Client;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 use App\Project;
-use App\HeaderData;
+use App\Contact;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        $headerData = HeaderData::with('links')->find(1);
-        $projects = Project::with('links')->get();
+        $projects = Project::with('links')->take(6)->orderBy('weight')->get();
         return view('welcome', [
-            'headerData' => $headerData,
             'projects' => $projects,
         ]);
     }
@@ -43,23 +42,33 @@ class HomeController extends Controller
         }
         // Validate Captcha
         $client = new Client();
-
         $response = $client->request('POST', 'https://www.google.com/recaptcha/api/siteverify', [
             'form_params' => [
-                'secret' => ENV('G_SECRET_KEY'),
+                'secret' => config('custom.GA.secret_key'),
                 'response' => $request->input('g-recaptcha-response', null),
             ],
         ]);
         $response = json_decode($response->getBody());
         if ($response->success) {
-            mail('info@robvankeilegom.be', 'contact form: ' . $request->email, $request->message);
+            // Mail::raw('This is the content of mail body', function ($message) use ($request) {
+            //     $message->from($request->email, 'Website Contact Form');
+            //     $message->to('info@robvankeilegom.be');
+            //     $message->subject(implode("\n", $request->all()));
+            // });
+            Contact::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'phone' => $request->phone,
+                'message' => $request->message,
+            ]);
             return redirect()
                     ->route('home', ['#contact'])
-                    ->with('status', 'Successfully sent!');
+                    ->with('success', 'Successfully sent!');
         } else {
+            $validator->errors()->add('invalid_captcha', (config('app.debug') == 'TRUE') ? (implode(', ', $response->{'error-codes'})) : 'Apparently, you are a robot?!' );
             return redirect()
                     ->route('home', ['#contact'])
-                    ->withErrors(['invalid_captcha' => 'Apparently, you are a robot?!'])
+                    ->withErrors($validator)
                     ->withInput();
         }
     }

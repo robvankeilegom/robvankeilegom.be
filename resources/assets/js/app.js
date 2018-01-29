@@ -8,5 +8,11 @@ window.$ = window.jQuery = require( 'jquery' );
 require( './template/bootstrap.bundle' );
 require( 'jquery-match-height' );
 require( './template/jquery.easing' );
-require( './template/jquery.magnific-popup' );
+require( 'magnific-popup' );
 require( './template/freelancer' );
+
+
+$( function() {
+    $( '.project img' )
+        .matchHeight();
+} );

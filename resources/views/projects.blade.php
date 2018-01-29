@@ -1,69 +1,73 @@
-@extends('layouts.template')
+@extends('layouts.app')
+
+
+@section('navigation')
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="{{ \URL::to('/en') }}">robvankeilegom.be</a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+@endsection
 
 @section('content')
-    <div class="welcome">
-        <header>
-            <div class='overlay'>
-                <img class="matchHeight profile-picture" src='//placehold.it/250x250/4A55EF/FFFFFF'/>
-                <div class="matchHeight wrapper">
-                    <h1>{{ $headerData->title }}</h1>
-                    <p class="intro">
-                        {{ $headerData->description }}
-                    </p>
-                </div>
-                <p class="links">
-                    @foreach ($headerData->links as $link)
-                        <a href="" target="{{ $link->target }}"><i class="fa {{ $link->icon }}"></i> {{ $link->title }}</a>
-                    @endforeach
-                </p>
-            </div>
-        </header>
-        <main>
-            <h2>Projecten</h2>
-<div class="row">
-
-            @foreach ($projects as $project)
-                <div class='project col-lg-3'>
-                    <a href="">
-                    <h3> {{ $project->title }}</h3>
-                    {{-- <img src="{{ $project->tumbnail_image }}" /> --}}
-                    <img src='//placehold.it/600x400/3548B7/FFFFFF'/>
-                    {{--
-                    <div class='links'>
-                        @foreach ($project->links as $link)
-                            <a href="" target="_blank"><i class="fa {{ $link->icon }}"></i> {{ $link->title }}</a>
-                        @endforeach
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio mt-5" id="portfolio">
+        <div class="container">
+            <h2 class="text-center text-uppercase">Portfolio</h2>
+            <hr class="star-dark mb-5">
+            @foreach ($projects as $key => $project)
+                <div class="row project-list mb-5 mt-2">
+                    <div class="col-md-6 col-lg-4">
+                        <a class="d-block mx-auto portfolio-item" href="{{ route('projectModal', [ $project->id ]) }}">
+                            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ asset($project->tumbnail_image) }}" alt="{{ $project->title }}">
+                        </a>
                     </div>
-
-                    <div class='tags'>
-                        @if ($project->tags->count())
-                            Tags:
-                            @foreach ($project->tags as $tag)
-                                <span class="label label-info">{{ $tag->getTranslation('name', 'en') }}</span>
+                    <div class="col-md-6 col-lg-8">
+                        <h3 class="mb-1">
+                            {{ $project->title }}
+                        </h3>
+                        <p class="description text-justify">
+                            @if (strlen($project->description) > 350)
+                                {{ substr($project->description, 0,  350) }}...
+                            @else
+                                {{ $project->description }}
+                            @endif
+                        </p>
+                        <div class="mb-2">
+                            @foreach ($project->links as $key => $link)
+                                @if ($key == 0)
+                                @else
+                                    |
+                                @endif
+                                <a href="{{ $link->href }}" target="{{ $link->target }}" class="ml-1 mr-1">{{ strtolower($link->title) }}</a>
                             @endforeach
-                        @endif
+                        </div>
+                        <div class="mb-5">
+                            @foreach ($project->tags as $key => $tag)
+                                <span class="badge badge-outline">{{ $tag->name }}</span>
+                            @endforeach
+                        </div>
                     </div>
-                    <p class='description'>{{ $project->description }}</p>
-                     --}}
-                     </a>
+                    <div class="col-md-6 col-lg-12 mb-5">
+                    </div>
                 </div>
             @endforeach
         </div>
-
-            <h2> </h2>
-        </main>
-    </div>
-
-    <script>
-    $( function() {
-        $('.project h3').matchHeight();
-        $('.overlay .matchHeight').matchHeight({
-            target: $('.wrapper')
-        });
-    });
-    </script>
+    </section>
 @endsection
 
+
 @section('footer')
-    <footer>&copy; 2016 - Rob Van Keilegom - Vragen of opmerkingen? <a href="mailto:info@robvankeilegom.be"> Mail mij!</a></footer>
+    <!-- Header -->
+    @include('parts.footer')
 @endsection

@@ -5,11 +5,18 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Tags\HasTags;
+use Spatie\Translatable\HasTranslations;
 
 class Project extends Model
 {
     use SoftDeletes,
-    HasTags;
+    HasTags,
+    HasTranslations;
+
+    public $translatable = [
+        'title',
+        'description',
+    ];
 
     protected $fillable = [
         'title',

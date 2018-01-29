@@ -23,9 +23,6 @@
 // Template
 @import 'node_modules/magnific-popup/src/css/main';
 
-// Outdatedbrowser
-@import 'outdatedbrowser';
-
 // Template
 @import 'template/mixins';
 @import 'template/global';
@@ -38,3 +35,5 @@
 
 // Custom SCSS
 @import 'custom';
+@import 'admin';
+@import 'admin_custom';
