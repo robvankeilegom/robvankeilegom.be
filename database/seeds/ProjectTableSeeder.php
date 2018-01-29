@@ -44,7 +44,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "Together with Marlon Stoops we made this project as a final project for the second period of our education. It's a webpage where students could login to see their schedule. This was pulled through the API of KU Leuven. Then a google API calculates when the student should leave to be on time for his/her class. If the student travels by public transport, the schedule of the bus/train appear in the directions.")
+           ->setTranslation('description', 'en', "Together with Marlon Stoops we made this project as a final project for the second period of our education. It’s a webpage where students could login to see their schedule. This was pulled through the API of KU Leuven. Then a google API calculates when the student should leave to be on time for his/her class. If the student travels by public transport, the schedule of the bus/train appear in the directions.")
            ->setTranslation('description', 'nl', "Samen met Marlon Stoops heb ik dit project gemaakt als eindproject voor de tweede periode van onze bacheloropleiding. Het is een webpagina waarop studenten kunnen inloggen om hun uurrooster te bekijken. Het uurrooster wordt opgehaald via de API van KU Leuven. Dan wordt er via de API van google berekend wanneer de student moet vertrekken om tijdig in de les aan te komen. Als de student kiest voor het openbaar vervoer zullen de trein/bus uren mee verschijnen in de routeomschrijving samen met eventuele overstappen en vertragingen.")
            ->save();
 
@@ -131,7 +131,7 @@ class ProjectTableSeeder extends Seeder
 
         $project
            ->setTranslation('description', 'en', "This is also an application written for the Total Plant in Schoten. This web application makes labels to show the dangers of products. Each base material has to have a label so that the staff knows what to do when something happens, such as a fire or a leakage. The application is written in PHP with a MySQL database.")
-           ->setTranslation('description', 'nl', "Dit is een applicatie geschreven voor de Total plant in Schoten. Met deze web applicatie worden fiches aangemaakt die de gevaren van een product aanduiden. Voor elke grondstof in het bedrijf wordt een fiche aangemaakt zodat het personeel weet wat er bij onregelmatigheden moet gebeuren (bv: spill, brand); De applicatie is geschreven in PHP met achterliggend een MySQL database.")
+           ->setTranslation('description', 'nl', "Dit is een applicatie geschreven voor de Total plant in Schoten. Met deze web applicatie worden fiches aangemaakt die de gevaren van een product aanduiden. Voor elke grondstof in het bedrijf wordt een fiche aangemaakt zodat het personeel weet wat er bij onregelmatigheden moet gebeuren (bv: spill, brand). De applicatie is geschreven in PHP met achterliggend een MySQL database.")
            ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'MySQL', 'Total']);
@@ -144,7 +144,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "To calculate running times of the products at the Total Plant I wrote this Excel Macro. It's written in VB and it processes data from a MS SQL database. It then generates charts for a clear visual representation of running times or pauses. Through the UI they can make changes to how the data has to be visualized.")
+           ->setTranslation('description', 'en', "To calculate running times of the products at the Total Plant I wrote this Excel Macro. It’s written in VB and it processes data from a MS SQL database. It then generates charts for a clear visual representation of running times or pauses. Through the UI they can make changes to how the data has to be visualized.")
            ->setTranslation('description', 'nl', "Om draaitijden te berekenen voor de Total plant in Schoten is deze Excel macro geschreven. De macro, geschreven in VB, verwerkt productie data uit een MS SQL database en genereert grafieken voor een duidelijk visuele vertoning van draaitijden en stilstanden. Via de UI kan men instellen hoe de data moet weergegeven worden.")
            ->save();
 
@@ -167,7 +167,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "This is a command line application written for the course Object Oriented Programming in the 2nd year of my bachelor education. It's completely written in C and is (obviously) focused on the object oriented programming. The application simulates a tire center where staff and owner can login to add, delete or adjust clients and articles.")
+           ->setTranslation('description', 'en', "This is a command line application written for the course Object Oriented Programming in the 2nd year of my bachelor education. It’s completely written in C and is (obviously) focused on the object oriented programming. The application simulates a tire center where staff and owner can login to add, delete or adjust clients and articles.")
            ->setTranslation('description', 'nl', "Dit is een command-line applicatie geschreven voor het vak Object Oriented Programming in de 2de fase van mijn bacheloropleiding. Het is volledig geschreven in C en is (uiteraard) gericht op het object georienteerd programmeren. De applicatie simuleert een bandencentrale waar personeel en eigenaar kunnen inloggen om artikelen en klanten toe te voegen, verwijderen en aan te passen.")
            ->save();
 
@@ -431,7 +431,7 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "This is the solution I came up with for the Codingame hackaton: The Accountant. Codingame is a creat way to combine programming and gaming. I ended 5th of the 73 belgian people. Hackaton description: For this mission, you take the role of Christian Wolff, an unconventional accountant who has lived as a double agent for years. He has gathered highly sensitive data while working for the most dangerous criminal organizations of the world. As things are starting to unravel, it is expected that Wolff's enemies will attempt to get their hands on these files. As Wolff cannot risk to blow his cover up, we need you to make sure the data is secure.")
+           ->setTranslation('description', 'en', "This is the solution I came up with for the Codingame hackaton: The Accountant. Codingame is a creat way to combine programming and gaming. I ended 5th of the 73 belgian people. Hackaton description: For this mission, you take the role of Christian Wolff, an unconventional accountant who has lived as a double agent for years. He has gathered highly sensitive data while working for the most dangerous criminal organizations of the world. As things are starting to unravel, it is expected that Wolff’s enemies will attempt to get their hands on these files. As Wolff cannot risk to blow his cover up, we need you to make sure the data is secure.")
            ->setTranslation('description', 'nl', "Mijn oplossing voor de Codingame hackaton: The Accountant waarin ik 5de van de 73 belgen eindigde.")
            ->save();
 
@@ -633,8 +633,8 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "A web application I wrote for a teambuilding event in Antwerp. It is the interface for a real-life interactive group game. Citypolis description: Citypolis takes place in a 300mÂ² space which is arranged into a large imaginary city and which is filled with interactive tasks. The participants will be divided into sub-teams which shall compete with each other in â€œthe cityâ€. This is a unique indoor team game filled with action and strategy, innovation and technology.")
-           ->setTranslation('description', 'nl', "Citypolis vindt plaats in een ruimte van 300mÂ² die gelijkt op een echte stad met daarin interactieve opdrachten. De deelnemers zullen het tegen elkaar opnemen in dit uniek indoor team-spel. Het is gevuld met actie, strategie, innovatie en technologie.")
+           ->setTranslation('description', 'en', "A web application I wrote for a teambuilding event in Antwerp. It is the interface for a real-life interactive group game. Citypolis description: Citypolis takes place in a 300m² space which is arranged into a large imaginary city and which is filled with interactive tasks. The participants will be divided into sub-teams which shall compete with each other in “the city”. This is a unique indoor team game filled with action and strategy, innovation and technology.")
+           ->setTranslation('description', 'nl', "Citypolis vindt plaats in een ruimte van 300m² die gelijkt op een echte stad met daarin interactieve opdrachten. De deelnemers zullen het tegen elkaar opnemen in dit uniek indoor team-spel. Het is gevuld met actie, strategie, innovatie en technologie.")
            ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel', 'Vue.JS']);
@@ -682,7 +682,7 @@ class ProjectTableSeeder extends Seeder
 
         $project
            ->setTranslation('description', 'en', "This project is the final work I had to do before graduating college. I did my internship at Uni-t which is part of the Gemaco group. Because of the fast growing staff number Uni-t decided a 'who is who application' would be a great idea to reconnect the people at Gemaco. This application would make it easier to find out personal and useful information about the company and the staff. This would make it easier for existing and new staff members to fit in. This is how Gemaco Connect was born: an online Laravel application with an API behind it. The API, which is also a Laravel application and uses the passport package for authentication, is used to store all data as a single sign-on provider. This way the API can be easily integrated in other (existing) applications.")
-           ->setTranslation('description', 'nl', "Door het snel groeiende personeelsaantal zou Uni-t graag een who is who/intranet app hebben. Deze app kan gebruikt worden voor het terug vinden van gegevens over personeel in het bedrijf en belangrijke/nuttige info voor nieuw personeel. Hierdoor kan iemand gemakkelijk gecontacteerd of terug gevonden worden. Als antwoord op dat probleem is Uni-t met Gemaco Connect gekomen. Een online tool waarbij personeel kan inloggen om professionele info, alsook persoonlijke info over collega's, belangrijke en handige weetjes terug te vinden. Ook zal de Gemaco Connect app als centrale login dienen. Zo kunnen gebruikers bij de verschillende andere applicaties in een klik inloggen.")
+           ->setTranslation('description', 'nl', "Door het snel groeiende personeelsaantal zou Uni-t graag een who is who/intranet app hebben. Deze app kan gebruikt worden voor het terug vinden van gegevens over personeel in het bedrijf en belangrijke/nuttige info voor nieuw personeel. Hierdoor kan iemand gemakkelijk gecontacteerd of terug gevonden worden. Als antwoord op dat probleem is Uni-t met Gemaco Connect gekomen. Een online tool waarbij personeel kan inloggen om professionele info, alsook persoonlijke info over collega’s, belangrijke en handige weetjes terug te vinden. Ook zal de Gemaco Connect app als centrale login dienen. Zo kunnen gebruikers bij de verschillende andere applicaties in één klik inloggen.")
            ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel', 'Laravel Passport', 'Single Sign-On', 'API', 'Thomas More']);
