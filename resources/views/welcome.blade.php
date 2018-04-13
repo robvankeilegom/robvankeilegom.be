@@ -65,7 +65,7 @@
             </div>
         </div>
     </section>
-
+{{--
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -126,18 +126,66 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
-    {{-- <!-- Numbers Section -->
-    <section class="bg-primary text-white mb-0" id="numbers">
+    <!-- Numbers Section -->
+    <section id="numbers">
         <div class="container">
-            <h2 class="text-center text-uppercase text-white">Numbers</h2>
-            <hr class="star-light mb-5">
+            <h2 class="text-center text-uppercase text-secondary mb-0">Numbers</h2>
+            <hr class="star-dark mb-5">
             <div class="row">
-
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="text-center"><i class="fa fa-align-justify"></i></h2>
+                            <h3 class="text-center">
+                                @if (array_key_exists('Keys', $whatpulse))
+                                    {{ number_format($whatpulse->Keys) }}
+                                @else
+                                    0
+                                @endif
+                            </h3>
+                            <p class="text-center">characters typed</p>
+                        </div>
+                    </div>
+                </div>
+                {{-- TODO: Get data from GIT --}}
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="text-center"><i class="fa fa-folder-open"></i></h2>
+                            <h3 class="text-center">{{ number_format(20) }}</h3>
+                            <p class="text-center">projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="text-center"><i class="fa fa-arrow-up"></i></h2>
+                            <h3 class="text-center">{{ number_format(650) }}</h3>
+                            <p class="text-center">commits pushed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="text-center"><i class="fa fa-mouse-pointer"></i></h2>
+                            <h3 class="text-center">
+                                @if (array_key_exists('Clicks', $whatpulse))
+                                    {{ number_format($whatpulse->Clicks) }}
+                                @else
+                                    0
+                                @endif
+                            </h3></h3>
+                            <p class="text-center">mouse clicks</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section> --}}
+    </section>
 @endsection
 
 @section('scripts')
