@@ -30,6 +30,14 @@
                                 </div>
                             </div>
                             <img class="img-fluid" src="{{ asset($project->tumbnail_image) }}" alt="{{ $project->title }}">
+                            @if ($project->highlight)
+                              <div class="ribbon">
+                                <div class="txt">
+                                  <i class="fa fa-star"></i>
+                                  {{ $project->highlight }}
+                                </div>
+                              </div>
+                            @endif
                         </a>
                     </div>
                     <div class="col-md-6 col-lg-8">
