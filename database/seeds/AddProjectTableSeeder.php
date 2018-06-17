@@ -47,6 +47,7 @@ class AddProjectTableSeeder extends Seeder
 
         $project = App\Project::create([
             "title" => "hoeveelfilestaater.be",
+            "highlight" => "newest",
             "description" => "",
             "tumbnail_image" => "images/projects/hoeveelfilestaater.be_tumb.png",
             "image" => "images/projects/hoeveelfilestaater.be.png",
@@ -99,6 +100,5 @@ class AddProjectTableSeeder extends Seeder
         ]);
 
         $project->links()->attach($link);
-
     }
 }
