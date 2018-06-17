@@ -31,9 +31,12 @@ class HomeController extends Controller
             }
         }
 
+        $projectCount = Project::count();
+
         return view('welcome', [
             'projects' => $projects,
             'whatpulse' => $whatpulse,
+            'projectCount' => $projectCount,
         ]);
     }
 
