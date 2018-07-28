@@ -26,7 +26,9 @@ class AddHighlightColumnToProjects extends Migration
     public function down()
     {
         Schema::table('users', function ($table) {
-            $table->dropColumn('highlight');
+            if (Schema::hasColumn('users', 'highlight')) {
+                $table->dropColumn('highlight');
+            }
         });
     }
 }

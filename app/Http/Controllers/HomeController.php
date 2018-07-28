@@ -17,17 +17,21 @@ class HomeController extends Controller
     {
         $projects = Project::with('links')->take(6)->orderBy('weight')->get();
 
-
+        $whatpulse = '';
         if (Cache::has('whatpulse')) {
             $whatpulse = Cache::get('whatpulse');
         } else {
-            $client = new \GuzzleHttp\Client();
-            $response = $client->request('GET', 'https://api.whatpulse.org/user.php?user=roobieboobieee&format=json');
-            if ($response->getStatusCode() == 200) {
-                $whatpulse = json_decode($response->getBody());
-                $expiresAt = now()->addDays(1)->setTime(0, 0, 0);
+            try {
+                $client = new \GuzzleHttp\Client();
+                $response = $client->request('GET', 'https://api.whatpulse.org/user.php?user=roobieboobieee&format=json');
+                if ($response->getStatusCode() == 200) {
+                    $whatpulse = json_decode($response->getBody());
+                    $expiresAt = now()->addDays(1)->setTime(0, 0, 0);
 
-                Cache::put('whatpulse', $whatpulse, $expiresAt);
+                    Cache::put('whatpulse', $whatpulse, $expiresAt);
+                }
+            } catch(\GuzzleHttp\Exception\RequestException $e) {
+
             }
         }
 
