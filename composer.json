@@ -24,7 +24,7 @@
         "itsgoingd/clockwork": "~1.12",
         "illuminate/support": "~5.4",
         "spatie/laravel-tags": "^2.0",
-        "laravel/homestead": "^5.2",
+        "laravel/homestead": "^7.12",
         "deployer/deployer": "^6.0",
         "spatie/laravel-translatable": "^2.1",
         "s-ichikawa/laravel-sendgrid-driver": "^2.0",

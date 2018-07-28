@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "95826ea6d0979cee34309959d61b6349",
+    "content-hash": "6c2d35e39cc5dbcc04f411b65758e804",
     "packages": [
         {
             "name": "arcanedev/localization",
@@ -1065,25 +1065,26 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v5.4.0",
+            "version": "v7.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "f54a9f0b6a0de85c96d5e82fd94a563d979f8288"
+                "reference": "393c4bdc4972af1355dc91b3c28b8a2f1bdbd349"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/f54a9f0b6a0de85c96d5e82fd94a563d979f8288",
-                "reference": "f54a9f0b6a0de85c96d5e82fd94a563d979f8288",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/393c4bdc4972af1355dc91b3c28b8a2f1bdbd349",
+                "reference": "393c4bdc4972af1355dc91b3c28b8a2f1bdbd349",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0",
-                "symfony/console": "~2.3|~3.0",
-                "symfony/process": "~2.3|~3.0",
-                "symfony/yaml": "~2.3|~3.0"
+                "symfony/console": "~3.3|~4.0",
+                "symfony/process": "~3.3|~4.0",
+                "symfony/yaml": "~3.3|~4.0"
             },
             "require-dev": {
+                "phly/changelog-generator": "^2.2",
                 "phpunit/phpunit": "^5.7 || ^6.0"
             },
             "bin": [
@@ -1111,7 +1112,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2017-06-09T13:53:37+00:00"
+            "time": "2018-07-14T01:02:53+00:00"
         },
         {
             "name": "laravelcollective/html",
@@ -1813,12 +1814,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RoobieBoobieee/GitDataCollector.git",
-                "reference": "3ff2bb6c762f33b14b2354eee07e970fc8faac3c"
+                "reference": "9f7bf72919ff63ba2e9930bfa54c75160268dcc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RoobieBoobieee/GitDataCollector/zipball/3ff2bb6c762f33b14b2354eee07e970fc8faac3c",
-                "reference": "3ff2bb6c762f33b14b2354eee07e970fc8faac3c",
+                "url": "https://api.github.com/repos/RoobieBoobieee/GitDataCollector/zipball/9f7bf72919ff63ba2e9930bfa54c75160268dcc0",
+                "reference": "9f7bf72919ff63ba2e9930bfa54c75160268dcc0",
                 "shasum": ""
             },
             "require": {
@@ -1831,6 +1832,9 @@
             },
             "type": "library",
             "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
                 "laravel": {
                     "providers": [
                         "RoobieBoobieee\\GitDataCollector\\Providers\\GitDataCollectorServiceProvider"
@@ -1879,7 +1883,7 @@
                 "source": "https://github.com/RoobieBoobieee/GitDataCollector/tree/master",
                 "issues": "https://github.com/RoobieBoobieee/GitDataCollector/issues"
             },
-            "time": "2018-04-20T15:03:49+00:00"
+            "time": "2018-04-25T17:46:53+00:00"
         },
         {
             "name": "s-ichikawa/laravel-sendgrid-driver",
