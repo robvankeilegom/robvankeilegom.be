@@ -20,6 +20,7 @@
         <div class="container">
             <h2 class="text-center text-uppercase">Portfolio</h2>
             <hr class="star-dark mb-5">
+
             @foreach ($projects as $key => $project)
                 <div class="row project-list mb-5 mt-2">
                     <div class="col-md-6 col-lg-4">
@@ -62,7 +63,7 @@
                         </div>
                         <div class="mb-5">
                             @foreach ($project->tags as $key => $tag)
-                                <span class="badge badge-outline">{{ $tag->name }}</span>
+                                <a href="{{ route('projectsByTag', [ $tag->name]) }}" class="badge badge-outline">{{ $tag->name }}</a>
                             @endforeach
                         </div>
                     </div>
@@ -70,6 +71,25 @@
                     </div>
                 </div>
             @endforeach
+
+
+            <h2 class="text-center text-uppercase mt-5">All tags</h2>
+            <hr class="star-dark mb-5">
+
+            <div class="mb-5 text-center">
+                @if ($allTags)
+                    @foreach ($allTags as $key => $tag)
+                        <a href="{{ route('projectsByTag', [ $tag->name]) }}" class="badge badge-outline">
+                            @if ($tag->name == $currentTag)
+                                <b>{{ $tag->name }}</b>
+                            @else
+                                {{ $tag->name }}
+                            @endif
+                            ({{ App\Project::withAllTags([$tag])->count() }})
+                        </a>
+                    @endforeach
+                @endif
+            </div>
         </div>
     </section>
 @endsection
