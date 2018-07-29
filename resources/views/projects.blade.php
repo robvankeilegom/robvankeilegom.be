@@ -8,7 +8,7 @@
             <a class="navbar-brand js-scroll-trigger" href="{{ \URL::to('/en') }}">robvankeilegom.be</a>
             <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
-                <i class="fa fa-bars"></i>
+                <i class="far fa-bars"></i>
             </button>
         </div>
     </nav>
@@ -27,14 +27,14 @@
                         <a class="d-block mx-auto portfolio-item" href="{{ route('projectModal', [ $project->id ]) }}">
                             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <i class="fab fa-readme fa-3x"></i>
                                 </div>
                             </div>
                             <img class="img-fluid" src="{{ asset($project->tumbnail_image) }}" alt="{{ $project->title }}">
                             @if ($project->highlight)
                               <div class="ribbon">
                                 <div class="txt">
-                                  <i class="fa fa-star"></i>
+                                  <i class="far fa-star"></i>
                                   {{ $project->highlight }}
                                 </div>
                               </div>

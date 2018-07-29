@@ -5,18 +5,18 @@
     "dev": "gulp watch"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^5.2.0",
     "bootstrap-sass": "^3.3.7",
     "bourbon": "^4.2.7",
-    "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
     "jquery": "^3.1.0",
     "laravel-elixir": "^6.0.0-9",
+    "laravel-elixir-browsersync-official": "^1.0.0",
     "laravel-elixir-vue-2": "^0.2.0",
     "laravel-elixir-webpack-official": "^1.0.2",
     "lodash": "^4.16.2",
     "vue": "^2.0.1",
-    "vue-resource": "^1.0.3",
-    "laravel-elixir-browsersync-official": "^1.0.0"
+    "vue-resource": "^1.0.3"
   },
   "dependencies": {
     "jquery": "^3.2.1",

@@ -23,7 +23,7 @@
                         <a class="portfolio-item d-block mx-auto" href="{{ route('projectModal', [ $project->id ]) }}">
                             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <i class="far fa-search-plus fa-3x"></i>
                                 </div>
                             </div>
                             <img class="img-fluid" src="{{ $project->tumbnail_image }}" alt="">
@@ -33,7 +33,7 @@
             </div>
             <div class="text-center mt-4">
                 <a class="btn btn-xl btn-primary" href="{{ route('projects') }}">
-                    <i class="fa fa-list mr-2"></i>
+                    <i class="far fa-list mr-2"></i>
                     See All Projects!
                 </a>
             </div>
@@ -59,7 +59,7 @@
             </div>
             <div class="text-center mt-4">
               <a class="btn btn-xl btn-outline-light" href="{{ asset('cv.pdf') }}" target="_blank">
-                <i class="fa fa-download mr-2"></i>
+                <i class="far fa-download mr-2"></i>
                 Download Resume!
               </a>
             </div>
@@ -145,7 +145,7 @@
                     @if ($whatpulse !== '')
                         <div class="card bg-primary border-primary">
                             <div class="card-body">
-                                <h2 class="text-center"><i class="fa fa-align-justify"></i></h2>
+                                <h2 class="text-center"><i class="far fa-align-justify"></i></h2>
                                 <h3 class="text-center">
                                     @if (array_key_exists('Keys', $whatpulse))
                                         {{ number_format($whatpulse->Keys) }}
@@ -162,7 +162,7 @@
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card bg-primary border-primary">
                         <div class="card-body">
-                            <h2 class="text-center"><i class="fa fa-folder-open"></i></h2>
+                            <h2 class="text-center"><i class="far fa-folder-open"></i></h2>
                             <h3 class="text-center">{{ number_format($projectCount) }}</h3>
                             <p class="text-center">projects</p>
                         </div>
@@ -171,7 +171,7 @@
                 {{-- <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h2 class="text-center"><i class="fa fa-arrow-up"></i></h2>
+                            <h2 class="text-center"><i class="far fa-arrow-up"></i></h2>
                             <h3 class="text-center">{{ number_format(650) }}</h3>
                             <p class="text-center">commits pushed</p>
                         </div>
@@ -181,7 +181,7 @@
                     @if ($whatpulse !== '')
                         <div class="card bg-primary border-primary">
                             <div class="card-body">
-                                <h2 class="text-center"><i class="fa fa-mouse-pointer"></i></h2>
+                                <h2 class="text-center"><i class="far fa-mouse-pointer"></i></h2>
                                 <h3 class="text-center">
                                     @if (array_key_exists('Clicks', $whatpulse))
                                         {{ number_format($whatpulse->Clicks) }}

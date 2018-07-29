@@ -15,7 +15,7 @@
                         <li class="list-inline-item">
                             <a class="btn btn-outline-light btn-social text-center rounded-circle"
                                 href="{{ $link->href }}" target="{{ $link->target }}" alt="{{ $link->title}}">
-                                <i class="fa fa-fw {{ $link->icon }}"></i>
+                                <i class="far fa-fw {{ $link->icon }}"></i>
                             </a>
                         </li>
                     @endforeach

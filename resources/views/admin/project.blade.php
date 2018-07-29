@@ -98,7 +98,7 @@
                                                     </td>
                                                     </td>
                                                     <td>
-                                                        <a href="{{ route('delete_link', [$project->id, $link->id]) }}" class="remove"><i class="fa fa-remove"></i></a>
+                                                        <a href="{{ route('delete_link', [$project->id, $link->id]) }}" class="remove"><i class="far fa-remove"></i></a>
                                                     </td>
                                                 </tr>
                                             @endforeach

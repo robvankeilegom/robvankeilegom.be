@@ -37,7 +37,7 @@
                                     <h4 class="title">Add new project</h4>
                                 </div>
                                 <div class="content">
-                                    <i class="fa fa-plus money"></i>
+                                    <i class="far fa-plus money"></i>
                                 </div>
                             </div>
                         </div>

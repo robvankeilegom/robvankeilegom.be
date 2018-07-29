@@ -29,7 +29,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/TM_ProjectPHPMySQL',
             'target' => '_blank',
         ]);
@@ -52,7 +52,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/tm_project2',
             'target' => '_blank',
         ]);
@@ -61,7 +61,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Marlon Stoops',
-            'icon' => 'fa-linkedin',
+            'icon' => 'fab fa-linkedin',
             'href' => 'https://www.linkedin.com/in/marlonstoops/',
             'target' => '_blank',
         ]);
@@ -114,7 +114,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/TM_ProjectWebEngineering1',
             'target' => '_blank',
         ]);
@@ -152,7 +152,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
                     'title' => 'Source Code',
-                    'icon' => 'fa-code',
+                    'icon' => 'fal fa-code',
                     'href' => 'https://gitlab.com/RoobieBoobieee/Total_Dafi',
                     'target' => '_blank',
                 ]);
@@ -175,7 +175,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/TM_ObjectOrientedProgramming',
             'target' => '_blank',
         ]);
@@ -198,7 +198,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/TM_ProjectDatabanken',
             'target' => '_blank',
         ]);
@@ -207,7 +207,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Marlon Stoops',
-            'icon' => 'fa-linkedin',
+            'icon' => 'fab fa-linkedin',
             'href' => 'https://www.linkedin.com/in/marlonstoops/',
             'target' => '_blank',
         ]);
@@ -230,7 +230,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/total_lab3',
             'target' => '_blank',
         ]);
@@ -253,7 +253,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/Happening_RankedGame',
             'target' => '_blank',
         ]);
@@ -270,7 +270,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/Portfolio',
             'target' => '_blank',
         ]);
@@ -279,7 +279,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code (legacy)',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/Portfolio/tree/legacy_code',
             'target' => '_blank',
         ]);
@@ -288,7 +288,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Live Link',
-            'icon' => 'fa-heartbeat',
+            'icon' => 'fal fa-heartbeat',
             'href' => 'http://portfolio.robvankeilegom.be',
             'target' => '_blank',
         ]);
@@ -313,7 +313,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/DBH_SolarTracker',
             'target' => '_blank',
         ]);
@@ -336,7 +336,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/TM_Project1',
             'target' => '_blank',
         ]);
@@ -345,7 +345,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Marlon Stoops',
-            'icon' => 'fa-linkedin',
+            'icon' => 'fab fa-linkedin',
             'href' => 'https://www.linkedin.com/in/marlonstoops/',
             'target' => '_blank',
         ]);
@@ -368,7 +368,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/TM_Python',
             'target' => '_blank',
         ]);
@@ -377,7 +377,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Marlon Stoops',
-            'icon' => 'fa-linkedin',
+            'icon' => 'fab fa-linkedin',
             'href' => 'https://www.linkedin.com/in/marlonstoops/',
             'target' => '_blank',
         ]);
@@ -400,7 +400,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Live Link',
-            'icon' => 'fa-heartbeat',
+            'icon' => 'fal fa-heartbeat',
             'href' => 'http://sns-productions.be',
             'target' => '_blank',
         ]);
@@ -439,7 +439,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/CodinGame_hackathon_The_Accountant',
             'target' => '_blank',
         ]);
@@ -471,7 +471,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/Discord_Bot',
             'target' => '_blank',
         ]);
@@ -480,7 +480,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code (Web interface)',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/Discord_Log_Bot_Web',
             'target' => '_blank',
         ]);
@@ -546,7 +546,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/Discord_Log_Bot_Web',
             'target' => '_blank',
         ]);
@@ -555,7 +555,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code (bot)',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/Discord_Bot',
             'target' => '_blank',
         ]);
@@ -578,7 +578,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://github.com/RoobieBoobieee/language-openedge-abl',
             'target' => '_blank',
         ]);
@@ -608,7 +608,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code (node)',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/PushToScreen_node',
             'target' => '_blank',
         ]);
@@ -617,7 +617,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code (master)',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/PushToScreen_master',
             'target' => '_blank',
         ]);
@@ -633,8 +633,8 @@ class ProjectTableSeeder extends Seeder
         ]);
 
         $project
-           ->setTranslation('description', 'en', "A web application I wrote for a teambuilding event in Antwerp. It is the interface for a real-life interactive group game. Citypolis description: Citypolis takes place in a 300mÂ² space which is arranged into a large imaginary city and which is filled with interactive tasks. The participants will be divided into sub-teams which shall compete with each other in â€œthe cityâ€. This is a unique indoor team game filled with action and strategy, innovation and technology.")
-           ->setTranslation('description', 'nl', "Citypolis vindt plaats in een ruimte van 300mÂ² die gelijkt op een echte stad met daarin interactieve opdrachten. De deelnemers zullen het tegen elkaar opnemen in dit uniek indoor team-spel. Het is gevuld met actie, strategie, innovatie en technologie.")
+           ->setTranslation('description', 'en', "A web application I wrote for a teambuilding event in Antwerp. It is the interface for a real-life interactive group game. Citypolis description: Citypolis takes place in a 300mÃ‚Â² space which is arranged into a large imaginary city and which is filled with interactive tasks. The participants will be divided into sub-teams which shall compete with each other in Ã¢â‚¬Å“the cityÃ¢â‚¬Â�. This is a unique indoor team game filled with action and strategy, innovation and technology.")
+           ->setTranslation('description', 'nl', "Citypolis vindt plaats in een ruimte van 300mÃ‚Â² die gelijkt op een echte stad met daarin interactieve opdrachten. De deelnemers zullen het tegen elkaar opnemen in dit uniek indoor team-spel. Het is gevuld met actie, strategie, innovatie en technologie.")
            ->save();
 
         $project->attachTags(['HTML', 'PHP', 'CSS', 'Laravel', 'Vue.JS']);
@@ -753,7 +753,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/eID_Reader',
             'target' => '_blank',
         ]);
@@ -776,7 +776,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/Daily_Dose',
             'target' => '_blank',
         ]);
@@ -785,7 +785,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Marlon Stoops',
-            'icon' => 'fa-linkedin',
+            'icon' => 'fab fa-linkedin',
             'href' => 'https://www.linkedin.com/in/marlonstoops/',
             'target' => '_blank',
         ]);
@@ -807,7 +807,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/bes.robvankeilegom.be',
             'target' => '_blank',
         ]);
@@ -816,7 +816,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Live Link',
-            'icon' => 'fa-heartbeat',
+            'icon' => 'fal fa-heartbeat',
             'href' => 'https://bes.robvankeilegom.be',
             'target' => '_blank',
         ]);
@@ -840,7 +840,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/hoeveelfilestaater.be',
             'target' => '_blank',
         ]);
@@ -849,7 +849,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Live Link',
-            'icon' => 'fa-heartbeat',
+            'icon' => 'fal fa-heartbeat',
             'href' => 'https://hoeveelfilestaater.be',
             'target' => '_blank',
         ]);
@@ -872,7 +872,7 @@ class ProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'fal fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/api.hoeveelfilestaater.be',
             'target' => '_blank',
         ]);
@@ -881,3 +881,5 @@ class ProjectTableSeeder extends Seeder
 
     }
 }
+
+

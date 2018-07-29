@@ -10,13 +10,13 @@
     <ul class="nav">
         <li>
             <a href="{{ route('admin') }}">
-                <i class="fa fa-tachometer"></i>
+                <i class="far fa-tachometer"></i>
                 <p>Dashboard</p>
             </a>
         </li>
         <li>
             <a href="{{ route('admin_projects') }}">
-                <i class="fa fa-tachometer"></i>
+                <i class="far fa-tachometer"></i>
                 <p>Projects</p>
             </a>
         </li>
