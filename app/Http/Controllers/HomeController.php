@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Validator;
+use Spatie\Tags\Tag;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -41,11 +42,13 @@ class HomeController extends Controller
             'projects' => $projects,
             'whatpulse' => $whatpulse,
             'projectCount' => $projectCount,
+            'allTags' => Tag::all(),
         ]);
     }
 
     public function contact(Request $request)
     {
+        return;
         // Validate form input
         $rules = [
             'name' => 'required|max:255',

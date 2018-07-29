@@ -128,15 +128,22 @@
         </div>
     </section> --}}
 
-    <!-- Numbers Section -->
-    <section id="numbers">
+    <!-- Tags Section -->
+    <section id="tags">
         <div class="container">
-            <h2 class="text-center text-uppercase text-secondary mb-0">Numbers</h2>
-            <hr class="star-dark mb-5">
+            @include('parts.tags')
+        </div>
+    </section>
+
+    <!-- Numbers Section -->
+    <section class="bg-primary text-white mb-0" id="numbers">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-white mb-0">Numbers</h2>
+            <hr class="star-light mb-5">
             <div class="row">
                 <div class="col-lg-4 col-md-12 mb-4">
                     @if ($whatpulse !== '')
-                        <div class="card">
+                        <div class="card bg-primary border-primary">
                             <div class="card-body">
                                 <h2 class="text-center"><i class="fa fa-align-justify"></i></h2>
                                 <h3 class="text-center">
@@ -153,7 +160,7 @@
                 </div>
                 {{-- TODO: Get data from GIT --}}
                 <div class="col-lg-4 col-md-12 mb-4">
-                    <div class="card">
+                    <div class="card bg-primary border-primary">
                         <div class="card-body">
                             <h2 class="text-center"><i class="fa fa-folder-open"></i></h2>
                             <h3 class="text-center">{{ number_format($projectCount) }}</h3>
@@ -172,7 +179,7 @@
                 </div> --}}
                 <div class="col-lg-4 col-md-12 mb-4">
                     @if ($whatpulse !== '')
-                        <div class="card">
+                        <div class="card bg-primary border-primary">
                             <div class="card-body">
                                 <h2 class="text-center"><i class="fa fa-mouse-pointer"></i></h2>
                                 <h3 class="text-center">
@@ -192,9 +199,11 @@
     </section>
 @endsection
 
+{{--
 @section('scripts')
 <script src='https://www.google.com/recaptcha/api.js'></script>
 @endsection
+--}}
 
 @section('footer')
     <!-- Header -->
