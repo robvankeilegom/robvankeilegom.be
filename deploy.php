@@ -33,7 +33,7 @@ host('production')
     ->stage('production');
 
 host('staging')
-    ->hostname('staging.robvankeilegom.be')
+    ->hostname('robvankeilegom.be')
     ->set('branch', 'staging')
     ->set('deploy_path', '/home/user/web/staging.robvankeilegom.be')
     ->stage('staging');
