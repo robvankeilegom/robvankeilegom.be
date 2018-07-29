@@ -29,7 +29,7 @@ class AddProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'far fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/bes.robvankeilegom.be',
             'target' => '_blank',
         ]);
@@ -38,7 +38,7 @@ class AddProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Live Link',
-            'icon' => 'fa-heartbeat',
+            'icon' => 'far fa-heartbeat',
             'href' => 'https://bes.robvankeilegom.be',
             'target' => '_blank',
         ]);
@@ -62,7 +62,7 @@ class AddProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'far fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/hoeveelfilestaater.be',
             'target' => '_blank',
         ]);
@@ -71,7 +71,7 @@ class AddProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Live Link',
-            'icon' => 'fa-heartbeat',
+            'icon' => 'far fa-heartbeat',
             'href' => 'https://hoeveelfilestaater.be',
             'target' => '_blank',
         ]);
@@ -94,7 +94,7 @@ class AddProjectTableSeeder extends Seeder
 
         $link = App\Link::create([
             'title' => 'Source Code',
-            'icon' => 'fa-code',
+            'icon' => 'far fa-code',
             'href' => 'https://gitlab.com/RoobieBoobieee/api.hoeveelfilestaater.be',
             'target' => '_blank',
         ]);

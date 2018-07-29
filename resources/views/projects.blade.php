@@ -8,7 +8,7 @@
             <a class="navbar-brand js-scroll-trigger" href="{{ \URL::to('/en') }}">robvankeilegom.be</a>
             <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
-                <i class="fa fa-bars"></i>
+                <i class="far fa-bars"></i>
             </button>
         </div>
     </nav>
@@ -16,7 +16,7 @@
 
 @section('content')
     <!-- Portfolio Grid Section -->
-    <section class="portfolio mt-5" id="portfolio">
+    <section class="portfolio mt-5 bg-white" id="portfolio">
         <div class="container">
             <h2 class="text-center text-uppercase">Portfolio</h2>
             <hr class="star-dark mb-5">
@@ -27,14 +27,14 @@
                         <a class="d-block mx-auto portfolio-item" href="{{ route('projectModal', [ $project->id ]) }}">
                             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <i class="fab fa-readme fa-3x"></i>
                                 </div>
                             </div>
                             <img class="img-fluid" src="{{ asset($project->tumbnail_image) }}" alt="{{ $project->title }}">
                             @if ($project->highlight)
                               <div class="ribbon">
                                 <div class="txt">
-                                  <i class="fa fa-star"></i>
+                                  <i class="far fa-star"></i>
                                   {{ $project->highlight }}
                                 </div>
                               </div>
@@ -72,24 +72,8 @@
                 </div>
             @endforeach
 
+            @include('parts.tags')
 
-            <h2 class="text-center text-uppercase mt-5">All tags</h2>
-            <hr class="star-dark mb-5">
-
-            <div class="mb-5 text-center">
-                @if ($allTags)
-                    @foreach ($allTags as $key => $tag)
-                        <a href="{{ route('projectsByTag', [ $tag->name]) }}" class="badge badge-outline">
-                            @if ($tag->name == $currentTag)
-                                <b>{{ $tag->name }}</b>
-                            @else
-                                {{ $tag->name }}
-                            @endif
-                            ({{ App\Project::withAllTags([$tag])->count() }})
-                        </a>
-                    @endforeach
-                @endif
-            </div>
         </div>
     </section>
 @endsection
