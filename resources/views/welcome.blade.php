@@ -13,7 +13,7 @@
 
 @section('content')
     <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio bg-white" id="portfolio">
         <div class="container">
             <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
             <hr class="star-dark mb-5">
@@ -67,7 +67,7 @@
     </section>
 
     <!-- Tags Section -->
-    <section id="tags">
+    <section id="tags" class="bg-white">
         <div class="container">
             @include('parts.tags')
         </div>

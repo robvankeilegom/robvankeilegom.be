@@ -16,7 +16,7 @@
 
 @section('content')
     <!-- Portfolio Grid Section -->
-    <section class="portfolio mt-5" id="portfolio">
+    <section class="portfolio mt-5 bg-white" id="portfolio">
         <div class="container">
             <h2 class="text-center text-uppercase">Portfolio</h2>
             <hr class="star-dark mb-5">
