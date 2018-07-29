@@ -65,68 +65,6 @@
             </div>
         </div>
     </section>
-{{--
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <form name="sentMessage" id="contactForm" method="post" action="{{ route('contact') }}">
-                        @if($errors->first('invalid_captcha'))
-                            <div class="alert alert-danger">
-                                {{ $errors->first('invalid_captcha') }}
-                            </div>
-                        @endif
-
-                        @if (session('success'))
-                        <div class="alert alert-success">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            {{ session('success') }}
-                        </div>
-                        @endif
-                        {{ csrf_field() }}
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Name</label>
-                                <input class="form-control" id="name" name="name" type="text" placeholder="Name" data-validation-required-message="Please enter your name." value="{{ old('name') }}">
-                                <p class="help-block text-danger"> {{ $errors->first('name') }}</p>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Email Address</label>
-                                <input class="form-control" id="email" name="email" type="email" placeholder="Email Address" value="{{ old('email') }}">
-                                <p class="help-block text-danger"> {{ $errors->first('email') }}</p>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Phone Number</label>
-                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Phone Number" value="{{ old('phone') }}">
-                                <p class="help-block text-danger"> {{ $errors->first('phone') }}</p>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message">{{ old('message') }}</textarea>
-                                <p class="help-block text-danger"> {{ $errors->first('message') }}</p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <div class="g-recaptcha" data-sitekey="{{ \Config::get('custom.GA.site_key')}}"></div>
-                            <input class='btn btn-primary btn-xl submit-contact pull-right' type="submit" class="btn btn-primary btn-xl" id="sendMessageButton" value="Send" />
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> --}}
 
     <!-- Tags Section -->
     <section id="tags">
