@@ -79,7 +79,7 @@
             <h2 class="text-center text-uppercase text-white mb-0">Numbers</h2>
             <hr class="star-light mb-5">
             <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4">
+                <div class="col-lg-3 col-md-12 mb-4">
                     @if ($whatpulse !== '')
                         <div class="card bg-primary border-primary">
                             <div class="card-body">
@@ -97,7 +97,7 @@
                     @endif
                 </div>
                 {{-- TODO: Get data from GIT --}}
-                <div class="col-lg-4 col-md-12 mb-4">
+                <div class="col-lg-3 col-md-12 mb-4">
                     <div class="card bg-primary border-primary">
                         <div class="card-body">
                             <h2 class="text-center"><i class="far fa-folder-open"></i></h2>
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                 </div> --}}
-                <div class="col-lg-4 col-md-12 mb-4">
+                <div class="col-lg-3 col-md-12 mb-4">
                     @if ($whatpulse !== '')
                         <div class="card bg-primary border-primary">
                             <div class="card-body">
@@ -128,6 +128,23 @@
                                     @endif
                                 </h3></h3>
                                 <p class="text-center">mouse clicks</p>
+                            </div>
+                        </div>
+                    @endif
+                </div>
+                <div class="col-lg-3 col-md-12 mb-4">
+                    @if ($km !== '')
+                        <div class="card bg-primary border-primary">
+                            <div class="card-body">
+                                <h2 class="text-center"><i class="far fa-car"></i></h2>
+                                <h3 class="text-center">
+                                    @if ($km->data && $km->data->m)
+                                        {{ number_format($km->data->m / 1000) }}
+                                    @else
+                                        0 km
+                                    @endif
+                                </h3></h3>
+                                <p class="text-center">km traffic jam</p>
                             </div>
                         </div>
                     @endif
