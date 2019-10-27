@@ -7,6 +7,12 @@
     ],
     "license": "MIT",
     "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/RoobieBoobieee/GitDataCollector"
+        }
+    ],
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.5.*",
@@ -18,10 +24,11 @@
         "itsgoingd/clockwork": "~1.12",
         "illuminate/support": "~5.4",
         "spatie/laravel-tags": "^2.0",
-        "laravel/homestead": "^5.2",
+        "laravel/homestead": "^7.12",
         "deployer/deployer": "^6.0",
         "spatie/laravel-translatable": "^2.1",
-        "s-ichikawa/laravel-sendgrid-driver": "^2.0"
+        "s-ichikawa/laravel-sendgrid-driver": "^2.0",
+        "roobieboobieee/gitdatacollector": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

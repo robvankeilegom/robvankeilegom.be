@@ -1,7 +1,7 @@
 <!-- Portfolio Modal -->
 <div class="portfolio-modal-dialog bg-white">
     <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
+        <i class="far fa-3x fa-times"></i>
     </a>
     <div class="row">
         <div class="col-lg-12 mb-2">
@@ -35,7 +35,7 @@
         </div>
         <div class="col-lg-12 text-center d-block d-sm-none">
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-            <i class="fa fa-close"></i>
+            <i class="far fa-close"></i>
             Close Project
             </a>
         </div>

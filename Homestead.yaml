@@ -8,11 +8,11 @@ keys:
 folders:
     -
         map: ./
-        to: /home/vagrant/Code/robvankeilegom.be
+        to: /home/vagrant/code
 sites:
     -
-        map: Portfolio.app
-        to: /home/vagrant/Code/robvankeilegom.be/public
+        map: robvankeilegom.app
+        to: /home/vagrant/code/public
 databases:
     - homestead
 name: robvankeilegom.be

@@ -1,55 +1,72 @@
 // Bootstrap overrides for this template
-a {
-  color: $primary;
-  &:focus,
-  &:hover,
-  &:active {
-    color: darken($primary, 10%);
-  }
+a
+{
+    color: $primary;
+    &:focus,
+    &:hover,
+    &:active
+    {
+        color: darken($primary, 10%);
+    }
 }
 
-.btn {
-  border-width: 2px;
+.btn
+{
+    border-width: 2px;
 }
 
-.bg-primary {
-  background-color: $primary !important;
+.bg-primary
+{
+    background-color: $primary !important;
 }
 
-.bg-secondary {
-  background-color: $secondary !important;
+.border-primary
+{
+    border-color: $primary !important;
 }
 
-.text-primary {
-  color: $primary !important;
+.bg-secondary
+{
+    background-color: $secondary !important;
 }
 
-.text-secondary {
-  color: $secondary !important;
+.text-primary
+{
+    color: $primary !important;
 }
 
-.btn-primary {
-  background-color: $primary;
-  border-color: $primary;
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: darken($primary, 10%);
-    border-color: darken($primary, 10%);
-  }
+.text-secondary
+{
+    color: $secondary !important;
 }
 
-.btn-secondary {
-  background-color: $secondary;
-  border-color: $secondary;
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: darken($secondary, 10%);
-    border-color: darken($secondary, 10%);
-  }
+.btn-primary
+{
+    border-color: $primary;
+    background-color: $primary;
+    &:hover,
+    &:focus,
+    &:active
+    {
+        border-color: darken($primary, 10%);
+        background-color: darken($primary, 10%);
+    }
 }
 
-.navbar-brand {
-  font-size: 1rem !important;
+.btn-secondary
+{
+    border-color: $secondary;
+    background-color: $secondary;
+    &:hover,
+    &:focus,
+    &:active
+    {
+        border-color: darken($secondary, 10%);
+        background-color: darken($secondary, 10%);
+    }
+}
+
+.navbar-brand
+{
+    font-size: .9rem !important;
 }

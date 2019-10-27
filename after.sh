@@ -1,4 +1,4 @@
-cd Code/robvankeilegom.be
+cd code
 npm install --loglevel error
 composer install
 cp .env.example .env
