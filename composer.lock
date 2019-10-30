@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea70d65de575406b9c22221c41f138ce",
+    "content-hash": "c33639f4807e436449cce2af1819ebea",
     "packages": [
         {
             "name": "bugsnag/bugsnag",
@@ -1949,6 +1949,63 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "roobieboobieee/bitbucket",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/RoobieBoobieee/bitbucket.git",
+                "reference": "ce503d2288736c9671cb0647de83ab8ccdf3302f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/RoobieBoobieee%2Fbitbucket/repository/archive.zip?sha=ce503d2288736c9671cb0647de83ab8ccdf3302f",
+                "reference": "ce503d2288736c9671cb0647de83ab8ccdf3302f",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "illuminate/support": ">=5.8",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.8.*",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RoobieBoobieee\\Bitbucket\\BitbucketServiceProvider"
+                    ],
+                    "aliases": {
+                        "Bitbucket": "RoobieBoobieee\\Bitbucket\\BitbucketFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RoobieBoobieee\\Bitbucket\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Van Keilegom",
+                    "email": "robvankeilegom@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "homepage": "https://github.com/roobieboobieee/bitbucket",
+            "keywords": [
+                "RoobieBoobieee",
+                "bitbucket"
+            ],
+            "time": "2019-10-30T21:03:02+00:00"
         },
         {
             "name": "spatie/eloquent-sortable",
@@ -6644,7 +6701,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "roobieboobieee/bitbucket": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

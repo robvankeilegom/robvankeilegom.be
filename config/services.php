@@ -40,4 +40,9 @@ return [
         'version' => 'v3',
     ],
 
+    'bitbucket' => [
+      'username' => env('BITBUCKET_USERNAME'),
+      'password' => env('BITBUCKET_PASSWORD'),
+    ],
+
 ];
