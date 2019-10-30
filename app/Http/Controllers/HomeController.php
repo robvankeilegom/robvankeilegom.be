@@ -6,8 +6,10 @@ use Validator;
 use Spatie\Tags\Tag;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Cache;
+use RoobieBoobieee\Bitbucket\ActiveUser;
 
 use App\Project;
 use App\Contact;
@@ -59,10 +61,22 @@ class HomeController extends Controller
 
         $projectCount = Project::count();
 
+        $bbCount = 0;
+        if (Cache::has('bb_count')) {
+            $bbCount = (int)Cache::get('bb_count');
+        } else {
+            $user = App::make(ActiveUser::class);
+            $bbCount = $user->commits()->count();
+            $expiresAt = now()->addHours(2);
+
+            Cache::put('bb_count', $bbCount, $expiresAt);
+        }
+
         return view('welcome', [
             'projects' => $projects,
             'whatpulse' => $whatpulse,
             'projectCount' => $projectCount,
+            'bbCount' => $bbCount,
             'allTags' => Tag::all(),
             'km' => $km,
         ]);

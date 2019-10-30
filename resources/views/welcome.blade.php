@@ -116,18 +116,14 @@
                     </div>
                 </div> --}}
                 <div class="col-lg-3 col-md-12 mb-4">
-                    @if ($whatpulse !== '')
+                    @if ($bbCount > 0)
                         <div class="card bg-primary border-primary">
                             <div class="card-body">
-                                <h2 class="text-center"><i class="far fa-mouse-pointer"></i></h2>
+                                <h2 class="text-center"><i class="far fa-code-commit"></i></h2>
                                 <h3 class="text-center">
-                                    @if (array_key_exists('Clicks', $whatpulse))
-                                        {{ number_format($whatpulse->Clicks) }}
-                                    @else
-                                        0
-                                    @endif
+                                    {{ number_format($bbCount) }}
                                 </h3></h3>
-                                <p class="text-center">mouse clicks</p>
+                                <p class="text-center">bitbucket commits</p>
                             </div>
                         </div>
                     @endif
