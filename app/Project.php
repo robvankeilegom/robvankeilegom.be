@@ -19,12 +19,14 @@ class Project extends Model
     ];
 
     protected $fillable = [
+        'id',
         'title',
         'description',
         'tumbnail_image',
         'image',
         'status',
         'highlight',
+        'weight',
     ];
 
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
