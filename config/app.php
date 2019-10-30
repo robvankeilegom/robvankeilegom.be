@@ -168,7 +168,6 @@ return [
          * Package Service Providers...
          */
 
-        Arcanedev\Localization\LocalizationServiceProvider::class,
         Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Clockwork\Support\Laravel\ClockworkServiceProvider::class,
