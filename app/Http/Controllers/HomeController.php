@@ -18,6 +18,7 @@ class HomeController extends Controller
     {
         $projects = Project::with('links')->take(6)->orderBy('weight')->get();
 
+        $client = null;
         $whatpulse = '';
         if (Cache::has('whatpulse')) {
             $whatpulse = Cache::get('whatpulse');
@@ -36,6 +37,26 @@ class HomeController extends Controller
             }
         }
 
+        $km = '';
+        if (Cache::has('km')) {
+            $km = Cache::get('km');
+        } else {
+            try {
+                if (!$client) {
+                  $client = new \GuzzleHttp\Client();
+                }
+                $response = $client->request('POST', 'https://api.hoeveelfilestaater.be/api/getWelcomeMessage');
+                if ($response->getStatusCode() == 200) {
+                    $km = json_decode($response->getBody());
+                    $expiresAt = now()->addMinutes(5);
+
+                    Cache::put('km', $km, $expiresAt);
+                }
+            } catch(\GuzzleHttp\Exception\RequestException $e) {
+
+            }
+        }
+
         $projectCount = Project::count();
 
         return view('welcome', [
@@ -43,6 +64,7 @@ class HomeController extends Controller
             'whatpulse' => $whatpulse,
             'projectCount' => $projectCount,
             'allTags' => Tag::all(),
+            'km' => $km,
         ]);
     }
 
