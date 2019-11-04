@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Validator;
+use RoobieBoobieee\Bitbucket\Bitbucket;
 use Spatie\Tags\Tag;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Cache;
 
@@ -59,10 +61,30 @@ class HomeController extends Controller
 
         $projectCount = Project::count();
 
+        $bbCount = 0;
+        if (Cache::has('bb_count')) {
+            $bbCount = (int)Cache::get('bb_count');
+        } else {
+            $username = config('services.bitbucket.organi.username');
+            $password = config('services.bitbucket.organi.password');
+            $bb = new Bitbucket($username, $password);
+            $bbCount += $bb->commits()->count();
+
+            $username = config('services.bitbucket.personal.username');
+            $password = config('services.bitbucket.personal.password');
+            $bb = new Bitbucket($username, $password);
+            $bbCount += $bb->commits()->count();
+            
+            $expiresAt = now()->addHours(2);
+
+            Cache::put('bb_count', $bbCount, $expiresAt);
+        }
+
         return view('welcome', [
             'projects' => $projects,
             'whatpulse' => $whatpulse,
             'projectCount' => $projectCount,
+            'bbCount' => $bbCount,
             'allTags' => Tag::all(),
             'km' => $km,
         ]);
