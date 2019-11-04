@@ -11,9 +11,7 @@
 |
 */
 
-Route::localizedGroup(function () {
-    Route::get('/', 'HomeController@index')->name('home');
-    Route::get('/projects', 'ProjectsController@index')->name('projects');
-    Route::get('/projects/{tag}', 'ProjectsController@tag')->name('projectsByTag');
-    Route::get('/project/{project_id}', 'ProjectsController@modal')->name('projectModal');
-});
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/projects', 'ProjectsController@index')->name('projects');
+Route::get('/projects/{tag}', 'ProjectsController@tag')->name('projectsByTag');
+Route::get('/project/{project_id}', 'ProjectsController@modal')->name('projectModal');

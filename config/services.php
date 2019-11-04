@@ -40,4 +40,15 @@ return [
         'version' => 'v3',
     ],
 
+    'bitbucket' => [
+      'organi' => [
+        'username' => env('BITBUCKET_USERNAME_ORGANI'),
+        'password' => env('BITBUCKET_PASSWORD_ORGANI'),
+      ],
+      'personal' => [
+        'username' => env('BITBUCKET_USERNAME_PERSONAL'),
+        'password' => env('BITBUCKET_PASSWORD_PERSONAL'),
+      ],
+    ],
+
 ];
