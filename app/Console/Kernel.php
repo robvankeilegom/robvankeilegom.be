@@ -25,7 +25,15 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-       $schedule->job(new SyncBitbucket)->everyFifteenMinutes();
+      $username = config('services.bitbucket.organi.username');
+      $password = config('services.bitbucket.organi.password');
+
+      $schedule->job(SyncBitbucket::dispatch($username, $password))->everyFifteenMinutes();
+
+      $username = config('services.bitbucket.personal.username');
+      $password = config('services.bitbucket.personal.password');
+
+      $schedule->job(SyncBitbucket::dispatch($username, $password))->everyFifteenMinutes();
     }
 
     /**

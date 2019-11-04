@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c33639f4807e436449cce2af1819ebea",
+    "content-hash": "c50d60eeb60948ad740ed41e7df1042e",
     "packages": [
         {
             "name": "bugsnag/bugsnag",
@@ -1952,16 +1952,16 @@
         },
         {
             "name": "roobieboobieee/bitbucket",
-            "version": "dev-master",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/RoobieBoobieee/bitbucket.git",
-                "reference": "ce503d2288736c9671cb0647de83ab8ccdf3302f"
+                "reference": "ab2380fb41d2d386466727f4f17fab4d3b64702d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/RoobieBoobieee%2Fbitbucket/repository/archive.zip?sha=ce503d2288736c9671cb0647de83ab8ccdf3302f",
-                "reference": "ce503d2288736c9671cb0647de83ab8ccdf3302f",
+                "url": "https://gitlab.com/api/v4/projects/RoobieBoobieee%2Fbitbucket/repository/archive.zip?sha=ab2380fb41d2d386466727f4f17fab4d3b64702d",
+                "reference": "ab2380fb41d2d386466727f4f17fab4d3b64702d",
                 "shasum": ""
             },
             "require": {
@@ -2005,7 +2005,7 @@
                 "RoobieBoobieee",
                 "bitbucket"
             ],
-            "time": "2019-10-30T21:03:02+00:00"
+            "time": "2019-11-04T18:13:17+00:00"
         },
         {
             "name": "spatie/eloquent-sortable",
@@ -6701,9 +6701,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "roobieboobieee/bitbucket": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
