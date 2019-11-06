@@ -4,7 +4,6 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-use RoobieBoobieee\Bitbucket\Jobs\SyncBitbucket;
 
 class Kernel extends ConsoleKernel
 {
@@ -25,15 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-      $username = config('services.bitbucket.organi.username');
-      $password = config('services.bitbucket.organi.password');
-
-      $schedule->job(SyncBitbucket::dispatch($username, $password))->everyFifteenMinutes();
-
-      $username = config('services.bitbucket.personal.username');
-      $password = config('services.bitbucket.personal.password');
-
-      $schedule->job(SyncBitbucket::dispatch($username, $password))->everyFifteenMinutes();
+      $schedule->command('sync:bitbucket')->hourly();
     }
 
     /**
