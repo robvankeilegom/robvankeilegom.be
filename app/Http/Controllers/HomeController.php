@@ -64,20 +64,6 @@ class HomeController extends Controller
         $bbCount = 0;
         if (Cache::has('bb_count')) {
             $bbCount = (int)Cache::get('bb_count');
-        } else {
-            $username = config('services.bitbucket.organi.username');
-            $password = config('services.bitbucket.organi.password');
-            $bb = new Bitbucket($username, $password);
-            $bbCount += $bb->commits()->count();
-
-            $username = config('services.bitbucket.personal.username');
-            $password = config('services.bitbucket.personal.password');
-            $bb = new Bitbucket($username, $password);
-            $bbCount += $bb->commits()->count();
-            
-            $expiresAt = now()->addHours(2);
-
-            Cache::put('bb_count', $bbCount, $expiresAt);
         }
 
         return view('welcome', [

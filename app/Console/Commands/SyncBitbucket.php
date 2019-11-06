@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use RoobieBoobieee\Bitbucket\Jobs\SyncBitbucket as Job;
+use RoobieBoobieee\Bitbucket\Jobs\SyncBitbucket as SyncBitbucketJob;
 
 class SyncBitbucket extends Command
 {
@@ -22,6 +22,13 @@ class SyncBitbucket extends Command
     protected $description = 'Sync bitbucket';
 
     /**
+     * List of all password keys in the services config
+     *
+     * @var array
+     */
+    private $keys = ['organi', 'personal'];
+
+    /**
      * Create a new command instance.
      *
      * @return void
@@ -38,14 +45,18 @@ class SyncBitbucket extends Command
      */
     public function handle()
     {
-      $username = config('services.bitbucket.organi.username');
-      $password = config('services.bitbucket.organi.password');
+      $bbCount = 0;
 
-      Job::dispatch($username, $password);
+      foreach ($this->keys as $key) {
+        $username = config('services.bitbucket.' . $key . '.username');
+        $password = config('services.bitbucket.' . $key . '.password');
+        SyncBitbucketJob::dispatch($username, $password);
 
-      $username = config('services.bitbucket.personal.username');
-      $password = config('services.bitbucket.personal.password');
+        // Commits from above job will not be available yes, but hey that's alright
+        $bb = new Bitbucket($username, $password);
+        $bbCount += $bb->commits()->count();
+      }
 
-      Job::dispatch($username, $password);
+      Cache::forever('bb_count', $bbCount);
     }
 }
