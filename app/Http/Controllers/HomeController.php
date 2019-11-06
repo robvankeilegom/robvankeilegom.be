@@ -24,39 +24,11 @@ class HomeController extends Controller
         $whatpulse = '';
         if (Cache::has('whatpulse')) {
             $whatpulse = Cache::get('whatpulse');
-        } else {
-            try {
-                $client = new \GuzzleHttp\Client();
-                $response = $client->request('GET', 'https://api.whatpulse.org/user.php?user=roobieboobieee&format=json');
-                if ($response->getStatusCode() == 200) {
-                    $whatpulse = json_decode($response->getBody());
-                    $expiresAt = now()->addDays(1)->setTime(0, 0, 0);
-
-                    Cache::put('whatpulse', $whatpulse, $expiresAt);
-                }
-            } catch(\GuzzleHttp\Exception\RequestException $e) {
-
-            }
         }
 
         $km = '';
         if (Cache::has('km')) {
             $km = Cache::get('km');
-        } else {
-            try {
-                if (!$client) {
-                  $client = new \GuzzleHttp\Client();
-                }
-                $response = $client->request('POST', 'https://api.hoeveelfilestaater.be/api/getWelcomeMessage');
-                if ($response->getStatusCode() == 200) {
-                    $km = json_decode($response->getBody());
-                    $expiresAt = now()->addMinutes(5);
-
-                    Cache::put('km', $km, $expiresAt);
-                }
-            } catch(\GuzzleHttp\Exception\RequestException $e) {
-
-            }
         }
 
         $projectCount = Project::count();
@@ -64,20 +36,6 @@ class HomeController extends Controller
         $bbCount = 0;
         if (Cache::has('bb_count')) {
             $bbCount = (int)Cache::get('bb_count');
-        } else {
-            $username = config('services.bitbucket.organi.username');
-            $password = config('services.bitbucket.organi.password');
-            $bb = new Bitbucket($username, $password);
-            $bbCount += $bb->commits()->count();
-
-            $username = config('services.bitbucket.personal.username');
-            $password = config('services.bitbucket.personal.password');
-            $bb = new Bitbucket($username, $password);
-            $bbCount += $bb->commits()->count();
-            
-            $expiresAt = now()->addHours(2);
-
-            Cache::put('bb_count', $bbCount, $expiresAt);
         }
 
         return view('welcome', [
@@ -121,11 +79,7 @@ class HomeController extends Controller
         ]);
         $resultponse = json_decode($resultponse->getBody());
         if ($resultponse->success) {
-            // Mail::raw('This is the content of mail body', function ($message) use ($request) {
-            //     $message->from($request->email, 'Website Contact Form');
-            //     $message->to('info@robvankeilegom.be');
-            //     $message->subject(implode("\n", $request->all()));
-            // });
+          
             Contact::create([
                 'name' => $request->name,
                 'email' => $request->email,
