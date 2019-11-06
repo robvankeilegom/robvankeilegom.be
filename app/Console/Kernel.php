@@ -25,6 +25,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
       $schedule->command('sync:bitbucket')->hourly();
+      $schedule->command('sync:whatpulse')->hourly();
+      $schedule->command('sync:km')->everyFiveMinutes();
     }
 
     /**

@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use RoobieBoobieee\Bitbucket\Jobs\SyncBitbucket as SyncBitbucketJob;
+use Illuminate\Support\Facades\Cache;
 
 class SyncBitbucket extends Command
 {
