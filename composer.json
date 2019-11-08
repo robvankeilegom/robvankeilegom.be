@@ -19,7 +19,7 @@
         "laravel/homestead": "^7.12",
         "laravelcollective/html": "6.0.*",
         "roobieboobieee/bitbucket": "2.2.1",
-        "roobieboobieee/gitlab": "0.1.0",
+        "roobieboobieee/gitlab": "0.2.0",
         "spatie/laravel-tags": "^2.5",
         "spatie/laravel-translatable": "^4.2"
     },
