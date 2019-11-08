@@ -52,8 +52,8 @@ return [
 
     'gitlab' => [
         'personal' => [
-            'username' => env('BITBUCKET_USERNAME_PERSONAL'),
-            'password' => env('BITBUCKET_PASSWORD_PERSONAL'),
+            'username' => env('GITLAB_USERNAME_PERSONAL'),
+            'password' => env('GITLAB_PASSWORD_PERSONAL'),
         ],
     ],
 ];
