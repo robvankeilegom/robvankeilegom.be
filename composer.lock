@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bfb039450eef72f059d45743a192df6d",
+    "content-hash": "78c4f080fcf474c8e6c36a7e20597943",
     "packages": [
         {
             "name": "bugsnag/bugsnag",
@@ -2006,6 +2006,61 @@
                 "bitbucket"
             ],
             "time": "2019-11-06T12:21:03+00:00"
+        },
+        {
+            "name": "roobieboobieee/gitlab",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/RoobieBoobieee/gitlab.git",
+                "reference": "8afc958fea3e7904bd8c997c80d65e7d60b5bcba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/RoobieBoobieee%2Fgitlab/repository/archive.zip?sha=8afc958fea3e7904bd8c997c80d65e7d60b5bcba",
+                "reference": "8afc958fea3e7904bd8c997c80d65e7d60b5bcba",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "illuminate/support": ">=5.8",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.8.*",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RoobieBoobieee\\Gitlab\\GitlabServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RoobieBoobieee\\Gitlab\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Van Keilegom",
+                    "email": "robvankeilegom@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Sync your Gitlab repos/commits.",
+            "homepage": "https://gitlab.com/roobieboobieee/gitlab",
+            "keywords": [
+                "RoobieBoobieee",
+                "gitlab"
+            ],
+            "time": "2019-11-08T21:24:01+00:00"
         },
         {
             "name": "spatie/eloquent-sortable",
