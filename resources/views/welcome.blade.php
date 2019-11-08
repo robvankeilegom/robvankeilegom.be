@@ -116,14 +116,14 @@
                     </div>
                 </div> --}}
                 <div class="col-lg-3 col-md-12 mb-4">
-                    @if ($bbCount > 0)
+                    @if ($totalCount > 0)
                         <div class="card bg-primary border-primary">
                             <div class="card-body">
                                 <h2 class="text-center"><i class="far fa-code-commit"></i></h2>
                                 <h3 class="text-center">
-                                    {{ number_format($bbCount) }}
+                                    {{ number_format($totalCount) }}
                                 </h3></h3>
-                                <p class="text-center">bitbucket commits</p>
+                                <p class="text-center">commits</p>
                             </div>
                         </div>
                     @endif

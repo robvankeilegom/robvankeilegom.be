@@ -3,16 +3,12 @@
 namespace App\Http\Controllers;
 
 use Validator;
-use RoobieBoobieee\Bitbucket\Bitbucket;
+use App\Contact;
+use App\Project;
 use Spatie\Tags\Tag;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Cache;
-
-use App\Project;
-use App\Contact;
 
 class HomeController extends Controller
 {
@@ -20,31 +16,38 @@ class HomeController extends Controller
     {
         $projects = Project::with('links')->take(6)->orderBy('weight')->get();
 
-        $client = null;
+        $client    = null;
         $whatpulse = '';
+
         if (Cache::has('whatpulse')) {
             $whatpulse = Cache::get('whatpulse');
         }
 
         $km = '';
+
         if (Cache::has('km')) {
             $km = Cache::get('km');
         }
 
         $projectCount = Project::count();
 
-        $bbCount = 0;
+        $commitCount = 0;
+
         if (Cache::has('bb_count')) {
-            $bbCount = (int)Cache::get('bb_count');
+            $commitCount += (int) Cache::get('bb_count');
+        }
+
+        if (Cache::has('gl_count')) {
+            $commitCount += (int) Cache::get('gl_count');
         }
 
         return view('welcome', [
-            'projects' => $projects,
-            'whatpulse' => $whatpulse,
+            'projects'     => $projects,
+            'whatpulse'    => $whatpulse,
             'projectCount' => $projectCount,
-            'bbCount' => $bbCount,
-            'allTags' => Tag::all(),
-            'km' => $km,
+            'commitCount'  => $commitCount,
+            'allTags'      => Tag::all(),
+            'km'           => $km,
         ]);
     }
 
@@ -53,8 +56,8 @@ class HomeController extends Controller
         return;
         // Validate form input
         $rules = [
-            'name' => 'required|max:255',
-            'email' => 'required|max:255|email',
+            'name'    => 'required|max:255',
+            'email'   => 'required|max:255|email',
             'message' => 'required|max:500',
         ];
 
@@ -65,36 +68,37 @@ class HomeController extends Controller
 
         if ($validator->fails()) {
             return redirect()
-                    ->route('home', ['#contact'])
-                    ->withErrors($validator)
-                    ->withInput();
+                ->route('home', ['#contact'])
+                ->withErrors($validator)
+                ->withInput();
         }
         // Validate Captcha
-        $client = new Client();
+        $client      = new Client();
         $resultponse = $client->request('POST', 'https://www.google.com/recaptcha/api/siteverify', [
             'form_params' => [
-                'secret' => config('custom.GA.secret_key'),
+                'secret'   => config('custom.GA.secret_key'),
                 'response' => $request->input('g-recaptcha-response', null),
             ],
         ]);
         $resultponse = json_decode($resultponse->getBody());
+
         if ($resultponse->success) {
-          
             Contact::create([
-                'name' => $request->name,
-                'email' => $request->email,
-                'phone' => $request->phone,
+                'name'    => $request->name,
+                'email'   => $request->email,
+                'phone'   => $request->phone,
                 'message' => $request->message,
             ]);
+
             return redirect()
-                    ->route('home', ['#contact'])
-                    ->with('success', 'Successfully sent!');
-        } else {
-            $validator->errors()->add('invalid_captcha', (config('app.debug') == 'TRUE') ? (implode(', ', $resultponse->{'error-codes'})) : 'Apparently, you are a robot?!' );
-            return redirect()
-                    ->route('home', ['#contact'])
-                    ->withErrors($validator)
-                    ->withInput();
+                ->route('home', ['#contact'])
+                ->with('success', 'Successfully sent!');
         }
+        $validator->errors()->add('invalid_captcha', (config('app.debug') == 'TRUE') ? (implode(', ', $resultponse->{'error-codes'})) : 'Apparently, you are a robot?!');
+
+        return redirect()
+            ->route('home', ['#contact'])
+            ->withErrors($validator)
+            ->withInput();
     }
 }
