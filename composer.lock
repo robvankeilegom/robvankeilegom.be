@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f993e6e05fd8c67f1e21458124392b14",
+    "content-hash": "df9223dd81a798624215ed39fb1705f9",
     "packages": [
         {
             "name": "bugsnag/bugsnag",
@@ -2009,16 +2009,16 @@
         },
         {
             "name": "roobieboobieee/gitlab",
-            "version": "0.3.0",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/RoobieBoobieee/gitlab.git",
-                "reference": "420831764d3a501ca77406fe653c7df4cefcad76"
+                "reference": "49b1a54a7a27fd5b5b94840591758428860ef6e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/RoobieBoobieee%2Fgitlab/repository/archive.zip?sha=420831764d3a501ca77406fe653c7df4cefcad76",
-                "reference": "420831764d3a501ca77406fe653c7df4cefcad76",
+                "url": "https://gitlab.com/api/v4/projects/RoobieBoobieee%2Fgitlab/repository/archive.zip?sha=49b1a54a7a27fd5b5b94840591758428860ef6e8",
+                "reference": "49b1a54a7a27fd5b5b94840591758428860ef6e8",
                 "shasum": ""
             },
             "require": {
@@ -2060,7 +2060,7 @@
                 "RoobieBoobieee",
                 "gitlab"
             ],
-            "time": "2019-11-08T21:50:05+00:00"
+            "time": "2019-11-08T22:10:07+00:00"
         },
         {
             "name": "spatie/eloquent-sortable",
