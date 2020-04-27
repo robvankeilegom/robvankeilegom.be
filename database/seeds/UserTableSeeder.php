@@ -12,7 +12,7 @@ class UserTableSeeder extends Seeder
     */
     public function run()
     {
-        $user = App\User::create([
+        $user = App\Models\User::create([
             'name' => 'Rob',
             'email' => 'RobVanKeilegom@hotmail.com',
             'password' => Hash::make('123'),

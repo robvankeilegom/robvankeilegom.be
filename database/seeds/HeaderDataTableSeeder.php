@@ -9,10 +9,10 @@ class HeaderDataTableSeeder extends Seeder
      */
     public function run()
     {
-        $headerData = App\HeaderData::where('code', 'MAIN')->first();
+        $headerData = App\Models\HeaderData::where('code', 'MAIN')->first();
 
         if (! $headerData) {
-            $headerData = new App\HeaderData();
+            $headerData = new App\Models\HeaderData();
         }
 
         $headerData->code         = 'MAIN';
@@ -30,7 +30,7 @@ class HeaderDataTableSeeder extends Seeder
             'Bitbucket',
         ];
 
-        $links = App\Link::whereIn('title', $links)->get();
+        $links = App\Models\Link::whereIn('title', $links)->get();
         $headerData->links()->attach($links);
     }
 }

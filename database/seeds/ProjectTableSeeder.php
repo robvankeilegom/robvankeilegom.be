@@ -7,10 +7,10 @@ class ProjectTableSeeder extends Seeder
 {
     public function addProject($data)
     {
-        $project = App\Project::find(1);
+        $project = App\Models\Project::find(1);
 
         if (! $project) {
-            $project     = new App\Project();
+            $project     = new App\Models\Project();
             $project->id = Arr::get($data, 'id');
         }
 
@@ -27,7 +27,7 @@ class ProjectTableSeeder extends Seeder
         $project->attachTags(Arr::get($data, 'tags'));
 
         foreach (Arr::get($data, 'links', []) as $key => $link) {
-            $link = App\Link::firstOrCreate([
+            $link = App\Models\Link::firstOrCreate([
                 'title'  => Arr::get($link, 'title'),
                 'icon'   => Arr::get($link, 'icon'),
                 'href'   => Arr::get($link, 'href'),

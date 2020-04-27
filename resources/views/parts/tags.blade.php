@@ -10,7 +10,7 @@
                 @else
                     {{ $tag->name }}
                 @endif
-                ({{ App\Project::withAllTags([$tag])->count() }})
+                ({{ App\Models\Project::withAllTags([$tag])->count() }})
             </a>
         @endforeach
     @endif

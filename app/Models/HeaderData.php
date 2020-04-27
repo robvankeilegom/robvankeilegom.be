@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Translatable\HasTranslations;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class HeaderData extends Model
 {
@@ -30,6 +30,6 @@ class HeaderData extends Model
 
     public function links()
     {
-        return $this->belongsToMany('App\Link', 'header_data_links');
+        return $this->belongsToMany('App\Models\Link', 'header_data_links');
     }
 }
