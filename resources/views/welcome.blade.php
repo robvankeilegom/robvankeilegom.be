@@ -26,7 +26,7 @@
                                     <i class="far fa-search-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{{ $project->tumbnail_image }}" alt="">
+                            <img class="img-fluid" src="{{ $project->tumbnail }}" alt="">
                         </a>
                     </div>
                 @endforeach

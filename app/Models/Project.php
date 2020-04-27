@@ -35,4 +35,9 @@ class Project extends Model
     {
         return $this->belongsToMany('App\Models\Link', 'links_projects');
     }
+
+    public function getTumbnailAttribute()
+    {
+        return config('app.env') === 'local' ? 'https://picsum.photos/400/200' : $this->tumbnail_image;
+    }
 }
