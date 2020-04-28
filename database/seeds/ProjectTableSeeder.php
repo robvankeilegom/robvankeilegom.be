@@ -436,7 +436,7 @@ class ProjectTableSeeder extends Seeder
 
         $data = [
             'id'             => 16,
-            'title'          => 'S&amp;S Productions',
+            'title'          => 'S&S Productions',
             'description'    => '',
             'tumbnail_image' => 'images/projects/sns.png',
             'image'          => 'images/projects/sns.png',
