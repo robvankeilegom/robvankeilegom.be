@@ -17,14 +17,14 @@ class ProjectTableSeeder extends Seeder
 
         $project->title          = Arr::get($data, 'title');
         $project->highlight      = Arr::get($data, 'highlight');
-        $project->description    = '';
         $project->tumbnail_image = Arr::get($data, 'tumbnail_image');
         $project->image          = Arr::get($data, 'image');
-        $project->save();
 
         $project
             ->setTranslation('description', 'en', Arr::get($data, 'description.en'))
             ->setTranslation('description', 'nl', Arr::get($data, 'description.nl'));
+
+        $project->save();
 
         $project->attachTags(Arr::get($data, 'tags'));
 
