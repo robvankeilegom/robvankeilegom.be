@@ -252,9 +252,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/TM_ProjectDatabanken',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Marlon Stoops',
                     'icon'   => 'fa-linkedin',
                     'href'   => 'https://www.linkedin.com/in/marlonstoops/',
@@ -330,16 +328,12 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Portfolio',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Source Code (legacy)',
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Portfolio/tree/legacy_code',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Live Link',
                     'icon'   => 'fa-heartbeat',
                     'href'   => 'http://portfolio.robvankeilegom.be',
@@ -397,9 +391,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/TM_Project1',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Marlon Stoops',
                     'icon'   => 'fa-linkedin',
                     'href'   => 'https://www.linkedin.com/in/marlonstoops/',
@@ -430,9 +422,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/TM_Python',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Marlon Stoops',
                     'icon'   => 'fa-linkedin',
                     'href'   => 'https://www.linkedin.com/in/marlonstoops/',
@@ -508,9 +498,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/CodinGame_hackathon_The_Accountant',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Codingame hackaton: The Accountant',
                     'icon'   => 'fa-globe',
                     'href'   => 'https://www.codingame.com/blog/launch-of-accountant-hackathon/',
@@ -541,9 +529,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Discord_Bot',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ],  [
                     'title'  => 'Source Code (Web interface)',
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Discord_Log_Bot_Web',
@@ -625,9 +611,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Discord_Log_Bot_Web',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Source Code (bot)',
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Discord_Bot',
@@ -658,9 +642,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://github.com/RoobieBoobieee/language-openedge-abl',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Atom Package',
                     'icon'   => 'fa-archive',
                     'href'   => 'https://atom.io/packages/language-openedge-abl',
@@ -691,9 +673,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/PushToScreen_node',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ],  [
                     'title'  => 'Source Code (master)',
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/PushToScreen_master',
@@ -779,16 +759,12 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-globe',
                     'href'   => 'https://www.gemacoglobal.com/',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Uni-t',
                     'icon'   => 'fa-globe',
                     'href'   => 'https://uni-t.be/',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Full Thesis',
                     'icon'   => 'fa-book',
                     'href'   => 'https://roobieboobieee.gitlab.io/thesis/',
@@ -871,9 +847,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Daily_Dose',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Marlon Stoops',
                     'icon'   => 'fa-linkedin',
                     'href'   => 'https://www.linkedin.com/in/marlonstoops/',
@@ -904,9 +878,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/bes.robvankeilegom.be',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Live Link',
                     'icon'   => 'fa-heartbeat',
                     'href'   => 'https://bes.robvankeilegom.be',
@@ -938,9 +910,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'far fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/hoeveelfilestaater.be',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Live Link',
                     'icon'   => 'far fa-heartbeat',
                     'href'   => 'https://hoeveelfilestaater.be',
