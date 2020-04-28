@@ -988,7 +988,7 @@ class ProjectTableSeeder extends Seeder
             'weight'         => 4,
 
             'description' => [
-                'en' => 'This package makes it easy to send notifications using Microsoft Teams with Laravel 5.5+ and 6.0',
+                'en' => 'A laravel/php package that makes it easy to send notifications to Microsoft Teams',
                 'nl' => '',
             ],
 
