@@ -893,7 +893,6 @@ class ProjectTableSeeder extends Seeder
         $data = [
             'id'             => 33,
             'title'          => 'hoeveelfilestaater.be',
-            'highlight'      => 'newest',
             'description'    => '',
             'tumbnail_image' => 'images/projects/hoeveelfilestaater.be_tumb.png',
             'image'          => 'images/projects/hoeveelfilestaater.be.png',
@@ -945,6 +944,132 @@ class ProjectTableSeeder extends Seeder
                 ],
             ],
         ];
+
+        $this->addProject($data);
+
+        $data = [
+            'id'             => 35,
+            'title'          => 'apache-conf-generator.robvankeilegom.be',
+            'description'    => '',
+            'tumbnail_image' => 'images/projects/apache-conf-generator.robvankeilegom.be_tumb.png',
+            'image'          => 'images/projects/apache-conf-generator.robvankeilegom.be.png',
+
+            'description' => [
+                'en' => 'Another project I did to get comfortable with the Angular framework. This is a tool I use frequently to generate the necessary configuration to set up a new virtual host on Apache.',
+                'nl' => 'Nog een project dat ik gedaan heb om gewoon te worden met het Angular framework. Dit is een tool die ik vaak gebruik om de nodige config te genereren om nieuwe virtual hosts op te zetten in apache.',
+            ],
+
+            'tags' => ['Angular', 'HTML', 'SASS', 'Javascript', 'Typescript', 'Finished', 'Apache'],
+
+            'links' => [
+                [
+                    'title'  => 'Source Code',
+                    'icon'   => 'far fa-code',
+                    'href'   => 'https://gitlab.com/RoobieBoobieee/apache-conf-generator',
+                    'target' => '_blank',
+                ], [
+                    'title'  => 'Live Link',
+                    'icon'   => 'far fa-heartbeat',
+                    'href'   => 'https://apache-conf-generator.robvankeilegom.be',
+                    'target' => '_blank',
+                ],
+            ],
+        ];
+
+        $this->addProject($data);
+
+        $data = [
+            'id'             => 36,
+            'title'          => 'roobieboobieee/laravel-notifications-microsoft-teams',
+            'highlight'      => 'newest',
+            'description'    => '',
+            'tumbnail_image' => 'images/projects/laravel-notifications-microsoft-teams_tumb.png',
+            'image'          => 'images/projects/laravel-notifications-microsoft-teams.png',
+
+            'description' => [
+                'en' => 'This package makes it easy to send notifications using Microsoft Teams with Laravel 5.5+ and 6.0',
+                'nl' => '',
+            ],
+
+            'tags' => ['PHP', 'Package', 'Composer', 'Laravel', 'Microsoft Teams'],
+
+            'links' => [
+                [
+                    'title'  => 'Source Code',
+                    'icon'   => 'far fa-code',
+                    'href'   => 'https://gitlab.com/RoobieBoobieee/laravel-notifications-microsoft-teams',
+                    'target' => '_blank',
+                ], [
+                    'title'  => 'Packagist',
+                    'icon'   => 'fal box-open',
+                    'href'   => 'https://packagist.org/packages/RoobieBoobieee/laravel-notifications-microsoft-teams',
+                    'target' => '_blank',
+                ],
+            ],
+        ];
+
+        $this->addProject($data);
+
+        $data = [
+            'id'             => 37,
+            'title'          => 'roobieboobieee/bitbucket',
+            'description'    => '',
+            'tumbnail_image' => 'images/projects/bitbucket_tumb.png',
+            'image'          => 'images/projects/bitbucket.png',
+
+            'description' => [
+                'en' => '',
+                'nl' => '',
+            ],
+
+            'tags' => ['PHP', 'Package', 'Composer'],
+
+            'links' => [
+                [
+                    'title'  => 'Source Code',
+                    'icon'   => 'far fa-code',
+                    'href'   => 'https://gitlab.com/RoobieBoobieee/bitbucket',
+                    'target' => '_blank',
+                ], [
+                    'title'  => 'Packagist',
+                    'icon'   => 'fal box-open',
+                    'href'   => 'https://packagist.org/packages/roobieboobieee/bitbucket',
+                    'target' => '_blank',
+                ],
+            ],
+        ];
+
+        $this->addProject($data);
+
+        $data = [
+            'id'             => 38,
+            'title'          => 'roobieboobieee/gitlab',
+            'description'    => '',
+            'tumbnail_image' => 'images/projects/gitlab_tumb.png',
+            'image'          => 'images/projects/gitlab.png',
+
+            'description' => [
+                'en' => '',
+                'nl' => '',
+            ],
+
+            'tags' => ['PHP', 'Package', 'Composer'],
+
+            'links' => [
+                [
+                    'title'  => 'Source Code',
+                    'icon'   => 'far fa-code',
+                    'href'   => 'https://gitlab.com/RoobieBoobieee/gitlab',
+                    'target' => '_blank',
+                ], [
+                    'title'  => 'Packagist',
+                    'icon'   => 'fal box-open',
+                    'href'   => 'https://packagist.org/packages/roobieboobieee/Gitlab',
+                    'target' => '_blank',
+                ],
+            ],
+        ];
+
         $this->addProject($data);
     }
 }
