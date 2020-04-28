@@ -131,7 +131,7 @@
                 <div class="col-lg-3 col-md-12 mb-4">
                     @if ($km !== '')
                         <div class="card bg-primary border-primary">
-                            <div class="card-body">
+                            <a href="https://hoeveelfilestaater.be" class="card-body">
                                 <h2 class="text-center"><i class="far fa-car"></i></h2>
                                 <h3 class="text-center">
                                     @if ($km->data && $km->data->m)
@@ -141,8 +141,8 @@
                                     @endif
                                 </h3></h3>
                                 <p class="text-center">km traffic jam</p>
-                            </div>
-                        </div>
+                            </a>
+                        </DIV>
                     @endif
                 </div>
             </div>

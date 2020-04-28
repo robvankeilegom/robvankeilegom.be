@@ -1,26 +1,21 @@
-.text-justify
-{
+.text-justify {
     text-align: justify;
 }
 
 .about p,
-.project .description
-{
+.project .description {
     text-align: justify;
 }
 
-footer i
-{
+footer i {
     margin: 2px 2px 0 0;
 }
 
-.g-recaptcha
-{
+.g-recaptcha {
     display: inline-block;
 }
 
-.badge-outline
-{
+.badge-outline {
     font-weight: 100;
 
     margin: 0 5px;
@@ -29,22 +24,18 @@ footer i
     border-bottom: 1px solid #61a8fb;
     border-radius: 0;
 
-    &:hover
-    {
+    &:hover {
         // border-top: 1px solid #61a8fb;
         // background-color: #61a8fb;
         text-decoration: none;
     }
 
-    b
-    {
+    b {
         font-weight: bold;
     }
 }
 
-
-.ribbon
-{
+.ribbon {
     font-family: sans-serif;
 
     position: absolute;
@@ -62,15 +53,19 @@ footer i
 
     size: 11px;
 
-    .txt
-    {
+    .txt {
         position: absolute;
         top: -25px;
         left: 20px;
     }
 
-    i
-    {
+    i {
         font-size: 80%;
+    }
+}
+
+#numbers {
+    a {
+        color: white;
     }
 }
