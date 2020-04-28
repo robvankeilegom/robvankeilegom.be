@@ -28,6 +28,7 @@ class ProjectTableSeeder extends Seeder
 
         $project->attachTags(Arr::get($data, 'tags'));
 
+        $project->links()->detach();
         foreach (Arr::get($data, 'links', []) as $key => $link) {
             $link = App\Models\Link::firstOrCreate([
                 'title'  => Arr::get($link, 'title'),
