@@ -7,11 +7,12 @@ class ProjectTableSeeder extends Seeder
 {
     public function addProject($data)
     {
-        $project = App\Models\Project::find(1);
+        $id      = Arr::get($data, 'id');
+        $project = App\Models\Project::find($id);
 
         if (! $project) {
             $project     = new App\Models\Project();
-            $project->id = Arr::get($data, 'id');
+            $project->id = $id;
         }
 
         $project->title          = Arr::get($data, 'title');
