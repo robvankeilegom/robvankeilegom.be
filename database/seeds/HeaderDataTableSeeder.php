@@ -31,6 +31,7 @@ class HeaderDataTableSeeder extends Seeder
         ];
 
         $links = App\Models\Link::whereIn('title', $links)->get();
+        $headerData->links()->detach();
         $headerData->links()->attach($links);
     }
 }
