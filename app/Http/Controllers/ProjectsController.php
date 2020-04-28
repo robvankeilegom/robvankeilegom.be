@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Project;
-use App\HeaderData;
+use App\Models\Project;
+use App\Models\HeaderData;
 use Spatie\Tags\Tag;
 
 class ProjectsController extends Controller

@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-use App\HeaderData;
+use App\Models\HeaderData;
 
 class ComposerServiceProvider extends ServiceProvider
 {

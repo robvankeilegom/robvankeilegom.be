@@ -1,11 +1,11 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Tags\HasTags;
+use Illuminate\Database\Eloquent\Model;
 use Spatie\Translatable\HasTranslations;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Project extends Model
 {
@@ -33,6 +33,11 @@ class Project extends Model
 
     public function links()
     {
-        return $this->belongsToMany('App\Link', 'links_projects');
+        return $this->belongsToMany('App\Models\Link', 'links_projects');
+    }
+
+    public function getTumbnailAttribute()
+    {
+        return config('app.env') === 'local' && ! file_exists(public_path($this->thumbnail_image)) ? 'https://picsum.photos/400/200' : $this->tumbnail_image;
     }
 }

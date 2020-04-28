@@ -7,27 +7,31 @@ class ProjectTableSeeder extends Seeder
 {
     public function addProject($data)
     {
-        $project = App\Project::find(1);
+        $id      = Arr::get($data, 'id');
+        $project = App\Models\Project::find($id);
 
         if (! $project) {
-            $project     = new App\Project();
-            $project->id = Arr::get($data, 'id');
+            $project     = new App\Models\Project();
+            $project->id = $id;
         }
 
         $project->title          = Arr::get($data, 'title');
-        $project->description    = '';
+        $project->highlight      = Arr::get($data, 'highlight');
         $project->tumbnail_image = Arr::get($data, 'tumbnail_image');
         $project->image          = Arr::get($data, 'image');
-        $project->save();
+        $project->weight         = Arr::get($data, 'weight', 1000);
 
         $project
             ->setTranslation('description', 'en', Arr::get($data, 'description.en'))
             ->setTranslation('description', 'nl', Arr::get($data, 'description.nl'));
 
+        $project->save();
+
         $project->attachTags(Arr::get($data, 'tags'));
 
+        $project->links()->detach();
         foreach (Arr::get($data, 'links', []) as $key => $link) {
-            $link = App\Link::firstOrCreate([
+            $link = App\Models\Link::firstOrCreate([
                 'title'  => Arr::get($link, 'title'),
                 'icon'   => Arr::get($link, 'icon'),
                 'href'   => Arr::get($link, 'href'),
@@ -250,9 +254,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/TM_ProjectDatabanken',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Marlon Stoops',
                     'icon'   => 'fa-linkedin',
                     'href'   => 'https://www.linkedin.com/in/marlonstoops/',
@@ -328,16 +330,12 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Portfolio',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Source Code (legacy)',
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Portfolio/tree/legacy_code',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Live Link',
                     'icon'   => 'fa-heartbeat',
                     'href'   => 'http://portfolio.robvankeilegom.be',
@@ -354,7 +352,6 @@ class ProjectTableSeeder extends Seeder
             'description'    => '',
             'tumbnail_image' => 'images/projects/solartracker.png',
             'image'          => 'images/projects/solartracker.png',
-            'weight'         => 4,
 
             'description' => [
                 'en' => 'For my integrated test as a student in the last year of Don Bosco Hoboken I made this website. On this website you could see in with position the solar panel was standing and how much it was generating. You can find more information about this on my GitLab page. This website was developed in ASP.NET.',
@@ -395,9 +392,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/TM_Project1',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Marlon Stoops',
                     'icon'   => 'fa-linkedin',
                     'href'   => 'https://www.linkedin.com/in/marlonstoops/',
@@ -428,9 +423,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/TM_Python',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Marlon Stoops',
                     'icon'   => 'fa-linkedin',
                     'href'   => 'https://www.linkedin.com/in/marlonstoops/',
@@ -443,7 +436,7 @@ class ProjectTableSeeder extends Seeder
 
         $data = [
             'id'             => 16,
-            'title'          => 'S&amp;S Productions',
+            'title'          => 'S&S Productions',
             'description'    => '',
             'tumbnail_image' => 'images/projects/sns.png',
             'image'          => 'images/projects/sns.png',
@@ -506,9 +499,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/CodinGame_hackathon_The_Accountant',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Codingame hackaton: The Accountant',
                     'icon'   => 'fa-globe',
                     'href'   => 'https://www.codingame.com/blog/launch-of-accountant-hackathon/',
@@ -539,9 +530,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Discord_Bot',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ],  [
                     'title'  => 'Source Code (Web interface)',
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Discord_Log_Bot_Web',
@@ -623,9 +612,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Discord_Log_Bot_Web',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Source Code (bot)',
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Discord_Bot',
@@ -656,9 +643,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://github.com/RoobieBoobieee/language-openedge-abl',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Atom Package',
                     'icon'   => 'fa-archive',
                     'href'   => 'https://atom.io/packages/language-openedge-abl',
@@ -689,9 +674,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/PushToScreen_node',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ],  [
                     'title'  => 'Source Code (master)',
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/PushToScreen_master',
@@ -777,16 +760,12 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-globe',
                     'href'   => 'https://www.gemacoglobal.com/',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Uni-t',
                     'icon'   => 'fa-globe',
                     'href'   => 'https://uni-t.be/',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Full Thesis',
                     'icon'   => 'fa-book',
                     'href'   => 'https://roobieboobieee.gitlab.io/thesis/',
@@ -869,9 +848,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/Daily_Dose',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Marlon Stoops',
                     'icon'   => 'fa-linkedin',
                     'href'   => 'https://www.linkedin.com/in/marlonstoops/',
@@ -902,9 +879,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/bes.robvankeilegom.be',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Live Link',
                     'icon'   => 'fa-heartbeat',
                     'href'   => 'https://bes.robvankeilegom.be',
@@ -918,7 +893,6 @@ class ProjectTableSeeder extends Seeder
         $data = [
             'id'             => 33,
             'title'          => 'hoeveelfilestaater.be',
-            'highlight'      => 'newest',
             'description'    => '',
             'tumbnail_image' => 'images/projects/hoeveelfilestaater.be_tumb.png',
             'image'          => 'images/projects/hoeveelfilestaater.be.png',
@@ -936,9 +910,7 @@ class ProjectTableSeeder extends Seeder
                     'icon'   => 'far fa-code',
                     'href'   => 'https://gitlab.com/RoobieBoobieee/hoeveelfilestaater.be',
                     'target' => '_blank',
-                ],
-
-                'links' => [
+                ], [
                     'title'  => 'Live Link',
                     'icon'   => 'far fa-heartbeat',
                     'href'   => 'https://hoeveelfilestaater.be',
@@ -972,6 +944,133 @@ class ProjectTableSeeder extends Seeder
                 ],
             ],
         ];
+
+        $this->addProject($data);
+
+        $data = [
+            'id'             => 35,
+            'title'          => 'apache-conf-generator.robvankeilegom.be',
+            'description'    => '',
+            'tumbnail_image' => 'images/projects/apache-conf-generator.robvankeilegom.be_tumb.png',
+            'image'          => 'images/projects/apache-conf-generator.robvankeilegom.be.png',
+
+            'description' => [
+                'en' => 'Another project I did to get comfortable with the Angular framework. This is a tool I use frequently to generate the necessary configuration to set up a new virtual host on Apache.',
+                'nl' => 'Nog een project dat ik gedaan heb om gewoon te worden met het Angular framework. Dit is een tool die ik vaak gebruik om de nodige config te genereren om nieuwe virtual hosts op te zetten in apache.',
+            ],
+
+            'tags' => ['Angular', 'HTML', 'SASS', 'Javascript', 'Typescript', 'Finished', 'Apache'],
+
+            'links' => [
+                [
+                    'title'  => 'Source Code',
+                    'icon'   => 'far fa-code',
+                    'href'   => 'https://gitlab.com/RoobieBoobieee/apache-conf-generator',
+                    'target' => '_blank',
+                ], [
+                    'title'  => 'Live Link',
+                    'icon'   => 'far fa-heartbeat',
+                    'href'   => 'https://apache-conf-generator.robvankeilegom.be',
+                    'target' => '_blank',
+                ],
+            ],
+        ];
+
+        $this->addProject($data);
+
+        $data = [
+            'id'             => 36,
+            'title'          => 'roobieboobieee/laravel-notifications-microsoft-teams',
+            'highlight'      => 'newest',
+            'description'    => '',
+            'tumbnail_image' => 'images/projects/laravel-notifications-microsoft-teams_tumb.png',
+            'image'          => 'images/projects/laravel-notifications-microsoft-teams.png',
+            'weight'         => 4,
+
+            'description' => [
+                'en' => 'A laravel/php package that makes it easy to send notifications to Microsoft Teams',
+                'nl' => '',
+            ],
+
+            'tags' => ['PHP', 'Package', 'Composer', 'Laravel', 'Microsoft Teams'],
+
+            'links' => [
+                [
+                    'title'  => 'Source Code',
+                    'icon'   => 'far fa-code',
+                    'href'   => 'https://gitlab.com/RoobieBoobieee/laravel-notifications-microsoft-teams',
+                    'target' => '_blank',
+                ], [
+                    'title'  => 'Packagist',
+                    'icon'   => 'fal box-open',
+                    'href'   => 'https://packagist.org/packages/RoobieBoobieee/laravel-notifications-microsoft-teams',
+                    'target' => '_blank',
+                ],
+            ],
+        ];
+
+        $this->addProject($data);
+
+        $data = [
+            'id'             => 37,
+            'title'          => 'roobieboobieee/bitbucket',
+            'description'    => '',
+            'tumbnail_image' => 'images/projects/bitbucket_tumb.png',
+            'image'          => 'images/projects/bitbucket.png',
+
+            'description' => [
+                'en' => '',
+                'nl' => '',
+            ],
+
+            'tags' => ['PHP', 'Package', 'Composer'],
+
+            'links' => [
+                [
+                    'title'  => 'Source Code',
+                    'icon'   => 'far fa-code',
+                    'href'   => 'https://gitlab.com/RoobieBoobieee/bitbucket',
+                    'target' => '_blank',
+                ], [
+                    'title'  => 'Packagist',
+                    'icon'   => 'fal box-open',
+                    'href'   => 'https://packagist.org/packages/roobieboobieee/bitbucket',
+                    'target' => '_blank',
+                ],
+            ],
+        ];
+
+        $this->addProject($data);
+
+        $data = [
+            'id'             => 38,
+            'title'          => 'roobieboobieee/gitlab',
+            'description'    => '',
+            'tumbnail_image' => 'images/projects/gitlab_tumb.png',
+            'image'          => 'images/projects/gitlab.png',
+
+            'description' => [
+                'en' => '',
+                'nl' => '',
+            ],
+
+            'tags' => ['PHP', 'Package', 'Composer'],
+
+            'links' => [
+                [
+                    'title'  => 'Source Code',
+                    'icon'   => 'far fa-code',
+                    'href'   => 'https://gitlab.com/RoobieBoobieee/gitlab',
+                    'target' => '_blank',
+                ], [
+                    'title'  => 'Packagist',
+                    'icon'   => 'fal box-open',
+                    'href'   => 'https://packagist.org/packages/roobieboobieee/Gitlab',
+                    'target' => '_blank',
+                ],
+            ],
+        ];
+
         $this->addProject($data);
     }
 }

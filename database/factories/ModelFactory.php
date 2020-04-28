@@ -11,7 +11,7 @@
 |
 */
 
-$factory->define(App\Project::class, function (Faker\Generator $faker) {
+$factory->define(App\Models\Project::class, function (Faker\Generator $faker) {
     return [
         'title' => $faker->sentence($nbWords = 6, $variableNbWords = true),
         'description' => $faker->text,
@@ -19,7 +19,7 @@ $factory->define(App\Project::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(App\Link::class, function (Faker\Generator $faker) {
+$factory->define(App\Models\Link::class, function (Faker\Generator $faker) {
     return [
         'title' => $faker->sentence($nbWords = 2, $variableNbWords = true),
         'icon' => '',
