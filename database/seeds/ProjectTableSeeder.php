@@ -16,6 +16,7 @@ class ProjectTableSeeder extends Seeder
         }
 
         $project->title          = Arr::get($data, 'title');
+        $project->highlight      = Arr::get($data, 'highlight');
         $project->description    = '';
         $project->tumbnail_image = Arr::get($data, 'tumbnail_image');
         $project->image          = Arr::get($data, 'image');
