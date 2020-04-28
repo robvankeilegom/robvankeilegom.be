@@ -29,7 +29,7 @@
         <div class="col-lg-12">
             <p class="mb-5 project-description text-justify">
                 @foreach ($project->tags as $key => $tag)
-                    <span class="badge badge-outline">{{ $tag->name }}</span>
+                    <a href="{{ route('projectsByTag', [ $tag->name]) }}" class="badge badge-outline">{{ $tag->name }}</a>
                 @endforeach
             </p>
         </div>
