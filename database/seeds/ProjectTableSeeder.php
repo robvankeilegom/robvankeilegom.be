@@ -19,6 +19,7 @@ class ProjectTableSeeder extends Seeder
         $project->highlight      = Arr::get($data, 'highlight');
         $project->tumbnail_image = Arr::get($data, 'tumbnail_image');
         $project->image          = Arr::get($data, 'image');
+        $project->weight         = Arr::get($data, 'weight', 1000);
 
         $project
             ->setTranslation('description', 'en', Arr::get($data, 'description.en'))
@@ -351,7 +352,6 @@ class ProjectTableSeeder extends Seeder
             'description'    => '',
             'tumbnail_image' => 'images/projects/solartracker.png',
             'image'          => 'images/projects/solartracker.png',
-            'weight'         => 4,
 
             'description' => [
                 'en' => 'For my integrated test as a student in the last year of Don Bosco Hoboken I made this website. On this website you could see in with position the solar panel was standing and how much it was generating. You can find more information about this on my GitLab page. This website was developed in ASP.NET.',
@@ -985,6 +985,7 @@ class ProjectTableSeeder extends Seeder
             'description'    => '',
             'tumbnail_image' => 'images/projects/laravel-notifications-microsoft-teams_tumb.png',
             'image'          => 'images/projects/laravel-notifications-microsoft-teams.png',
+            'weight'         => 4,
 
             'description' => [
                 'en' => 'This package makes it easy to send notifications using Microsoft Teams with Laravel 5.5+ and 6.0',
