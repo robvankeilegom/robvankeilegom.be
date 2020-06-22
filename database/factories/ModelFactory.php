@@ -15,7 +15,7 @@ $factory->define(App\Models\Project::class, function (Faker\Generator $faker) {
     return [
         'title' => $faker->sentence($nbWords = 6, $variableNbWords = true),
         'description' => $faker->text,
-        'tumbnail_image' => 'http://placekitten.com/500/280',
+        'thumbnail_image' => 'http://placekitten.com/500/280',
     ];
 });
 

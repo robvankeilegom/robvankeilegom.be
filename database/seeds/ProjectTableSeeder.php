@@ -15,11 +15,11 @@ class ProjectTableSeeder extends Seeder
             $project->id = $id;
         }
 
-        $project->title          = Arr::get($data, 'title');
-        $project->highlight      = Arr::get($data, 'highlight');
-        $project->tumbnail_image = Arr::get($data, 'tumbnail_image');
-        $project->image          = Arr::get($data, 'image');
-        $project->weight         = Arr::get($data, 'weight', 1000);
+        $project->title           = Arr::get($data, 'title');
+        $project->highlight       = Arr::get($data, 'highlight');
+        $project->thumbnail_image = Arr::get($data, 'thumbnail_image');
+        $project->image           = Arr::get($data, 'image');
+        $project->weight          = Arr::get($data, 'weight', 1000);
 
         $project
             ->setTranslation('description', 'en', Arr::get($data, 'description.en'))
@@ -48,12 +48,12 @@ class ProjectTableSeeder extends Seeder
     public function run()
     {
         $data = [
-            'id'             => 1,
-            'title'          => 'TM: PHP MySQL',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/tm_projectphpmysql.png',
-            'image'          => 'images/projects/tm_projectphpmysql.png',
-            'description'    => [
+            'id'              => 1,
+            'title'           => 'TM: PHP MySQL',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/tm_projectphpmysql.png',
+            'image'           => 'images/projects/tm_projectphpmysql.png',
+            'description'     => [
                 'en' => "In the 2nd year of my bachelor education I had to make this website for the course PHP - MYSQL. We had to make a website so that the staff of the restaurant could log in to make adjustments to the menu and dishes. Customers could login to make reservations and select a table. In this project I used PHP, HTML, CSS and JS/JQuery. It's linked to a MYSQL database and was focused on object oriented PHP and safely processing data.",
                 'nl' => "In het 2de jaar van mijn bacheloropleiding maakte ik deze website. Voor het vak PHP - MySQL moest ik een webpagina schrijven voor een restaurant. Personeel kan hier inloggen om menu's en gerechten aan te passen. Klanten kunnen inloggen om de tafelverdeling te bekijken en een plaatsje te reserveren. In het project is gebruik gemaakt van PHP, HTML, CSS en JS/JQuery, is gekoppeld aan een MySQL database en was gericht op object oriented PHP en het veilig verwerken van data.",
             ],
@@ -73,11 +73,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 2,
-            'title'          => 'TM: Project 2',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/tm_project2.png',
-            'image'          => 'images/projects/tm_project2.png',
+            'id'              => 2,
+            'title'           => 'TM: Project 2',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/tm_project2.png',
+            'image'           => 'images/projects/tm_project2.png',
 
             'description' => [
                 'en' => 'Together with Marlon Stoops we made this project as a final project for the second period of our education. It’s a webpage where students could login to see their schedule. This was pulled through the API of KU Leuven. Then a google API calculates when the student should leave to be on time for his/her class. If the student travels by public transport, the schedule of the bus/train appear in the directions.',
@@ -106,11 +106,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 3,
-            'title'          => 'Total: Receptie',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/total_receptie.png',
-            'image'          => 'images/projects/total_receptie.png',
+            'id'              => 3,
+            'title'           => 'Total: Receptie',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/total_receptie.png',
+            'image'           => 'images/projects/total_receptie.png',
 
             'description' => [
                 'en' => 'This application is written to log all the visitors of the Total Plant in Schoten. The visitors can use their credentials to login and gain safe access to the plant. I mostly used HTML and PHP for this. I also developed a script, which wrote data off to a Bartender print server. This prints a label with the visitors credentials so they can easily checkout.',
@@ -123,11 +123,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 4,
-            'title'          => 'Huiskamer Optredens',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/hko.png',
-            'image'          => 'images/projects/hko.png',
+            'id'              => 4,
+            'title'           => 'Huiskamer Optredens',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/hko.png',
+            'image'           => 'images/projects/hko.png',
 
             'description' => [
                 'en' => "'Huiskamer Optredens' (performances in your living room) is a Joomla! website build to book small performances in your living room. I wrote my own Joomla template for this website. We used Joomla so that the owner could easily made changes, such as changing artists.",
@@ -140,11 +140,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 5,
-            'title'          => 'TM: Web Engineering 1',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/tm_projectwebengineering1.png',
-            'image'          => 'images/projects/tm_projectwebengineering1.png',
+            'id'              => 5,
+            'title'           => 'TM: Web Engineering 1',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/tm_projectwebengineering1.png',
+            'image'           => 'images/projects/tm_projectwebengineering1.png',
 
             'description' => [
                 'en' => 'This website was written in the first year of my education for the course Web Engineering 1. This website contains all the information about my final project of my first year. The website is build with PHP, HTML, CSS and JS.',
@@ -166,11 +166,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 6,
-            'title'          => 'Total: Hazards',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/total_hazards.png',
-            'image'          => 'images/projects/total_hazards.png',
+            'id'              => 6,
+            'title'           => 'Total: Hazards',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/total_hazards.png',
+            'image'           => 'images/projects/total_hazards.png',
 
             'description' => [
                 'en' => 'This is also an application written for the Total Plant in Schoten. This web application makes labels to show the dangers of products. Each base material has to have a label so that the staff knows what to do when something happens, such as a fire or a leakage. The application is written in PHP with a MySQL database.',
@@ -183,11 +183,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 7,
-            'title'          => 'Total: Dafi',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/total_dafi.png',
-            'image'          => 'images/projects/total_dafi.png',
+            'id'              => 7,
+            'title'           => 'Total: Dafi',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/total_dafi.png',
+            'image'           => 'images/projects/total_dafi.png',
 
             'description' => [
                 'en' => 'To calculate running times of the products at the Total Plant I wrote this Excel Macro. It’s written in VB and it processes data from a MS SQL database. It then generates charts for a clear visual representation of running times or pauses. Through the UI they can make changes to how the data has to be visualized.',
@@ -209,11 +209,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 8,
-            'title'          => 'TM: OOP',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/tm_bandencentrale.png',
-            'image'          => 'images/projects/tm_bandencentrale.png',
+            'id'              => 8,
+            'title'           => 'TM: OOP',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/tm_bandencentrale.png',
+            'image'           => 'images/projects/tm_bandencentrale.png',
 
             'description' => [
                 'en' => 'This is a command line application written for the course Object Oriented Programming in the 2nd year of my bachelor education. It’s completely written in C and is (obviously) focused on the object oriented programming. The application simulates a tire center where staff and owner can login to add, delete or adjust clients and articles.',
@@ -235,11 +235,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 9,
-            'title'          => 'TM: Databanken',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/tm_projectdatabanken.png',
-            'image'          => 'images/projects/tm_projectdatabanken.png',
+            'id'              => 9,
+            'title'           => 'TM: Databanken',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/tm_projectdatabanken.png',
+            'image'           => 'images/projects/tm_projectdatabanken.png',
 
             'description' => [
                 'en' => "This web application was written for the course Databanken in the first fase of my education. I made this project together with Marlon Stoops and it's mainly focusd on the underlying MySQL database, tabels and relations.",
@@ -266,11 +266,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 10,
-            'title'          => 'Total: LAB3',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/total_lab3.png',
-            'image'          => 'images/projects/total_lab3.png',
+            'id'              => 10,
+            'title'           => 'Total: LAB3',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/total_lab3.png',
+            'image'           => 'images/projects/total_lab3.png',
 
             'description' => [
                 'en' => 'This web application for the Total Plant in Schoten was written in C# with help from ASP.NET MVC framework. This application was made to adjust a template, quantity and printer, so they could print a whole series of labels, to later use in production. ',
@@ -292,11 +292,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 11,
-            'title'          => 'Happening: Ranked Game',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/happening.png',
-            'image'          => 'images/projects/happening.png',
+            'id'              => 11,
+            'title'           => 'Happening: Ranked Game',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/happening.png',
+            'image'           => 'images/projects/happening.png',
 
             'description' => [
                 'en' => 'This is a plugin for a mobile app: Happening. This is an app where friends can chat, split bills and play games together in group. One of these games is Ranked game. You can vote on which friend is more compatible with the question. I wrote this plugin so we could add our own questions to the game. I wrote this in JS/CoffeeScript.',
@@ -318,11 +318,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 12,
-            'title'          => 'Portfolio',
-            'tumbnail_image' => 'images/projects/portfolio_tumb.png',
-            'image'          => 'images/projects/portfolio_new.png',
-            'tags'           => ['HTML', 'CSS', 'Javascript', 'JQuery', 'Laravel', 'Work in Progress'],
+            'id'              => 12,
+            'title'           => 'Portfolio',
+            'thumbnail_image' => 'images/projects/portfolio_thumb.png',
+            'image'           => 'images/projects/portfolio_new.png',
+            'tags'            => ['HTML', 'CSS', 'Javascript', 'JQuery', 'Laravel', 'Work in Progress'],
 
             'links' => [
                 [
@@ -347,11 +347,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 13,
-            'title'          => 'DBH: Solar Tracker',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/solartracker.png',
-            'image'          => 'images/projects/solartracker.png',
+            'id'              => 13,
+            'title'           => 'DBH: Solar Tracker',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/solartracker.png',
+            'image'           => 'images/projects/solartracker.png',
 
             'description' => [
                 'en' => 'For my integrated test as a student in the last year of Don Bosco Hoboken I made this website. On this website you could see in with position the solar panel was standing and how much it was generating. You can find more information about this on my GitLab page. This website was developed in ASP.NET.',
@@ -373,11 +373,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 14,
-            'title'          => 'TM: Project 1',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/tm_project1.png',
-            'image'          => 'images/projects/tm_project1.png',
+            'id'              => 14,
+            'title'           => 'TM: Project 1',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/tm_project1.png',
+            'image'           => 'images/projects/tm_project1.png',
 
             'description' => [
                 'en' => 'As final project in my first year I wrote this website together with Marlon Stoops. Users could play the famous game Battleship. The shots where shown on a LED array powered through an Arduino. The website itself is written in PHP with an underlying MySQL database.',
@@ -404,11 +404,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 15,
-            'title'          => 'TM: Python',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/discord.png',
-            'image'          => 'images/projects/discord.png',
+            'id'              => 15,
+            'title'           => 'TM: Python',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/discord.png',
+            'image'           => 'images/projects/discord.png',
 
             'description' => [
                 'en' => 'Discord is an all-in-one voice and text chat for gamers. For the course Python in the 2nd fase of my bachelor education we (Marlon Stoops and I) wrote a bot for Discord. You can add the bot to one of you channels with a command. The bot then plays music of your choosing in the channel.',
@@ -435,11 +435,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 16,
-            'title'          => 'S&S Productions',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/sns.png',
-            'image'          => 'images/projects/sns.png',
+            'id'              => 16,
+            'title'           => 'S&S Productions',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/sns.png',
+            'image'           => 'images/projects/sns.png',
 
             'description' => [
                 'en' => "s&amp;s productions is an association who make small productions and post these on YouTube. This simple site is written in plain PHP and addresses Facebook's, Youtube's and Flickr's API to keep itself up-to-date.",
@@ -461,12 +461,12 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 17,
-            'title'          => 'FoM: Facebook chatbot',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/fom.png',
-            'image'          => 'images/projects/fom.png',
-            'weight'         => 3,
+            'id'              => 17,
+            'title'           => 'FoM: Facebook chatbot',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/fom.png',
+            'image'           => 'images/projects/fom.png',
+            'weight'          => 3,
 
             'description' => [
                 'en' => 'This is a POC to reach out to contestants of the Frag-o-Matic event via Facebook. This bot is linked to a Facebook page, so contestants could receive information about the ongoing tournaments in messenger. After linking your Frag-o-Matic profile to your Facebook profile, the bot would pull data from the Frag-o-Matic API and send it to the user.',
@@ -479,12 +479,12 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 18,
-            'title'          => 'CodinGame Hackaton',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/codingame.png',
-            'image'          => 'images/projects/codingame.png',
-            'weight'         => 5,
+            'id'              => 18,
+            'title'           => 'CodinGame Hackaton',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/codingame.png',
+            'image'           => 'images/projects/codingame.png',
+            'weight'          => 5,
 
             'description' => [
                 'en' => 'This is the solution I came up with for the Codingame hackaton: The Accountant. Codingame is a creat way to combine programming and gaming. I ended 5th of the 73 belgian people. Hackaton description: For this mission, you take the role of Christian Wolff, an unconventional accountant who has lived as a double agent for years. He has gathered highly sensitive data while working for the most dangerous criminal organizations of the world. As things are starting to unravel, it is expected that Wolff’s enemies will attempt to get their hands on these files. As Wolff cannot risk to blow his cover up, we need you to make sure the data is secure.',
@@ -511,11 +511,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 19,
-            'title'          => 'Discord Log Bot',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/discord.png',
-            'image'          => 'images/projects/discord.png',
+            'id'              => 19,
+            'title'           => 'Discord Log Bot',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/discord.png',
+            'image'           => 'images/projects/discord.png',
 
             'description' => [
                 'en' => 'This bot can be included in a Discord server and log almost all data. It writes off all data to a MySQL database. The bot is written on top of a Discord.PY layer, which makes it simpler to address the API. There is a seperate Laravel project to display all data in a webpage. I stopped supporting this project since Discord implemented its own audit log.',
@@ -542,11 +542,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 20,
-            'title'          => 'FOM: API Wrapper',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/fom.png',
-            'image'          => 'images/projects/fom.png',
+            'id'              => 20,
+            'title'           => 'FOM: API Wrapper',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/fom.png',
+            'image'           => 'images/projects/fom.png',
 
             'description' => [
                 'en' => 'A PHP wrapper for the Frag-O-Matic API, which makes it easier to address the API.',
@@ -559,11 +559,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 21,
-            'title'          => 'Total: Who Is Who',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/whoiswho.png',
-            'image'          => 'images/projects/whoiswho.png',
+            'id'              => 21,
+            'title'           => 'Total: Who Is Who',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/whoiswho.png',
+            'image'           => 'images/projects/whoiswho.png',
 
             'description' => [
                 'en' => 'Written to easily find a person in the other Arteco Plants.',
@@ -576,11 +576,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 22,
-            'title'          => 'Total: SAPReader',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/total_sap.png',
-            'image'          => 'images/projects/total_sap.png',
+            'id'              => 22,
+            'title'           => 'Total: SAPReader',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/total_sap.png',
+            'image'           => 'images/projects/total_sap.png',
 
             'description' => [
                 'en' => 'This web application reads data from the SAP systems.',
@@ -593,11 +593,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 23,
-            'title'          => 'Discord Log Bot: Web',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/discord_log_bot_web_tumb.png',
-            'image'          => 'images/projects/discord_log_bot_web.png',
+            'id'              => 23,
+            'title'           => 'Discord Log Bot: Web',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/discord_log_bot_web_thumb.png',
+            'image'           => 'images/projects/discord_log_bot_web.png',
 
             'description' => [
                 'en' => 'A web interface for the log bot. The interface shows all data the bot logged to the database. You can see in which servers the bot is added, what users are in the channels, who was banned, etc... ',
@@ -624,11 +624,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 24,
-            'title'          => 'Atom: Language OpenEdge ABL',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/atom_tumb.png',
-            'image'          => 'images/projects/atom.png',
+            'id'              => 24,
+            'title'           => 'Atom: Language OpenEdge ABL',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/atom_thumb.png',
+            'image'           => 'images/projects/atom.png',
 
             'description' => [
                 'en' => 'A package I wrote to support the OpenEdge ABL language in Atom.',
@@ -655,11 +655,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 25,
-            'title'          => 'Push to screen',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/pushtoscreen_tumb.png',
-            'image'          => 'images/projects/pushtoscreen.png',
+            'id'              => 25,
+            'title'           => 'Push to screen',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/pushtoscreen_thumb.png',
+            'image'           => 'images/projects/pushtoscreen.png',
 
             'description' => [
                 'en' => "This originally writen to use in escape rooms. The node-code is a Python script running on Raspberry Pi's in de boxes. The master is used from the outside to push to the different nodes. The text pushed by the master will be captured by the node's web server and put in a file. The Python script will pick up this file and use the Raspberry Pi's Python module to display it fullscreen.",
@@ -686,12 +686,12 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 26,
-            'title'          => 'Citypolis',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/citypolis_tumb.png',
-            'image'          => 'images/projects/citypolis.png',
-            'weight'         => 2,
+            'id'              => 26,
+            'title'           => 'Citypolis',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/citypolis_thumb.png',
+            'image'           => 'images/projects/citypolis.png',
+            'weight'          => 2,
 
             'description' => [
                 'en' => 'A web application I wrote for a teambuilding event in Antwerp. It is the interface for a real-life interactive group game. Citypolis description: Citypolis takes place in a 300m² space which is arranged into a large imaginary city and which is filled with interactive tasks. The participants will be divided into sub-teams which shall compete with each other in “the city”. This is a unique indoor team game filled with action and strategy, innovation and technology.',
@@ -713,12 +713,12 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 27,
-            'title'          => 'Snowsports',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/snowsports_tumb.png',
-            'image'          => 'images/projects/snowsports.png',
-            'weight'         => 1,
+            'id'              => 27,
+            'title'           => 'Snowsports',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/snowsports_thumb.png',
+            'image'           => 'images/projects/snowsports.png',
+            'weight'          => 1,
 
             'description' => [
                 'en' => "The snowsports application is a website I wrote for a skiclub. It's made so that monitors and members can easily connect. Monitors can easily add lessons. The members can indicate whether they will be present. Everyone has a profile where they can add familiy members who are too young to create an account themselves. The website is written on top of the Laravel framework and is completely mobile friendly.",
@@ -740,12 +740,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 28,
-            'title'          => 'Gemaco Connect (Thesis)',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/connect_tumb.png',
-            'image'          => 'images/projects/connect.png',
-            'weight'         => 6,
+            'id'              => 28,
+            'title'           => 'Gemaco Connect (Thesis)',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/connect_thumb.png',
+            'image'           => 'images/projects/connect.png',
 
             'description' => [
                 'en' => "This project is the final work I had to do before graduating college. I did my internship at Uni-t which is part of the Gemaco group. Because of the fast growing staff number Uni-t decided a 'who is who application' would be a great idea to reconnect the people at Gemaco. This application would make it easier to find out personal and useful information about the company and the staff. This would make it easier for existing and new staff members to fit in. This is how Gemaco Connect was born: an online Laravel application with an API behind it. The API, which is also a Laravel application and uses the passport package for authentication, is used to store all data as a single sign-on provider. This way the API can be easily integrated in other (existing) applications.",
@@ -777,11 +776,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 29,
-            'title'          => 'FoM: Compo TV',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/compo_tv_tumb.png',
-            'image'          => 'images/projects/compo_tv.png',
+            'id'              => 29,
+            'title'           => 'FoM: Compo TV',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/compo_tv_thumb.png',
+            'image'           => 'images/projects/compo_tv.png',
 
             'description' => [
                 'en' => 'A React web application which displays ongoing tournaments on Frag-o-Matic. All data is retrieved from the Frag-o-Matic API. Styling done by Elke Moras.',
@@ -803,11 +802,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 30,
-            'title'          => 'EID Reader',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/eid_tumb.png',
-            'image'          => 'images/projects/eid_tumb.png',
+            'id'              => 30,
+            'title'           => 'EID Reader',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/eid_thumb.png',
+            'image'           => 'images/projects/eid_thumb.png',
 
             'description' => [
                 'en' => 'A very small Java application I wrote to read data from a Belgian electronic passport.',
@@ -829,11 +828,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 31,
-            'title'          => 'Discord Daily Dose Bot',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/discord.png',
-            'image'          => 'images/projects/discord.png',
+            'id'              => 31,
+            'title'           => 'Discord Daily Dose Bot',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/discord.png',
+            'image'           => 'images/projects/discord.png',
 
             'description' => [
                 'en' => 'Another Discord bot. This bot pulls data from social platform Reddit. Every day another link is used from the config. The bot waits x time, then reaches out to reddit to get a random post and posts it in Discord. I made this in co-operation with Marlon Stoops.',
@@ -860,11 +859,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 32,
-            'title'          => 'bes.robvankeilegom.be',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/bes.robvankeilegom.be_thumb.png',
-            'image'          => 'images/projects/bes.robvankeilegom.be.png',
+            'id'              => 32,
+            'title'           => 'bes.robvankeilegom.be',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/bes.robvankeilegom.be_thumb.png',
+            'image'           => 'images/projects/bes.robvankeilegom.be.png',
 
             'description' => [
                 'en' => 'Another project I did to get familiar with the Angular framework. Without getting in to much detail. You can enter data about your cars gearbox and the application will calculate the cars max speed at a certain rPM.',
@@ -891,11 +890,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 33,
-            'title'          => 'hoeveelfilestaater.be',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/hoeveelfilestaater.be_tumb.png',
-            'image'          => 'images/projects/hoeveelfilestaater.be.png',
+            'id'              => 33,
+            'title'           => 'hoeveelfilestaater.be',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/hoeveelfilestaater.be_thumb.png',
+            'image'           => 'images/projects/hoeveelfilestaater.be.png',
 
             'description' => [
                 'en' => 'A project I did to get comfortable with the Angular framework. It displays live data of traffic jams in Belgium and a graph to check out data in the past. This is just a front-end shell that pulls data from an API via AJAX calls. ',
@@ -922,11 +921,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 34,
-            'title'          => 'api.hoeveelfilestaater.be',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/hoeveelfilestaater.be_tumb.png',
-            'image'          => 'images/projects/hoeveelfilestaater.be.png',
+            'id'              => 34,
+            'title'           => 'api.hoeveelfilestaater.be',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/hoeveelfilestaater.be_thumb.png',
+            'image'           => 'images/projects/hoeveelfilestaater.be.png',
 
             'description' => [
                 'en' => 'The API for hoeveelfilestaater.be is build on top of the Laravel framework. Every 5 minutes it pulls data from touringmobilis.be. The data is then stored in a database and every night the data from the past day is processed. Averages, minimums and maximums are calculated and stored in another table. This data is made public through 2 endpoints which are consumed by the Angular application.',
@@ -948,11 +947,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 35,
-            'title'          => 'apache-conf-generator.robvankeilegom.be',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/apache-conf-generator.robvankeilegom.be_tumb.png',
-            'image'          => 'images/projects/apache-conf-generator.robvankeilegom.be.png',
+            'id'              => 35,
+            'title'           => 'apache-conf-generator.robvankeilegom.be',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/apache-conf-generator.robvankeilegom.be_thumb.png',
+            'image'           => 'images/projects/apache-conf-generator.robvankeilegom.be.png',
 
             'description' => [
                 'en' => 'Another project I did to get comfortable with the Angular framework. This is a tool I use frequently to generate the necessary configuration to set up a new virtual host on Apache.',
@@ -979,13 +978,12 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 36,
-            'title'          => 'roobieboobieee/laravel-notifications-microsoft-teams',
-            'highlight'      => 'newest',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/laravel-notifications-microsoft-teams_tumb.png',
-            'image'          => 'images/projects/laravel-notifications-microsoft-teams.png',
-            'weight'         => 4,
+            'id'              => 36,
+            'title'           => 'roobieboobieee/laravel-notifications-microsoft-teams',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/laravel-notifications-microsoft-teams_thumb.png',
+            'image'           => 'images/projects/laravel-notifications-microsoft-teams.png',
+            'weight'          => 4,
 
             'description' => [
                 'en' => 'A laravel/php package that makes it easy to send notifications to Microsoft Teams',
@@ -1012,11 +1010,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 37,
-            'title'          => 'roobieboobieee/bitbucket',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/bitbucket_tumb.png',
-            'image'          => 'images/projects/bitbucket.png',
+            'id'              => 37,
+            'title'           => 'roobieboobieee/bitbucket',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/bitbucket_thumb.png',
+            'image'           => 'images/projects/bitbucket.png',
 
             'description' => [
                 'en' => '',
@@ -1043,11 +1041,11 @@ class ProjectTableSeeder extends Seeder
         $this->addProject($data);
 
         $data = [
-            'id'             => 38,
-            'title'          => 'roobieboobieee/gitlab',
-            'description'    => '',
-            'tumbnail_image' => 'images/projects/gitlab_tumb.png',
-            'image'          => 'images/projects/gitlab.png',
+            'id'              => 38,
+            'title'           => 'roobieboobieee/gitlab',
+            'description'     => '',
+            'thumbnail_image' => 'images/projects/gitlab_thumb.png',
+            'image'           => 'images/projects/gitlab.png',
 
             'description' => [
                 'en' => '',
@@ -1066,6 +1064,33 @@ class ProjectTableSeeder extends Seeder
                     'title'  => 'Packagist',
                     'icon'   => 'fal box-open',
                     'href'   => 'https://packagist.org/packages/roobieboobieee/Gitlab',
+                    'target' => '_blank',
+                ],
+            ],
+        ];
+
+        $this->addProject($data);
+
+        $data = [
+            'id'              => 39,
+            'highlight'       => 'newest',
+            'title'           => 'liezele.be',
+            'thumbnail_image' => 'images/projects/liezele.be_thumb.png',
+            'image'           => 'images/projects/liezele.be.png',
+            'weight'          => 6,
+
+            'description' => [
+                'en' => 'A site for Liezele, the village I was born and raised. Statically build with Hugo',
+                'nl' => '',
+            ],
+
+            'tags' => ['Hugo'],
+
+            'links' => [
+                [
+                    'title'  => 'Live Link',
+                    'icon'   => 'fa-heartbeat',
+                    'href'   => 'https://liezele.be',
                     'target' => '_blank',
                 ],
             ],
