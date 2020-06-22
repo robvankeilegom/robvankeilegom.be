@@ -1070,5 +1070,32 @@ class ProjectTableSeeder extends Seeder
         ];
 
         $this->addProject($data);
+
+        $data = [
+            'id'              => 39,
+            'highlight'       => 'newest',
+            'title'           => 'liezele.be',
+            'thumbnail_image' => 'images/projects/liezele.be_thumb.png',
+            'image'           => 'images/projects/liezele.be.png',
+            'weight'          => 6,
+
+            'description' => [
+                'en' => 'A site for Liezele, the village I was born and raised. Statically build with Hugo',
+                'nl' => '',
+            ],
+
+            'tags' => ['Hugo'],
+
+            'links' => [
+                [
+                    'title'  => 'Live Link',
+                    'icon'   => 'fa-heartbeat',
+                    'href'   => 'https://liezele.be',
+                    'target' => '_blank',
+                ],
+            ],
+        ];
+
+        $this->addProject($data);
     }
 }
