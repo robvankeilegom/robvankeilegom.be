@@ -22,7 +22,7 @@ class Project extends Model
         'id',
         'title',
         'description',
-        'tumbnail_image',
+        'thumbnail_image',
         'image',
         'status',
         'highlight',
@@ -36,8 +36,8 @@ class Project extends Model
         return $this->belongsToMany('App\Models\Link', 'links_projects');
     }
 
-    public function getTumbnailAttribute()
+    public function getthumbnailAttribute()
     {
-        return config('app.env') === 'local' && ! file_exists(public_path($this->thumbnail_image)) ? 'https://picsum.photos/400/200' : $this->tumbnail_image;
+        return config('app.env') === 'local' && ! file_exists(public_path($this->thumbnail_image)) ? 'https://picsum.photos/400/200' : $this->thumbnail_image;
     }
 }

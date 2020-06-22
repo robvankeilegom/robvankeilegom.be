@@ -30,7 +30,7 @@
                                     <i class="fab fa-readme fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{{ asset($project->tumbnail_image) }}" alt="{{ $project->title }}">
+                            <img class="img-fluid" src="{{ asset($project->thumbnail_image) }}" alt="{{ $project->title }}">
                             @if ($project->highlight)
                               <div class="ribbon">
                                 <div class="txt">
