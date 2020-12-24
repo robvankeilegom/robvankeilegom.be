@@ -1,27 +1,24 @@
 <footer class="footer text-center">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Location</h4>
-                <p class="lead mb-0">Louis Van Campenhoutstraat 40
-                    <br>2870 Liezele
-                    <br>Belgium
-                </p>
-            </div>
-            <div class="col-md-4 mb-0 mb-lg-0">
+            <div class="col-md-6 mb-0 mb-lg-0">
                 <h4 class="text-uppercase mb-4">Around the Web</h4>
                 <ul class="list-inline mb-1">
                     @foreach ($headerData->links as $key => $link)
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle"
-                                href="{{ $link->href }}" target="{{ $link->target }}" alt="{{ $link->title}}">
-                                <i class="far fa-fw {{ $link->icon }}"></i>
-                            </a>
-                        </li>
+                    <li class="list-inline-item">
+                        <a
+                            class="btn btn-outline-light btn-social text-center rounded-circle"
+                            href="{{ $link->href }}"
+                            target="{{ $link->target }}"
+                            alt="{{ $link->title}}"
+                        >
+                            <i class="far fa-fw {{ $link->icon }}"></i>
+                        </a>
+                    </li>
                     @endforeach
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <h4 class="text-uppercase mb-4">Contact</h4>
                 <p class="lead mb-0">
                     <a href="mailto:info@robvankeilegom.be">info@robvankeilegom.be</a>
