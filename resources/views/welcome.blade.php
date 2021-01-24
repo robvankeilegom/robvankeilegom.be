@@ -85,7 +85,7 @@
                             <div class="card-body">
                                 <h2 class="text-center"><i class="far fa-align-justify"></i></h2>
                                 <h3 class="text-center">
-                                    @if (array_key_exists('Keys', $whatpulse))
+                                    @if (property_exists($whatpulse, 'Keys'))
                                         {{ number_format($whatpulse->Keys) }}
                                     @else
                                         0
