@@ -29,13 +29,13 @@ add('writable_dirs', []);
 host('production')
     ->hostname('robvankeilegom.be')
     ->set('branch', 'master')
-    ->set('deploy_path', '/home/user/web/robvankeilegom.be')
+    ->set('deploy_path', '~/webroot/robvankeilegom.be')
     ->stage('production');
 
 host('staging')
     ->hostname('robvankeilegom.be')
     ->set('branch', 'staging')
-    ->set('deploy_path', '/home/user/web/staging.robvankeilegom.be')
+    ->set('deploy_path', '~/webroot/staging.robvankeilegom.be')
     ->stage('staging');
 
 // Tasks
@@ -44,11 +44,11 @@ task('build', function () {
 });
 
 task('gulp', function () {
-    run("cd {{release_path}} && gulp");
+    run("cd {{release_path}} && ./node_modules/.bin/gulp");
 })->onStage('staging')->desc("Running gulp");
 
 task('gulp:production', function () {
-    run("cd {{release_path}} && gulp --production");
+    run("cd {{release_path}} && ./node_modules/.bin/gulp --production");
 })->onStage('production')->desc("Running gulp");
 
 // Run npm install
