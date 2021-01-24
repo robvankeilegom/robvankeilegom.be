@@ -90,5 +90,7 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}"></script>
         @yield('scripts')
+
+        <script async defer data-website-id="2bdbb4cb-687f-4806-b584-eef56c4366e7" src="https://analytics.robvankeilegom.be/umami.js"></script>
     </body>
 </html>
