@@ -13,7 +13,7 @@
     <!-- Meta -->
     <link rel="author" href="{{ asset('humans.txt') }}">
 
-    <meta name="description" content="My name is Rob. I'm a 24 year old developer graduated in June 2017. I currently work as a Progress developer over at Organi (Wilrijk, Belgium). In my free time I work on personal or open source projects. When I'm not programming I'm probably busy volunteering at Frag-o-Matic, playing video- and boardgames or out snowboarding.">
+    <meta name="description" content="My name is Rob. I'm a 25 year old developer graduated in June 2017. I currently work as a Progress developer over at Organi (Wilrijk, Belgium). In my free time I work on personal or open source projects. When I'm not programming I'm probably busy volunteering at Frag-o-Matic, playing video- and boardgames or out snowboarding.">
     <meta name="url" content="{{ Request::url() }}">
 
     <!-- Open Graph -->
