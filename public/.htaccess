@@ -1,3 +1,9 @@
+<IfModule mod_headers.c>
+      <FilesMatch ".(css|jpg|jpeg|png|gif|js|ico|woff2)$">
+        Header set Cache-Control "max-age=31536000, public"
+      </FilesMatch>
+</IfModule>
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
