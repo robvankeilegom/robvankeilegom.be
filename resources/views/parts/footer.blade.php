@@ -8,6 +8,7 @@
                     <li class="list-inline-item">
                         <a
                             class="btn btn-outline-light btn-social text-center rounded-circle"
+                            rel="noopener"
                             href="{{ $link->href }}"
                             target="{{ $link->target }}"
                             alt="{{ $link->title}}"
