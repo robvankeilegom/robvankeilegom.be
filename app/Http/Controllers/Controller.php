@@ -9,12 +9,14 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    use AuthorizesRequests;
+    use DispatchesJobs;
+    use ValidatesRequests;
 
     public function __construct()
     {
-        if (!\App::isLocale('en')) {
-            \App::setLocale("en");
+        if (! \App::isLocale('en')) {
+            \App::setLocale('en');
         }
     }
 }

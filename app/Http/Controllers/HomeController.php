@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Validator;
-use App\Models\Contact;
-use App\Models\Project;
 use Spatie\Tags\Tag;
 use GuzzleHttp\Client;
+use App\Models\Contact;
+use App\Models\Project;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 

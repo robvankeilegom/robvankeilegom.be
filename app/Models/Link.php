@@ -16,5 +16,7 @@ class Link extends Model
         'target',
     ];
 
-    protected $dates = ['created_at', 'updated_at', 'deleted_at'];
+    protected $dates = [
+        'created_at', 'updated_at', 'deleted_at',
+    ];
 }

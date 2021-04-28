@@ -29,7 +29,6 @@ class Handler extends ExceptionHandler
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
      * @param  \Exception  $exception
-     * @return void
      */
     public function report(Throwable $exception)
     {
@@ -48,6 +47,7 @@ class Handler extends ExceptionHandler
         if ($exception instanceof NotFoundHttpException) {
             return redirect('/');
         }
+
         return parent::render($request, $exception);
     }
 

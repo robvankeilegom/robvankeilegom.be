@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class HeaderData extends Model
 {
-    use SoftDeletes,
-    HasTranslations;
+    use SoftDeletes;
+    use HasTranslations;
 
     public $translatable = [
         'description1',
@@ -26,7 +26,9 @@ class HeaderData extends Model
         'description2',
     ];
 
-    protected $dates = ['created_at', 'updated_at', 'deleted_at'];
+    protected $dates = [
+        'created_at', 'updated_at', 'deleted_at',
+    ];
 
     public function links()
     {

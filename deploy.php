@@ -1,4 +1,5 @@
 <?php
+
 namespace Deployer;
 
 require 'recipe/laravel.php';
@@ -19,7 +20,7 @@ set('git_tty', true);
 // Shared files/dirs between deploys
 add('shared_files', []);
 add('shared_dirs', [
-    "public/images/projects"
+    'public/images/projects',
 ]);
 
 // Writable dirs by web server
@@ -44,12 +45,12 @@ task('build', function () {
 });
 
 task('gulp', function () {
-    run("cd {{release_path}} && ./node_modules/.bin/gulp");
-})->onStage('staging')->desc("Running gulp");
+    run('cd {{release_path}} && ./node_modules/.bin/gulp');
+})->onStage('staging')->desc('Running gulp');
 
 task('gulp:production', function () {
-    run("cd {{release_path}} && ./node_modules/.bin/gulp --production");
-})->onStage('production')->desc("Running gulp");
+    run('cd {{release_path}} && ./node_modules/.bin/gulp --production');
+})->onStage('production')->desc('Running gulp');
 
 // Run npm install
 after('deploy:update_code', 'npm:install');

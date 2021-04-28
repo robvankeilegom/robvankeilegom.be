@@ -13,17 +13,17 @@
 
 $factory->define(App\Models\Project::class, function (Faker\Generator $faker) {
     return [
-        'title' => $faker->sentence($nbWords = 6, $variableNbWords = true),
-        'description' => $faker->text,
+        'title'           => $faker->sentence($nbWords = 6, $variableNbWords = true),
+        'description'     => $faker->text,
         'thumbnail_image' => 'http://placekitten.com/500/280',
     ];
 });
 
 $factory->define(App\Models\Link::class, function (Faker\Generator $faker) {
     return [
-        'title' => $faker->sentence($nbWords = 2, $variableNbWords = true),
-        'icon' => '',
-        'href' => '#',
+        'title'        => $faker->sentence($nbWords = 2, $variableNbWords = true),
+        'icon'         => '',
+        'href'         => '#',
         'target_blank' => true,
     ];
 });

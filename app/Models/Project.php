@@ -9,9 +9,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Project extends Model
 {
-    use SoftDeletes,
-    HasTags,
-    HasTranslations;
+    use SoftDeletes;
+    use HasTags;
+    use HasTranslations;
 
     public $translatable = [
         'title',
@@ -29,7 +29,9 @@ class Project extends Model
         'weight',
     ];
 
-    protected $dates = ['created_at', 'updated_at', 'deleted_at'];
+    protected $dates = [
+        'created_at', 'updated_at', 'deleted_at',
+    ];
 
     public function links()
     {

@@ -2,9 +2,8 @@
 
 namespace App\Console\Commands;
 
-use Illuminate\Console\Command;
-
 use App\Models\Link;
+use Illuminate\Console\Command;
 
 class updatefa5 extends Command
 {
@@ -24,8 +23,6 @@ class updatefa5 extends Command
 
     /**
      * Create a new command instance.
-     *
-     * @return void
      */
     public function __construct()
     {

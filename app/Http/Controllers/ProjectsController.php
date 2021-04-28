@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Project;
-use App\Models\HeaderData;
 use Spatie\Tags\Tag;
+use App\Models\Project;
 
 class ProjectsController extends Controller
 {
     public function index()
     {
         $projects = Project::with('links')->orderBy('highlight', 'DESC')->orderBy('views', 'DESC')->get();
+
         return view('projects', [
-            'projects' => $projects,
-            'allTags' => Tag::all(),
+            'projects'   => $projects,
+            'allTags'    => Tag::all(),
             'currentTag' => null,
         ]);
     }
@@ -22,16 +22,19 @@ class ProjectsController extends Controller
     {
         $project = Project::with('links')->find($projectId);
         $project->increment('views');
+
         return view('parts.projectModal', [
             'project' => $project,
         ]);
     }
 
-    public function tag($tag) {
+    public function tag($tag)
+    {
         $projects = Project::withAllTags([$tag])->orderBy('highlight', 'DESC')->orderBy('views', 'DESC')->get();
+
         return view('projects', [
-            'projects' => $projects,
-            'allTags' => Tag::all(),
+            'projects'   => $projects,
+            'allTags'    => Tag::all(),
             'currentTag' => $tag,
         ]);
     }

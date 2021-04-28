@@ -1,23 +1,18 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\Model;
 
 class UserTableSeeder extends Seeder
 {
     /**
-    * Run the database seeds.
-    *
-    * @return void
-    */
+     * Run the database seeds.
+     */
     public function run()
     {
         $user = App\Models\User::create([
-            'name' => 'Rob',
-            'email' => 'RobVanKeilegom@hotmail.com',
+            'name'     => 'Rob',
+            'email'    => 'RobVanKeilegom@hotmail.com',
             'password' => Hash::make('123'),
         ]);
-
-
     }
 }
