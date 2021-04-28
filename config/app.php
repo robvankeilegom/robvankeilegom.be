@@ -164,7 +164,6 @@ return [
 
         Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        Clockwork\Support\Laravel\ClockworkServiceProvider::class,
 
         // Application Service Providers...
         App\Providers\AppServiceProvider::class,
