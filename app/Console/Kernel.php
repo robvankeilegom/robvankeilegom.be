@@ -27,6 +27,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('sync:gitlab')->hourly();
         $schedule->command('sync:whatpulse')->hourly();
         $schedule->command('sync:km')->everyMinute();
+        $schedule->command('queue:flush')->weekly();
     }
 
     /**
