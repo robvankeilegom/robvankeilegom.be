@@ -12,9 +12,9 @@ class ProjectsController extends Controller
         $projects = Project::with('links')->orderBy('highlight', 'DESC')->orderBy('views', 'DESC')->get();
 
         return view('projects', [
-            'projects'   => $projects,
-            'allTags'    => Tag::all(),
-            'currentTag' => null,
+            'projects' => $projects,
+            // 'allTags'    => Tag::all(),
+            // 'currentTag' => null,
         ]);
     }
 

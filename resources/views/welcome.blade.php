@@ -66,22 +66,15 @@
         </div>
     </section>
 
-    <!-- Tags Section -->
-    <section id="tags" class="bg-white">
-        <div class="container">
-            @include('parts.tags')
-        </div>
-    </section>
-
     <!-- Numbers Section -->
-    <section class="bg-primary text-white mb-0" id="numbers">
+    <section class="bg-white mb-0" id="numbers">
         <div class="container">
-            <h2 class="text-center text-uppercase text-white mb-0">Numbers</h2>
-            <hr class="star-light mb-5">
+            <h2 class="text-center text-uppercase text-secondary mb-0">Numbers</h2>
+            <hr class="star-dark mb-5">
             <div class="row">
                 <div class="col-lg-3 col-md-12 mb-4">
                     @if ($whatpulse !== '')
-                        <div class="card bg-primary border-primary">
+                        <div class="card bg-white">
                             <div class="card-body">
                                 <h2 class="text-center"><i class="far fa-align-justify"></i></h2>
                                 <h3 class="text-center">
@@ -98,7 +91,7 @@
                 </div>
                 {{-- TODO: Get data from GIT --}}
                 <div class="col-lg-3 col-md-12 mb-4">
-                    <div class="card bg-primary border-primary">
+                    <div class="card bg-white">
                         <div class="card-body">
                             <h2 class="text-center"><i class="far fa-folder-open"></i></h2>
                             <h3 class="text-center">{{ number_format($projectCount) }}</h3>
@@ -117,12 +110,12 @@
                 </div> --}}
                 <div class="col-lg-3 col-md-12 mb-4">
                     @if ($commitCount > 0)
-                        <div class="card bg-primary border-primary">
+                        <div class="card bg-white">
                             <div class="card-body">
                                 <h2 class="text-center"><i class="far fa-code-commit"></i></h2>
                                 <h3 class="text-center">
                                     {{ number_format($commitCount) }}
-                                </h3></h3>
+                                </h3>
                                 <p class="text-center">commits</p>
                             </div>
                         </div>
@@ -130,7 +123,7 @@
                 </div>
                 <div class="col-lg-3 col-md-12 mb-4">
                     @if ($km !== '')
-                        <div class="card bg-primary border-primary">
+                        <div class="card bg-white">
                             <a href="https://hoeveelfilestaater.be" class="card-body">
                                 <h2 class="text-center"><i class="far fa-car"></i></h2>
                                 <h3 class="text-center">
@@ -139,7 +132,7 @@
                                     @else
                                         0 km
                                     @endif
-                                </h3></h3>
+                                </h3>
                                 <p class="text-center">km traffic jam</p>
                             </a>
                         </DIV>
@@ -149,12 +142,6 @@
         </div>
     </section>
 @endsection
-
-{{--
-@section('scripts')
-<script src='https://www.google.com/recaptcha/api.js'></script>
-@endsection
---}}
 
 @section('footer')
     <!-- Header -->

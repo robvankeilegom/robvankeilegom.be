@@ -72,8 +72,6 @@
                 </div>
             @endforeach
 
-            @include('parts.tags')
-
         </div>
     </section>
 @endsection
