@@ -3,7 +3,7 @@
 namespace Deployer;
 
 require 'recipe/laravel.php';
-require 'recipe/npm.php';
+require 'recipe/yarn.php';
 
 // Config
 set('default_stage', 'staging');
@@ -44,27 +44,28 @@ task('build', function () {
     run('cd {{release_path}} && build');
 });
 
-task('gulp', function () {
-    run('cd {{release_path}} && ./node_modules/.bin/gulp');
-})->onStage('staging')->desc('Running gulp');
+task('assets', function () {
+    run('cd {{release_path}} && yarn dev');
+})->onStage('staging')->desc('Building assets');
 
-task('gulp:production', function () {
-    run('cd {{release_path}} && ./node_modules/.bin/gulp --production');
-})->onStage('production')->desc('Running gulp');
+task('assets:production', function () {
+    run('cd {{release_path}} && yarn prod');
+})->onStage('production')->desc('Building assets (prod)');
 
+// Clean up after build to save disk space
 task('npm:clean', function () {
     run('cd {{release_path}} && rm -rf ./node_modules');
-})->onStage('production')->desc('Running gulp');
+})->onStage('production')->desc('Removing node_modules');
 
-// Run npm install
-after('deploy:update_code', 'npm:install');
+// Run yarn install
+after('deploy:update_code', 'yarn:install');
 
-// Run gulp
-after('npm:install', 'gulp:production');
-after('npm:install', 'gulp');
+// Build assets
+after('yarn:install', 'assets:production');
+after('yarn:install', 'assets');
 
-after('gulp:production', 'npm:clean');
-after('gulp', 'npm:clean');
+after('assets:production', 'npm:clean');
+after('assets', 'npm:clean');
 
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
