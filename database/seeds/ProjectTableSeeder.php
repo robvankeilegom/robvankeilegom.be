@@ -734,6 +734,7 @@ class ProjectTableSeeder extends Seeder
             'title'           => 'Gemaco Connect (Thesis)',
             'thumbnail_image' => 'images/projects/connect_thumb.png',
             'image'           => 'images/projects/connect.png',
+            'weight'          => 4,
 
             'description' => [
                 'en' => "This project is the final work I had to do before graduating college. I did my internship at Uni-t which is part of the Gemaco group. Because of the fast growing staff number Uni-t decided a 'who is who application' would be a great idea to reconnect the people at Gemaco. This application would make it easier to find out personal and useful information about the company and the staff. This would make it easier for existing and new staff members to fit in. This is how Gemaco Connect was born: an online Laravel application with an API behind it. The API, which is also a Laravel application and uses the passport package for authentication, is used to store all data as a single sign-on provider. This way the API can be easily integrated in other (existing) applications.",
@@ -972,7 +973,6 @@ class ProjectTableSeeder extends Seeder
             'title'           => 'roobieboobieee/laravel-notifications-microsoft-teams',
             'thumbnail_image' => 'images/projects/laravel-notifications-microsoft-teams_thumb.png',
             'image'           => 'images/projects/laravel-notifications-microsoft-teams.png',
-            'weight'          => 4,
             'visible'         => false,
 
             'description' => [
