@@ -19,20 +19,19 @@
             <hr class="star-dark mb-5">
             <div class="row">
                 @foreach ($projects as $key => $project)
-                    <div class="col-md-6 col-lg-4 project">
-                        <a class="portfolio-item d-block mx-auto" href="{{ route('projectModal', [ $project->id ]) }}">
-                            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                    <i class="far fa-search-plus fa-3x"></i>
-                                </div>
-                            </div>
+                    <div class="col-md-6 col-lg-4 project d-flex mb-4">
+                        <a class="d-block mx-auto text-decoration-none mb-4" href="{{ route('projectModal', [ $project->id ]) }}">
                             <img class="img-fluid" src="{{ $project->thumbnail }}" alt="">
+
+                            <p class="text-justify text-dark mt-2">
+                            {{ $project->description }}
+                            </p>
                         </a>
                     </div>
                 @endforeach
             </div>
             <div class="text-center mt-4">
-                <a class="btn btn-xl btn-primary" href="{{ route('projects') }}">
+                <a class="btn btn-xl btn-primary text-white" href="{{ route('projects') }}">
                     <i class="far fa-list mr-2"></i>
                     See All Projects!
                 </a>
