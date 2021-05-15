@@ -9,7 +9,11 @@ class ProjectsController extends Controller
 {
     public function index()
     {
-        $projects = Project::with('links')->orderBy('highlight', 'DESC')->orderBy('views', 'DESC')->get();
+        $projects = Project::with('links')
+            ->where('visible', true)
+            ->orderBy('highlight', 'DESC')
+            ->orderBy('views', 'DESC')
+            ->get();
 
         return view('projects', [
             'projects' => $projects,
@@ -30,7 +34,10 @@ class ProjectsController extends Controller
 
     public function tag($tag)
     {
-        $projects = Project::withAllTags([$tag])->orderBy('highlight', 'DESC')->orderBy('views', 'DESC')->get();
+        $projects = Project::withAllTags([$tag])
+            ->orderBy('highlight', 'DESC')
+            ->orderBy('views', 'DESC')
+            ->get();
 
         return view('projects', [
             'projects'   => $projects,

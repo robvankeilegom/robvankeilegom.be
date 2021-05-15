@@ -14,7 +14,11 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $projects = Project::with('links')->take(6)->orderBy('weight')->get();
+        $projects = Project::with('links')
+            ->where('visible', true)
+            ->take(6)
+            ->orderBy('weight')
+            ->get();
 
         $client    = null;
         $whatpulse = '';
