@@ -20,7 +20,7 @@
             <div class="row">
                 @foreach ($projects as $key => $project)
                     <div class="col-md-6 col-lg-4 project d-flex mb-4">
-                        <a class="d-block mx-auto text-decoration-none mb-4" href="{{ route('projectModal', [ $project->id ]) }}">
+                        <a class="portfolio-item d-block mx-auto text-decoration-none mb-4" href="{{ route('projectModal', [ $project->id ]) }}">
                             <img class="img-fluid" src="{{ $project->thumbnail }}" alt="">
 
                             <p class="text-justify text-dark mt-2">
