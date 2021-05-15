@@ -1569,7 +1569,7 @@
     display: inline-block;
     line-height: 1.72222;
     /*   this code is for fixing safari bug with hidden overflow for border-radius   */
-    mask: url('../img/mask.png') 0 0 no-repeat;
+    // mask: url('../img/mask.png') 0 0 no-repeat;
     overflow: hidden;
     position: relative;
     text-align: left;
@@ -1757,7 +1757,6 @@
     border-radius: 0;
     left: auto;
     right: 0;
-    width: calc(100% - $sidebar-width);
   }
 
   .navbar-nav > li > .dropdown-menu {

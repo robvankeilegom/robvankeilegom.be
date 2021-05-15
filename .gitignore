@@ -55,6 +55,7 @@ Temporary Items
 public/images/projects/*
 public/css/
 /public/js/*
+/public/mix-manifest.json
 !/public/js/vendor
 .idea
 /storage/clockwork
