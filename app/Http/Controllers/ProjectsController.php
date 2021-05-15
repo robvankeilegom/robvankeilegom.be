@@ -35,6 +35,7 @@ class ProjectsController extends Controller
     public function tag($tag)
     {
         $projects = Project::withAllTags([$tag])
+            ->where('visible', true)
             ->orderBy('highlight', 'DESC')
             ->orderBy('views', 'DESC')
             ->get();
