@@ -1,13 +1,15 @@
 .admin {
   .nav {
     li {
-      width: 100%;
       padding: 3px;
+      width: 100%;
     }
   }
+
   img {
     width: 100%;
   }
+
   .add-new {
     font-size: 150px;
     text-align: center;
@@ -17,18 +19,22 @@
     p {
       margin: 10px 0;
     }
+
     input,
     textarea,
     table {
-      width: 100%;
       max-width: 100%;
+      width: 100%;
     }
+
     textarea {
       height: 150px;
     }
+
     td {
       padding: 3px 5px;
     }
+
     th {
       margin-bottom: 10px;
     }

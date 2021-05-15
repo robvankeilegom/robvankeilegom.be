@@ -1,20 +1,24 @@
 // Styling for the portfolio section
 .portfolio {
   margin-bottom: -15px;
+
   .portfolio-item {
-    position: relative;
     display: block;
-    max-width: 25rem;
     margin-bottom: 15px;
+    max-width: 25rem;
+    position: relative;
+
     .portfolio-item-caption {
-      -webkit-transition: all ease .5s;
-      -moz-transition: all ease .5s;
-      transition: all ease .5s;
+      background-color: fade-out($primary, 0.1);
       opacity: 0;
-      background-color: fade-out($primary, .1);
+      transition: all ease 0.5s;
+      transition: all ease 0.5s;
+      transition: all ease 0.5s;
+
       &:hover {
         opacity: 1;
       }
+
       .portfolio-item-caption-content {
         font-size: 1.5rem;
       }
@@ -22,6 +26,7 @@
   }
   @media (min-width: 576px) {
     margin-bottom: -30px;
+
     .portfolio-item {
       margin-bottom: 30px;
     }
@@ -29,32 +34,36 @@
 }
 
 .portfolio-modal-dialog {
-  padding: 3rem 1rem;
-  min-height: calc(80vh - 2rem);
+  box-shadow: 0 0 3rem 1rem fade-out(#000, 0.5);
+  box-shadow: 0 0 3rem 1rem fade-out(#000, 0.5);
+  box-shadow: 0 0 3rem 1rem fade-out(#000, 0.5);
   margin: 1rem auto;
+  min-height: calc(80vh - 2rem);
+  padding: 3rem 1rem;
   position: relative;
   z-index: 2;
-  -moz-box-shadow: 0 0 3rem 1rem fade-out(black, .5);
-  -webkit-box-shadow: 0 0 3rem 1rem fade-out(black, .5);
-  box-shadow: 0 0 3rem 1rem fade-out(black, .5);
+
   .close-button {
     position: absolute;
-    top: 2rem;
     right: 2rem;
+    top: 2rem;
+
     i {
       line-height: 38px;
     }
   }
+
   h2 {
     font-size: 2rem;
   }
 }
 @media(min-width: 768px) {
   .portfolio-modal-dialog {
+    margin: 3rem auto;
+    max-width: 1200px;
     min-height: 80vh;
     padding: 5rem;
-    max-width: 1200px;
-    margin: 3rem auto;
+
     h2 {
       font-size: 3rem;
     }

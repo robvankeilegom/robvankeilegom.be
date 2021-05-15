@@ -1,31 +1,37 @@
 header.masthead {
-  padding-top: calc(6rem);
   padding-bottom: 6rem;
+  padding-top: calc(6rem);
+
   h1 {
     font-size: 3rem;
     line-height: 3rem;
   }
+
   h2 {
-    font-size: 1.3rem;
     @include body-font;
+    font-size: 1.3rem;
   }
+
   img {
-    max-width: 57vw;
-    border-radius: 50%;
     border: 5px solid $white;
+    border-radius: 50%;
+    max-width: 57vw;
   }
 }
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(6rem + 106px);
     padding-bottom: 6rem;
+    padding-top: calc(6rem + 106px);
+
     h1 {
       font-size: 4.75em;
       line-height: 4rem;
     }
+
     h2 {
       font-size: 1.75em;
     }
+
     img {
       max-width: 12vw;
     }

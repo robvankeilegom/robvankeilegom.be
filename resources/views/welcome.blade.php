@@ -24,7 +24,7 @@
                             <img class="img-fluid" src="{{ $project->thumbnail }}" alt="">
 
                             <p class="text-justify text-dark mt-2">
-                            {{ $project->description }}
+                                {{ $project->description }}
                             </p>
                         </a>
                     </div>
