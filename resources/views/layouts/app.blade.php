@@ -61,7 +61,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -88,7 +88,7 @@
         </div>
 
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ mix('js/app.js') }}"></script>
         @yield('scripts')
 
         <script async defer data-website-id="2bdbb4cb-687f-4806-b584-eef56c4366e7" src="https://analytics.robvankeilegom.be/umami.js"></script>

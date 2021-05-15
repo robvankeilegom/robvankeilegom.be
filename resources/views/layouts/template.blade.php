@@ -62,7 +62,7 @@
     -->
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -70,7 +70,7 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
 </head>
 <body id="app">
 

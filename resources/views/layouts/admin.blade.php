@@ -22,7 +22,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/less.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ app('css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -33,7 +33,7 @@
         window.Currency = '{{ trans('general.currency') }}';
         window.csrfToken = '{{ csrf_token() }}';
     </script>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
 </head>
 <body class="admin">
 
