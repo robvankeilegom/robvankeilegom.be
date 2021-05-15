@@ -65,3 +65,4 @@ public/css/
 public/fonts
 !public/fonts/.gitkeep
 .npmrc
+.php-cs-fixer.cache
