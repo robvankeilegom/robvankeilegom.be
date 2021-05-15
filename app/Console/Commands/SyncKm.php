@@ -41,7 +41,7 @@ class SyncKm extends Command
         try {
             $response = $client->request('POST', 'https://api.hoeveelfilestaater.be/api/getWelcomeMessage');
 
-            if ($response->getStatusCode() == 200) {
+            if (200 == $response->getStatusCode()) {
                 $km        = json_decode($response->getBody());
                 $expiresAt = now()->addMinutes(5);
 

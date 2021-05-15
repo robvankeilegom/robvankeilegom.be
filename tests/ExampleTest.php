@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @internal
+ * @coversNothing
+ */
 class ExampleTest extends TestCase
 {
     /**

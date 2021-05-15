@@ -94,7 +94,7 @@ class HomeController extends Controller
                 ->route('home', ['#contact'])
                 ->with('success', 'Successfully sent!');
         }
-        $validator->errors()->add('invalid_captcha', (config('app.debug') == 'TRUE') ? (implode(', ', $resultponse->{'error-codes'})) : 'Apparently, you are a robot?!');
+        $validator->errors()->add('invalid_captcha', ('TRUE' == config('app.debug')) ? (implode(', ', $resultponse->{'error-codes'})) : 'Apparently, you are a robot?!');
 
         return redirect()
             ->route('home', ['#contact'])

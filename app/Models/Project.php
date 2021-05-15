@@ -40,6 +40,6 @@ class Project extends Model
 
     public function getthumbnailAttribute()
     {
-        return config('app.env') === 'local' && ! file_exists(public_path($this->thumbnail_image)) ? 'https://picsum.photos/400/200' : $this->thumbnail_image;
+        return 'local' === config('app.env') && ! file_exists(public_path($this->thumbnail_image)) ? 'https://picsum.photos/400/200' : $this->thumbnail_image;
     }
 }

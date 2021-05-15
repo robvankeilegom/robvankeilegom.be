@@ -42,7 +42,7 @@ class SyncWhatpulse extends Command
             $client   = new \GuzzleHttp\Client();
             $response = $client->request('GET', 'https://api.whatpulse.org/user.php?user=roobieboobieee&format=json');
 
-            if ($response->getStatusCode() == 200) {
+            if (200 == $response->getStatusCode()) {
                 $whatpulse = json_decode($response->getBody());
 
                 Cache::forever('whatpulse', $whatpulse);

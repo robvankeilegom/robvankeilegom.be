@@ -40,11 +40,11 @@ class updatefa5 extends Command
 
         foreach ($links as $key => $link) {
             if (
-                $link->icon === 'fa-facebook' ||
-                $link->icon === 'fa-linkedin' ||
-                $link->icon === 'fa-gitlab' ||
-                $link->icon === 'fa-github' ||
-                $link->icon === 'fa-bitbucket'
+                'fa-facebook' === $link->icon
+                || 'fa-linkedin' === $link->icon
+                || 'fa-gitlab' === $link->icon
+                || 'fa-github' === $link->icon
+                || 'fa-bitbucket' === $link->icon
             ) {
                 $link->icon = 'fab ' . $link->icon;
             } else {
