@@ -31,6 +31,7 @@ class ProjectTableSeeder extends Seeder
         $project->attachTags(Arr::get($data, 'tags'));
 
         $project->links()->detach();
+
         foreach (Arr::get($data, 'links', []) as $key => $link) {
             $link = App\Models\Link::firstOrCreate([
                 'title'  => Arr::get($link, 'title'),
@@ -692,12 +693,12 @@ class ProjectTableSeeder extends Seeder
             'tags' => ['HTML', 'PHP', 'CSS', 'Laravel', 'Vue.JS'],
 
             'links' => [
-                [
-                    'title'  => 'Citypolis',
-                    'icon'   => 'fa-globe',
-                    'href'   => 'https://www.citypolis.be/',
-                    'target' => '_blank',
-                ],
+                // [
+                // 'title'  => 'Citypolis',
+                // 'icon'   => 'fa-globe',
+                // 'href'   => 'https://www.citypolis.be/',
+                // 'target' => '_blank',
+                // ],
             ],
         ];
 
@@ -718,12 +719,12 @@ class ProjectTableSeeder extends Seeder
             'tags' => ['HTML', 'PHP', 'CSS', 'Laravel'],
 
             'links' => [
-                [
-                    'title'  => 'Demo (nl)',
-                    'icon'   => 'fa-globe',
-                    'href'   => 'https://snowsports.robvankeilegom.be',
-                    'target' => '_blank',
-                ],
+                // [
+                // 'title'  => 'Demo (nl)',
+                // 'icon'   => 'fa-globe',
+                // 'href'   => 'https://snowsports.robvankeilegom.be',
+                // 'target' => '_blank',
+                // ],
             ],
         ];
 
@@ -745,16 +746,16 @@ class ProjectTableSeeder extends Seeder
 
             'links' => [
                 [
-                    'title'  => 'Gemaco',
-                    'icon'   => 'fa-globe',
-                    'href'   => 'https://www.gemacoglobal.com/',
-                    'target' => '_blank',
-                ], [
-                    'title'  => 'Uni-t',
-                    'icon'   => 'fa-globe',
-                    'href'   => 'https://uni-t.be/',
-                    'target' => '_blank',
-                ], [
+                    // 'title'  => 'Gemaco',
+                    // 'icon'   => 'fa-globe',
+                    // 'href'   => 'https://www.gemacoglobal.com/',
+                    // 'target' => '_blank',
+                    // ], [
+                    // 'title'  => 'Uni-t',
+                    // 'icon'   => 'fa-globe',
+                    // 'href'   => 'https://uni-t.be/',
+                    // 'target' => '_blank',
+                    // ], [
                     'title'  => 'Full Thesis',
                     'icon'   => 'fa-book',
                     'href'   => 'https://roobieboobieee.gitlab.io/thesis/',
