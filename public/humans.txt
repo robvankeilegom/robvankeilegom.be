@@ -1,12 +1,11 @@
 /* TEAM */
 	Developer : Rob Van Keilegom
 	Linkedin: https://www.linkedin.com/in/robvankeilegom
-	Twitter: @RoobieBoobieee
 	From: Liezele, Belgium
 
 /* SITE */
-	Last update: 04/04/2017
+	Last update: 15/05/2021
 	Language: English
 	Doctype: HTML5
 	Frameworks: Laravel & Bootstrap
-	IDE: Atom, HeidiSQL, XAMPP
+	IDE: VIM
