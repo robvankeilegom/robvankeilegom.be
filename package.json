@@ -10,7 +10,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "@fortawesome/fontawesome-pro": "^5.15.3",
+        "@fortawesome/fontawesome-pro": "git+ssh://git@gitlab.com:robvankeilegom/fontawesome.git",
         "bourbon": "^4.2.7",
         "jquery": "^3.6.0",
         "lodash": "^4.17.21",
