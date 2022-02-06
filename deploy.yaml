@@ -4,7 +4,7 @@ import:
 
 config:
   application: robvankeilegom.be
-  repository: git@gitlab.com:RoobieBoobieee/Portfolio.git
+  repository: git@gitlab.com:robvankeilegom/robvankeilegom.be.git
 
 hosts:
   production:
@@ -12,6 +12,11 @@ hosts:
     deploy_path: ~/websites/robvankeilegom.be
     branch: master
     stage: production
+  staging:
+    hostname: robvankeilegom.be
+    deploy_path: ~/websites/staging.robvankeilegom.be
+    branch: develop
+    stage: staging
 
 tasks:
   deploy:

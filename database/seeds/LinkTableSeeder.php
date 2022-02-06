@@ -33,14 +33,14 @@ class LinkTableSeeder extends Seeder
         $link = App\Models\Link::create([
             'title'  => 'Gitlab',
             'icon'   => 'fab fa-gitlab',
-            'href'   => 'https://gitlab.com/RoobieBoobieee',
+            'href'   => 'https://gitlab.com/robvankeilegom',
             'target' => '_blank',
         ]);
 
         $link = App\Models\Link::create([
             'title'  => 'Github',
             'icon'   => 'fab fa-github',
-            'href'   => 'https://github.com/RoobieBoobieee',
+            'href'   => 'https://github.com/robvankeilegom',
             'target' => '_blank',
         ]);
 

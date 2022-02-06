@@ -3259,12 +3259,12 @@
             "version": "2.2.1",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.com/RoobieBoobieee/bitbucket.git",
+                "url": "https://gitlab.com/robvankeilegom/bitbucket.git",
                 "reference": "2dcac2972888a2afa7d6375cc422bdfff4f35ca6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/RoobieBoobieee%2Fbitbucket/repository/archive.zip?sha=2dcac2972888a2afa7d6375cc422bdfff4f35ca6",
+                "url": "https://gitlab.com/api/v4/projects/robvankeilegom%2Fbitbucket/repository/archive.zip?sha=2dcac2972888a2afa7d6375cc422bdfff4f35ca6",
                 "reference": "2dcac2972888a2afa7d6375cc422bdfff4f35ca6",
                 "shasum": ""
             },
@@ -3309,19 +3309,23 @@
                 "RoobieBoobieee",
                 "bitbucket"
             ],
-            "time": "2019-11-06T12:21:03+00:00"
+            "support": {
+                "issues": "https://gitlab.com/robvankeilegom/bitbucket/-/issues",
+                "source": "https://gitlab.com/robvankeilegom/bitbucket/-/tree/2.2.1"
+            },
+            "time": "2019-11-06T13:21:03+00:00"
         },
         {
             "name": "roobieboobieee/gitlab",
             "version": "0.7.0",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.com/RoobieBoobieee/gitlab.git",
+                "url": "https://gitlab.com/robvankeilegom/gitlab.git",
                 "reference": "6f266730fe4704058f892c1cfb43e713dae86ae1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/RoobieBoobieee%2Fgitlab/repository/archive.zip?sha=6f266730fe4704058f892c1cfb43e713dae86ae1",
+                "url": "https://gitlab.com/api/v4/projects/robvankeilegom%2Fgitlab/repository/archive.zip?sha=6f266730fe4704058f892c1cfb43e713dae86ae1",
                 "reference": "6f266730fe4704058f892c1cfb43e713dae86ae1",
                 "shasum": ""
             },
@@ -3365,9 +3369,10 @@
                 "gitlab"
             ],
             "support": {
-                "issues": "https://gitlab.com/api/v4/projects/15173302/issues"
+                "issues": "https://gitlab.com/robvankeilegom/gitlab/-/issues",
+                "source": "https://gitlab.com/robvankeilegom/gitlab/-/tree/0.7.0"
             },
-            "time": "2020-05-10T14:52:48+00:00"
+            "time": "2020-05-10T16:52:48+00:00"
         },
         {
             "name": "spatie/eloquent-sortable",
