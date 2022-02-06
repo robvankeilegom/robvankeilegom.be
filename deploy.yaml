@@ -1,0 +1,29 @@
+import:
+  - recipe/laravel.php
+  - contrib/yarn.php
+
+config:
+  application: robvankeilegom.be
+  repository: git@gitlab.com:RoobieBoobieee/Portfolio.git
+
+hosts:
+  production:
+    hostname: robvankeilegom.be
+    deploy_path: ~/websites/robvankeilegom.be
+    branch: master
+    stage: production
+
+tasks:
+  deploy:
+    - deploy:prepare
+    - deploy:vendors
+    - artisan:storage:link
+    - artisan:view:cache
+    - artisan:config:cache
+    - artisan:migrate
+    - yarn:install
+    - yarn:prod
+    - deploy:publish
+  yarn:prod:
+    - run: cd {{release_path}} && yarn prod
+

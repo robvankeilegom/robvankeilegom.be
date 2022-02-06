@@ -10,7 +10,7 @@
     "require": {
         "php": ">=7.2",
         "bugsnag/bugsnag-laravel": "^2.2",
-        "deployer/deployer": "^6.0",
+        "deployer/deployer": "^7.0",
         "fideloper/proxy": "^4.0",
         "guzzlehttp/guzzle": "^6.2",
         "illuminate/support": "^7.0",
