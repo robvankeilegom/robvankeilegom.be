@@ -63,12 +63,6 @@ class ProjectTableSeeder extends Seeder
             'tags' => ['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'Ajax', 'Thomas More', 'Finished'],
 
             'links' => [
-                [
-                    'title'  => 'Source Code',
-                    'icon'   => 'fa-code',
-                    'href'   => 'https://gitlab.com/robvankeilegom/TM_ProjectPHPMySQL',
-                    'target' => '_blank',
-                ],
             ],
         ];
 
@@ -89,13 +83,6 @@ class ProjectTableSeeder extends Seeder
             'tags' => ['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'MySQL', 'KU Leuven API', 'Google API', 'API', 'Thomas More', 'Finished'],
 
             'links' => [
-                [
-                    'title'  => 'Source Code',
-                    'icon'   => 'fa-code',
-                    'href'   => 'https://gitlab.com/robvankeilegom/tm_project2',
-                    'target' => '_blank',
-                ],
-
                 [
                     'title'  => 'Marlon Stoops',
                     'icon'   => 'fa-linkedin',
@@ -154,12 +141,6 @@ class ProjectTableSeeder extends Seeder
             'tags' => ['HTML', 'PHP', 'CSS', 'Javascript', 'JQuery', 'Thomas More'],
 
             'links' => [
-                [
-                    'title'  => 'Source Code',
-                    'icon'   => 'fa-code',
-                    'href'   => 'https://gitlab.com/robvankeilegom/TM_ProjectWebEngineering1',
-                    'target' => '_blank',
-                ],
             ],
         ];
 
@@ -197,12 +178,6 @@ class ProjectTableSeeder extends Seeder
             'tags' => ['MS-SQL', 'Excel', 'Visual Basic', 'Total'],
 
             'links' => [
-                [
-                    'title'  => 'Source Code',
-                    'icon'   => 'fa-code',
-                    'href'   => 'https://gitlab.com/robvankeilegom/Total_Dafi',
-                    'target' => '_blank',
-                ],
             ],
         ];
 
@@ -223,12 +198,6 @@ class ProjectTableSeeder extends Seeder
             'tags' => ['C++', 'Object Oriented', 'Thomas More', 'Finished'],
 
             'links' => [
-                [
-                    'title'  => 'Source Code',
-                    'icon'   => 'fa-code',
-                    'href'   => 'https://gitlab.com/robvankeilegom/TM_ObjectOrientedProgramming',
-                    'target' => '_blank',
-                ],
             ],
         ];
 
@@ -250,11 +219,6 @@ class ProjectTableSeeder extends Seeder
 
             'links' => [
                 [
-                    'title'  => 'Source Code',
-                    'icon'   => 'fa-code',
-                    'href'   => 'https://gitlab.com/robvankeilegom/TM_ProjectDatabanken',
-                    'target' => '_blank',
-                ], [
                     'title'  => 'Marlon Stoops',
                     'icon'   => 'fa-linkedin',
                     'href'   => 'https://www.linkedin.com/in/marlonstoops/',
@@ -280,12 +244,6 @@ class ProjectTableSeeder extends Seeder
             'tags' => ['ASP.NET MVC', 'C#', 'Ajax', 'Total'],
 
             'links' => [
-                [
-                    'title'  => 'Source Code',
-                    'icon'   => 'fa-code',
-                    'href'   => 'https://gitlab.com/robvankeilegom/total_lab3',
-                    'target' => '_blank',
-                ],
             ],
         ];
 
@@ -386,11 +344,6 @@ class ProjectTableSeeder extends Seeder
 
             'links' => [
                 [
-                    'title'  => 'Source Code',
-                    'icon'   => 'fa-code',
-                    'href'   => 'https://gitlab.com/robvankeilegom/TM_Project1',
-                    'target' => '_blank',
-                ], [
                     'title'  => 'Marlon Stoops',
                     'icon'   => 'fa-linkedin',
                     'href'   => 'https://www.linkedin.com/in/marlonstoops/',
@@ -417,11 +370,6 @@ class ProjectTableSeeder extends Seeder
 
             'links' => [
                 [
-                    'title'  => 'Source Code',
-                    'icon'   => 'fa-code',
-                    'href'   => 'https://gitlab.com/robvankeilegom/TM_Python',
-                    'target' => '_blank',
-                ], [
                     'title'  => 'Marlon Stoops',
                     'icon'   => 'fa-linkedin',
                     'href'   => 'https://www.linkedin.com/in/marlonstoops/',
