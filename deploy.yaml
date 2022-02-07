@@ -5,12 +5,14 @@ import:
 config:
   application: robvankeilegom.be
   repository: git@gitlab.com:robvankeilegom/robvankeilegom.be.git
+  shared_dirs:
+    - public/images/projects
 
 hosts:
   production:
     hostname: robvankeilegom.be
     deploy_path: ~/websites/robvankeilegom.be
-    branch: master
+    branch: develop
     stage: production
   staging:
     hostname: robvankeilegom.be
