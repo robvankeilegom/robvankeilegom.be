@@ -660,7 +660,7 @@ class ProjectTableSeeder extends Seeder
             'weight'          => 1,
 
             'description' => [
-                'en' => "The snowsports application is a website I wrote for a skiclub. It's made so that monitors and members can easily connect. Monitors can easily add lessons. The members can indicate whether they will be present. Everyone has a profile where they can add familiy members who are too young to create an account themselves. The website is written on top of the Laravel framework and is completely mobile friendly.",
+                'en' => "The snowsports application is a website I wrote for a skiclub. It's made so that monitors and members can easily connect. Monitors can easily add lessons. The members can indicate whether they will be present. Everyone has a profile where they can add family members who are too young to create an account themselves. The website is written on top of the Laravel framework and is completely mobile friendly.",
                 'nl' => 'De Snowsports applicatie is een website die ik geschreven heb voor een skiclub. Hierop kunnen monitoren en gebruikers heel gemakkelijk connecteren. Monitoren kunnen lessen toevoegen en deelnemers kunnen meteen zeggen of ze aanwezig kunnen zijn of niet. Iedereen heeft een profiel waar ze ook familieleden kunnen toevoegen, denk maar aan kinderen die te jong zijn voor hun eigen account. De website is geschreven op een Laravel Framework en is helemaal mobiel vriendelijk.',
             ],
 
