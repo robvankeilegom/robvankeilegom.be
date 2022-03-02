@@ -12,13 +12,15 @@ hosts:
   production:
     hostname: robvankeilegom.be
     deploy_path: ~/websites/robvankeilegom.be
-    branch: develop
+    branch: master
     stage: production
+    forwardAgent: true
   staging:
     hostname: robvankeilegom.be
     deploy_path: ~/websites/staging.robvankeilegom.be
     branch: develop
     stage: staging
+    forwardAgent: true
 
 tasks:
   deploy:
