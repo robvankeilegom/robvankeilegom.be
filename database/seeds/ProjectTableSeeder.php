@@ -848,7 +848,7 @@ class ProjectTableSeeder extends Seeder
                 ], [
                     'title'  => 'Live Link',
                     'icon'   => 'far fa-heartbeat',
-                    'href'   => 'https://hoeveelfilestaater.be',
+                    'href'   => 'https://hfse.robvankeilegom.be',
                     'target' => '_blank',
                 ], [
                     'title'  => 'Source Code (api)',

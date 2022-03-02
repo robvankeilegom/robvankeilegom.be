@@ -39,7 +39,7 @@ class SyncKm extends Command
         $client = new \GuzzleHttp\Client();
 
         try {
-            $response = $client->request('POST', 'https://api.hoeveelfilestaater.be/api/getWelcomeMessage');
+            $response = $client->request('POST', 'https://api.hfse.robvankeilegom.be/api/getWelcomeMessage');
 
             if (200 == $response->getStatusCode()) {
                 $km        = json_decode($response->getBody());
