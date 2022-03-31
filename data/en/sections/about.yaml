@@ -1,0 +1,49 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Software Engineer
+# your company information
+company:
+  name: Organi
+  url: "https://www.organi.be"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/resume.pdf"
+
+# a summary about you
+summary: "I'm a 26 year old developer graduated in June 2017 with a bachelor's degree in Networks, Systems and Security. I currently work as a Progress developer at Organi (Wilrijk, Belgium). In my free time I work on personal or open source projects. When I'm not programming I'm probably busy volunteering at Frag-o-Matic, playing video- and boardgames or out snowboarding.
+<br /><br />
+Programming is my passion as you can see by the many projects I've worked on: lots of projects in different languages. I love experimenting which is why some projects are unfinished. As I see it, it's not about the destination but about the experience gained.
+"
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "info@robvankeilegom.be"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/robvankeilegom"
+
+- name: Gitlab
+  icon: "fab fa-gitlab"
+  url: "https://gitlab.com/robvankeilegom"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/robvankeilegom/"
+
+# Show your badges
+# You can show your verifiable certificates from https://www.credly.com.
+# You can also show a circular bar indicating the level of expertise on a certain skill
+badges:
+

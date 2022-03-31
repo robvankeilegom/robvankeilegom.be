@@ -1,0 +1,22 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: false
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+  - name: "Bachelor Electronics-IT: Networks, Systems and Security"
+    icon: fa-graduation-cap
+    timeframe: 2014-2017
+    institution:
+      name: "Thomas More: De Nayer"
+  - name: Industrial-IT
+    icon: fa-school
+    timeframe: 2011-2014
+    institution:
+      name: "Don Bosco Hoboken"

@@ -1,0 +1,9 @@
+# Copyright Notice
+copyright: © 2020 Copyright.
+
+# A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `config.yaml` file.
+disclaimer: ""
+
+# Meta description for your site.  This will help the search engines to find your site.
+description: Portfolio and personal blog of Rob Van Keilegom.
+
