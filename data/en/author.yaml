@@ -3,7 +3,7 @@ name: "Rob Van Keilegom"
 nickname: "Rob"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Hi, I am"
-image: "images/author/rob.png"
+image: "images/author/rob.jpg"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "info@robvankeilegom.be"
@@ -13,6 +13,6 @@ contactInfo:
 
 # some summary about what you do
 summary:
-  - I am a Developer
-  - I am a Devops
+  - I am a Full Stack Developer
   - I work on open-source projects
+  - I love Laravel

@@ -32,6 +32,14 @@ experiences:
           - Create REST API on top of bailiffs software running on a Progress PASOE instance.
           - Write a bailiff and defendant module in the existing Organi Angular application utilizing said API.
 
+  - company:
+      location: Antwerp
+    positions:
+      - designation: Intern
+        start: Jun 2017
+        end: Sep 2017
+        responsibilities:
+          - TODO
 
   - company:
       name: Uni-t
@@ -41,5 +49,14 @@ experiences:
       - designation: Intern
         start: Feb 2017
         end: Jun 2017
+        responsibilities:
+          - TODO
+
+  - company:
+      location: Schoten - Antwerp
+    positions:
+      - designation: Intern
+        start: Jun 2017
+        end: Sep 2017
         responsibilities:
           - TODO

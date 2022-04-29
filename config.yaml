@@ -1,4 +1,4 @@
-baseURL: robvankeilegom.be
+baseURL: ''
 
 languageCode: en-us
 title: "Rob Van Keilegom"
@@ -120,6 +120,11 @@ params:
       # Google Analytics
       google:
         id: G-H4LBG7NDFZ
+
+      # Umami Analytics
+      umami:
+        id: 93f15218-dd3c-4437-800d-8a1358dd97c1
+
       # # CounterDev
       # counterDev:
       #   id: <your counterdev id>
