@@ -23,7 +23,11 @@ experiences:
         # end: Dec 2020
         # give some points about what was your responsibilities at the company.
         responsibilities:
-          - TODO
+          - Development of a e-commerce application written in PHP/Laravel.
+          - Design, develop and document API for the e-commerce platform.
+          - Create an maintain several PHP packages supporting the e-commerce application.
+          - Analyse and process incoming change requests.
+          - Develop and configure pipelines for continuous integration and continuous delivery.
 
       - designation: Software Engineer
         start: Sep 2017
@@ -39,7 +43,8 @@ experiences:
         start: Jun 2017
         end: Sep 2017
         responsibilities:
-          - TODO
+          - Development of a web platform that serves as an interface for a real life team building game.
+          - Building escape rooms. Making them interactive with Arduino.
 
   - company:
       name: Uni-t
@@ -50,13 +55,15 @@ experiences:
         start: Feb 2017
         end: Jun 2017
         responsibilities:
-          - TODO
+          - Create internal tool for employees to connect
+          - Write out analysis before and complete documentation afterwards
+          - Integrate single sign-on and OAuth
 
-  - company:
-      location: Schoten - Antwerp
-    positions:
-      - designation: Intern
-        start: Jun 2017
-        end: Sep 2017
-        responsibilities:
-          - TODO
+  # - company:
+  #     name: TotalEnergies
+  #     location: Schoten - Antwerp
+  #   positions:
+  #     - designation: Intern
+  #       start: Jun 2017
+  #       end: Sep 2017
+  #       responsibilities:
