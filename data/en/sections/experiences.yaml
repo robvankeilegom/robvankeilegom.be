@@ -1,0 +1,69 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your experiences
+experiences:
+  - company:
+      name: Organi
+      url: "https://www.organi.be"
+      location: Wilrijk - Antwerp
+      # company overview
+      overview: Organi helps companies to improve and automate their business processes.
+    positions:
+      - designation: Full Stack Developer
+        start: Mar 2019
+        # don't provide end date if you are currently working there. It will be replaced by "Present"
+        # end: Dec 2020
+        # give some points about what was your responsibilities at the company.
+        responsibilities:
+          - Development of a e-commerce application written in PHP/Laravel.
+          - Design, develop and document API for the e-commerce platform.
+          - Create an maintain several PHP packages supporting the e-commerce application.
+          - Analyse and process incoming change requests.
+          - Develop and configure pipelines for continuous integration and continuous delivery.
+
+      - designation: Software Engineer
+        start: Sep 2017
+        responsibilities:
+          - Maintaining and extending a very extensive desktop application for court bailiffs.
+          - Create REST API on top of bailiffs software running on a Progress PASOE instance.
+          - Write a bailiff and defendant module in the existing Organi Angular application utilizing said API.
+
+  - company:
+      location: Antwerp
+    positions:
+      - designation: Intern
+        start: Jun 2017
+        end: Sep 2017
+        responsibilities:
+          - Development of a web platform that serves as an interface for a real life team building game.
+          - Building escape rooms. Making them interactive with Arduino.
+
+  - company:
+      name: Uni-t
+      location: Mechelen - Antwerp
+      overview: Uni-t works on web applications, websites and digital experiences for leading brands.
+    positions:
+      - designation: Intern
+        start: Feb 2017
+        end: Jun 2017
+        responsibilities:
+          - Create internal tool for employees to connect
+          - Write out analysis before and complete documentation afterwards
+          - Integrate single sign-on and OAuth
+
+  # - company:
+  #     name: TotalEnergies
+  #     location: Schoten - Antwerp
+  #   positions:
+  #     - designation: Intern
+  #       start: Jun 2017
+  #       end: Sep 2017
+  #       responsibilities:

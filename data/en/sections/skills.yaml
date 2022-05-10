@@ -1,0 +1,61 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Ecommerce / SEO
+  logo: /images/sections/skills/cart.svg
+  summary: "The last 3 years I've been working on an in-house Ecommerce application as the lead developer. This gives me a lot of experience with SEO best practices and analytics integration."
+
+- name: Laravel
+  logo: /images/sections/skills/laravel.png
+  summary: "My go-to framework for web development since 2017. Most of my projects are developed on top op Laravel or Lumen. I have experience with almost all packages developed by the Laravel or Spatie team."
+
+- name: Vue.js / Angular
+  logo: /images/sections/skills/vuejs.svg
+  summary: "Vue.js is my frontend framework of choice. I use it a lot together with Inertia.js and Veux. I also have quite some experience with Angular. "
+
+- name: Tailwind / Bootstrap
+  logo: /images/sections/skills/tailwind.svg
+  summary: "I have a lot of experience creating frontends or admin panels with Tailwind, Bootstrap, Pure.css and Bulma. Tailwind is my absolute favorite though. "
+
+- name: PHPUnit / Pest
+  logo: /images/sections/skills/pest.png
+  summary: "Writing test and integrating them in the pipeline. This includes the specific Laravel functionality to mock jobs, http calls, mails or events."
+
+- name: Swagger / OpenAPI
+  logo: /images/sections/skills/swagger.svg
+  summary: "Writing documentation for API's I developed."
+
+- name: Elasticsearch / MeiliSearch
+  logo: /images/sections/skills/elastic.svg
+  summary: "I've used both search engines in my applications. Directly or with the Laravel Scout package. I've used Elasticsearch extensively in our e-commerce application."
+
+- name: MySQL
+  logo: /images/sections/skills/mysql.png
+  summary: "Default DBMS for all my project. "
+
+- name: CI / CD
+  logo: /images/sections/skills/vuejs.svg
+  summary: "Creating pipelines to automatically test/build applications. After succeeding the builds are then automatically deployed. Experience with Bitbucket Pipelines, Github Actions ans Jenkins."
+
+- name: Docker
+  logo: /images/sections/skills/docker.svg
+  summary: "Write most of the programs as dockerized container. Setting up and configuring development environments including NGINX, Apache, Traefik."
+
+- name: Linux
+  logo: /images/sections/skills/linux.png
+  summary: "Main operating system for many years. I personally use Ubuntu with a custom build desktop environment for higher efficiency. Setup and maintenance of web servers."
+
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: "Experienced with git-based development and Git flow. Experienced with cloud environments: Github, Gitlab and Bitbucket."
+
