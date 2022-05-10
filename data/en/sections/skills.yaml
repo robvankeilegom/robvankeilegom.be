@@ -41,7 +41,7 @@ skills:
 
 - name: MySQL
   logo: /images/sections/skills/mysql.png
-  summary: "TODO"
+  summary: "Default DBMS for all my project. "
 
 - name: CI / CD
   logo: /images/sections/skills/vuejs.svg
