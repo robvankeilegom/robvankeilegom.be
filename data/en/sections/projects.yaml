@@ -1,0 +1,67 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Professional
+  filter: "Professional"
+- name: Academic
+  filter: "Academic"
+- name: Hobby
+  filter: "Hobby"
+
+# your projects
+projects:
+- name: Firefly III PayPal Importer
+  role: Owner
+  timeline: "March 2022 - Present"
+  repo: https://github.com/robvankeilegom/firefly-III-paypal-importer
+  summary: "Firefly III is a (self-hosted) manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more. The PayPal importer is built to help you sync transactions between PayPal and your Firefly instance."
+  tags: ["Lumen", "PHP", "Firefly", "Hobby"]
+
+- name: liezele.be
+  role: Owner
+  image: /images/sections/projects/liezele_be.png
+  timeline: "Jun 2020 - Present"
+  url: "https://liezele.be"
+  summary: "A site for Liezele, the village I was raised. Statically build with Hugo. All content is written in Markdown."
+  tags: ["Hugo", "Hobby"]
+
+- name: Snowsports
+  role: Developer
+  image: /images/sections/projects/snowsports.png
+  timeline: "Sep 2017"
+  summary: "The snowsports application is a website I wrote for a skiclub. It's made so that monitors and members can easily connect. Monitors can easily add lessons. The members can indicate whether they will be present. Everyone has a profile where they can add familiy members who are too young to create an account themselves. The website is written on top of the Laravel framework and is completely mobile friendly."
+  tags: ["Laravel", "Bulma", "Professional"]
+
+- name: Citypolis
+  role: Developer
+  image: /images/sections/projects/citypolis.png
+  timeline: "May 2017 - Jan 2019"
+  summary: "A web application I wrote for a teambuilding event in Antwerp. It is the interface for a real-life interactive group game. Citypolis description: Citypolis takes place in a 300m² space which is arranged into a large imaginary city and which is filled with interactive tasks. The participants will be divided into sub-teams which shall compete with each other in “the city”. This is a unique indoor team game filled with action and strategy, innovation and technology."
+  tags: ["Laravel", "Vue.JS", "Bootstrap", "Professional"]
+
+- name: Gemaco Connect
+  role: Developer
+  image: /images/sections/projects/gemaco_connect.png
+  timeline: "Jan 2017 - Apr 2017"
+  url: "https://robvankeilegom.gitlab.io/thesis/"
+  summary: "This project is the final work I had to do before graduating college. I did my internship at Uni-t which is part of the Gemaco group. Because of the fast growing staff number Uni-t decided a 'who is who application' would be a great idea to reconnect the people at Gemaco. This application would make it easier to find out personal and useful information about the company and the staff. This would make it easier for existing and new staff members to fit in. This is how Gemaco Connect was born: an online Laravel application with an API behind it. The API, which is also a Laravel application and uses the passport package for authentication, is used to store all data as a single sign-on provider. This way the API can be easily integrated in other (existing) applications."
+  tags: ["Academic", "Laravel", "Bootstrap", "Vue.JS"]
+
+- name: Solar Tracker
+  role: Developer/Engineer
+  image: /images/sections/projects/solar_tracker.png
+  url: "https://gitlab.com/robvankeilegom/DBH_SolarTracker"
+  summary: "For my integrated test as a student in the last year of Don Bosco Hoboken I made this website. On this website you could see in with position the solar panel was standing and how much it was generating. You can find more information about this on my GitLab page. This website was developed in ASP.NET."
+  tags: ["Academic", "ASP.NET", "C#"]
+
