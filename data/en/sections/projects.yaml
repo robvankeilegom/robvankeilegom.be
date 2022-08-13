@@ -65,3 +65,12 @@ projects:
   summary: "For my integrated test as a student in the last year of Don Bosco Hoboken I made this website. On this website you could see in with position the solar panel was standing and how much it was generating. You can find more information about this on my GitLab page. This website was developed in ASP.NET."
   tags: ["Academic", "ASP.NET", "C#"]
 
+- name: adlijn.be
+  role: Developer
+  image: /images/sections/projects/adlijn_be.png
+  timeline: "Dec 2020 - Present"
+  url: "https://github.com/marlonstoops/de_ad_lijn"
+  summary: "Fun project i did during the holidays. This is an application to use used among friends. When creating an account you get a small amount of credits. With there credits you can have the application call your friends. When picking up they will be greeted with a message. Usually this message will be that they have to do an 'ad fundum'. Calling is done via the Twilio API. The application is written in the Laravel framework."
+  tags: ["Laravel", "Twilio", "Hobby"]
+
+
