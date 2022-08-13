@@ -23,11 +23,12 @@ experiences:
         # end: Dec 2020
         # give some points about what was your responsibilities at the company.
         responsibilities:
-          - Development of a e-commerce application written in PHP/Laravel.
+          - Development of an e-commerce application written in PHP/Laravel.
           - Design, develop and document API for the e-commerce platform.
           - Create an maintain several PHP packages supporting the e-commerce application.
           - Analyse and process incoming change requests.
           - Develop and configure pipelines for continuous integration and continuous delivery.
+          - Making data searchable via Elastic Search and creating sophisticated search pages.
 
       - designation: Software Engineer
         start: Sep 2017
