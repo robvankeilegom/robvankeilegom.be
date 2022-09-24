@@ -39,9 +39,9 @@ skills:
   logo: /images/sections/skills/elastic.svg
   summary: "I've used both search engines in my applications. Directly or with the Laravel Scout package. I've used Elasticsearch extensively in our e-commerce application."
 
-- name: MySQL
+- name: MySQL / PostgreSQL
   logo: /images/sections/skills/mysql.png
-  summary: "Default DBMS for all my project. "
+  summary: "MySQL is my default DBMS for most of my project. Every now and then I use PostgreSQL for smaller projects."
 
 - name: CI / CD
   logo: /images/sections/skills/vuejs.svg
