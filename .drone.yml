@@ -33,12 +33,12 @@ steps:
       - eval `ssh-agent -s`
       - echo "$SSH_KEY" | ssh-add -
       - mkdir -p ~/.ssh && touch ~/.ssh/known_hosts
-      - ssh-keyscan -p $SSH_PORT robvankeilegom.be >> ~/.ssh/known_hosts
+      - ssh-keyscan -p $SSH_PORT staging.robvankeilegom.be >> ~/.ssh/known_hosts
       - mkdir -p ~/.ssh
-      - rsync -av -e "ssh -p $SSH_PORT" /drone/src/build/ $SSH_USER@robvankeilegom.be:~/websites/staging.robvankeilegom.be/current --delete
+      - rsync -av -e "ssh -p $SSH_PORT" /drone/src/build/ $SSH_USER@staging.robvankeilegom.be:~/websites/staging.robvankeilegom.be/current --delete
     when:
       branch:
-      - develop
+        - develop
 
   - name: Deploy to production
     image: robvankeilegom/ssh-rsync
@@ -58,5 +58,5 @@ steps:
       - rsync -av -e "ssh -p $SSH_PORT" /drone/src/build/ $SSH_USER@robvankeilegom.be:~/websites/robvankeilegom.be/current --delete
     when:
       branch:
-      - master
+        - master
 
