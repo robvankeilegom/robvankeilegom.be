@@ -45,7 +45,7 @@ skills:
 
 - name: CI / CD
   logo: /images/sections/skills/vuejs.svg
-  summary: "Creating pipelines to automatically test/build applications. After succeeding the builds are then automatically deployed. Experience with Bitbucket Pipelines, Github Actions ans Jenkins."
+  summary: "Creating pipelines to automatically test/build applications. After succeeding the builds are then automatically deployed. Experience with Bitbucket Pipelines, Github Actions, Jenkins and Drone ci."
 
 - name: Docker
   logo: /images/sections/skills/docker.svg
