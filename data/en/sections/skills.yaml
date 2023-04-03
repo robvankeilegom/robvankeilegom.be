@@ -13,11 +13,11 @@ section:
 skills:
 - name: Ecommerce / SEO
   logo: /images/sections/skills/cart.svg
-  summary: "The last 3 years I've been working on an in-house Ecommerce application as the lead developer. This gives me a lot of experience with SEO best practices and analytics integration."
+  summary: "The last 4 years I've been working on an in-house Ecommerce application as the lead developer. This gives me a lot of experience with SEO best practices and analytics integration."
 
 - name: Laravel
   logo: /images/sections/skills/laravel.png
-  summary: "My go-to framework for web development since 2017. Most of my projects are developed on top op Laravel or Lumen. I have experience with almost all packages developed by the Laravel or Spatie team."
+  summary: "My go-to framework for web development since 2017. Most of my projects are developed on top of Laravel or Lumen. I have experience with almost all packages developed by the Laravel and Spatie teams."
 
 - name: Vue.js / Angular
   logo: /images/sections/skills/vuejs.svg
