@@ -21,7 +21,7 @@ skills:
 
 - name: Vue.js / Angular
   logo: /images/sections/skills/vuejs.svg
-  summary: "Vue.js is my frontend framework of choice. I use it a lot together with Inertia.js and Veux. I also have quite some experience with Angular. "
+  summary: "Vue.js is my frontend framework of choice. I use it a lot together with Inertia.js and Vuex. I also have quite some experience with Angular. "
 
 - name: Tailwind / Bootstrap
   logo: /images/sections/skills/tailwind.svg
