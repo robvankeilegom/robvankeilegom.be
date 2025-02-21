@@ -31,12 +31,7 @@ pipeline {
         }
 
         stage('Deploy site') {
-            agent {
-                docker {
-                    image 'rvkorgani/ssh-rsync'
-                    args '-v /home/jenkins/.ssh/known_hosts:/home/user/.ssh/known_hosts'
-                }
-            }
+            agent any
             environment {
                 SSH_PORT = credentials('SSH_PORT_ROBVANKEILEGOM_BE')
             }
