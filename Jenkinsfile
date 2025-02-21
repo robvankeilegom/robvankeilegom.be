@@ -14,6 +14,8 @@ pipeline {
                 cleanWs()
 
                 checkout scm
+
+                git submodule update --init --recursive
             }
         }
 
