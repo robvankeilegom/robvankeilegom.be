@@ -13,9 +13,14 @@ pipeline {
             steps {
                 cleanWs()
 
-                checkout scm
-
-                git submodule update --init --recursive
+                checkout([
+                    $class: 'GitSCM',
+                    branches: scm.branches,
+                    extensions: [
+                        [$class: 'SubmoduleOption', recursiveSubmodules: true]
+                    ],
+                    userRemoteConfigs: scm.userRemoteConfigs
+                ])
             }
         }
 
