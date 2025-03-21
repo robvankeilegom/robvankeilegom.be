@@ -17,18 +17,20 @@ experiences:
       # company overview
       overview: Organi helps companies to improve and automate their business processes.
     positions:
-      - designation: Full Stack Developer
+      - designation: Full Stack Developer e-commerce
         start: Mar 2019
         # don't provide end date if you are currently working there. It will be replaced by "Present"
         # end: Dec 2020
         # give some points about what was your responsibilities at the company.
         responsibilities:
           - Development of an e-commerce application written in PHP/Laravel.
-          - Design, develop and document API for the e-commerce platform.
+          - Design, develop and document API according to JSON:API specs for the e-commerce platform.
           - Create an maintain several PHP packages supporting the e-commerce application.
-          - Analyse and process incoming change requests.
-          - Develop and configure pipelines for continuous integration and continuous delivery.
+          - Analyze and process incoming change requests.
+          - Develop and configure pipelines for continuous integration and continuous delivery in Jenkins.
           - Making data searchable via Elastic Search and creating sophisticated search pages.
+          - Provisioning and managing servers with Ansible
+          - Run email campaigns via Sendgrid
 
       - designation: Software Engineer
         start: Sep 2017

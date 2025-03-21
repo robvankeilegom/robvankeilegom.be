@@ -13,7 +13,7 @@ section:
 skills:
 - name: Ecommerce / SEO
   logo: /images/sections/skills/cart.svg
-  summary: "The last 5 years I've been working on an in-house Ecommerce application as the lead developer. This gives me a lot of experience with SEO best practices and analytics integration."
+  summary: "Since 2019 I've been working on an in-house Ecommerce application as the lead developer. This gives me a lot of experience with SEO best practices and analytics integration."
 
 - name: Laravel
   logo: /images/sections/skills/laravel.png
@@ -45,7 +45,7 @@ skills:
 
 - name: CI / CD
   logo: /images/sections/skills/vuejs.svg
-  summary: "Creating pipelines to automatically test/build applications. After succeeding the builds are then automatically deployed. Experience with Bitbucket Pipelines, Github Actions, Jenkins and Drone ci."
+  summary: "Creating pipelines to automatically test/build applications. After succeeding the builds are then automatically deployed. Experience with Bitbucket Pipelines, Github Actions, Jenkins and Drone CI."
 
 - name: Docker
   logo: /images/sections/skills/docker.svg
