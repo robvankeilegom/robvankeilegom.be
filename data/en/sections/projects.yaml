@@ -21,6 +21,14 @@ buttons:
 
 # your projects
 projects:
+- name: landelijkegildeliezele.be
+  role: Owner
+  image: /images/sections/projects/landelijkegildeliezele_be.png
+  timeline: "Jun 2025 - Present"
+  url: "https://landelijkegildeliezele.be"
+  summary: ""
+  tags: ["WordPress", "Hobby"]
+
 - name: Firefly III PayPal Importer
   role: Owner
   timeline: "March 2022 - Present"
@@ -33,8 +41,8 @@ projects:
   image: /images/sections/projects/liezele_be.png
   timeline: "Jun 2020 - Present"
   url: "https://liezele.be"
-  summary: "A site for Liezele, the village I was raised. Statically build with Hugo. All content is written in Markdown."
-  tags: ["Hugo", "Hobby"]
+  summary: "A site for Liezele, the village I was raised. Originally built in Hugo. In 2025 I migrated to WordPress."
+  tags: ["WordPress", "Hobby"]
 
 - name: Snowsports
   role: Developer
@@ -72,5 +80,13 @@ projects:
   url: "https://github.com/marlonstoops/de_ad_lijn"
   summary: "Fun project i did during the holidays. This is an application to is used among friends. When creating an account you get a small amount of credits. With these credits you can have the application call your friends. When picking up they will be greeted with a message. Usually this message will be that they have to do an 'ad fundum'. Calling is done via the Twilio API. The application is written in the Laravel framework."
   tags: ["Laravel", "Twilio", "Hobby"]
+
+- name: robvankeilegom.be
+  role: Owner
+  image: /images/sections/projects/robvankeilegom_be.png
+  timeline: "Jun 2016 - Present"
+  url: "https://robvankeilegom.be"
+  summary: "This website. Statically built with Hugo. All content is written in Markdown."
+  tags: ["Hugo", "Hobby"]
 
 
