@@ -23,14 +23,19 @@ experiences:
         # end: Dec 2020
         # give some points about what was your responsibilities at the company.
         responsibilities:
-          - Development of an e-commerce application written in PHP/Laravel.
-          - Design, develop and document API according to JSON:API specs for the e-commerce platform.
-          - Create an maintain several PHP packages supporting the e-commerce application.
-          - Analyze and process incoming change requests.
-          - Develop and configure pipelines for continuous integration and continuous delivery in Jenkins.
-          - Making data searchable via Elastic Search and creating sophisticated search pages.
-          - Provisioning and managing servers with Ansible
-          - Run email campaigns via Sendgrid
+          - Lead the development of a custom e-commerce platform built on PHP/Laravel, handling both backend and frontend development.
+          - Designed and developed RESTful APIs following JSON:API standards for seamless integration with various services.
+          - Document these APIs in OpenAPI and generate SDK’s.
+          - Built and maintained PHP packages to enhance the functionality of the e-commerce application.
+          - Integrated Elasticsearch to improve product search functionality and designed advanced search pages for enhanced user experience.
+          - Worked extensively with SEO best practices, ensuring optimized page speed, metadata, and structured data for search engine ranking.
+          - Created and managed CI/CD pipelines using Jenkins to automate the deployment and testing process for faster delivery cycles.
+          - Built and managed Docker environments for local development and production environments.
+          - Wrote and maintained test suites with PHPUnit and Pest, ensuring code quality and minimizing regression bugs.
+          - Use SendGrid for creating and sending email campaigns, optimizing email deliverability and tracking open rates.
+          - Wrote a custom administrative backend with BREAD actions and page builder.
+          - Integrated third-party APIs and services for payment processing, sending mails, log management and more.
+          - Development of many side projects like image optimizer, pdf optimizer, data importer, etc…
 
       - designation: Software Engineer
         start: Sep 2017

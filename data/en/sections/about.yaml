@@ -18,11 +18,15 @@ company:
 resume: "files/resume-rob-van-keilegom.pdf"
 
 # a summary about you
-summary: "I'm 29 year old. I graduated in June 2017 with a bachelor's degree in Networks, Systems and Security. Currently I work as a Full Stack developer at Organi (Wilrijk, Belgium).
+summary: "
+I'm 29 year old. I graduated in June 2017 with a bachelor's degree in Networks, Systems and Security. Currently I work as a Full Stack developer at Organi (Wilrijk, Belgium).
 <br /><br />
-In my spare time I like to work on personal and open source projects. For the more social activities I enjoy playing video- and board games with my friends, snowboarding and sport climbing. I love nature so in the weekends you’ll find me on the trail doing multi day hikes with my backpack, in the mountains climbing / mountaineering or camping.
+Experienced full stack engineer with over 6 years of expertise in e-commerce application development. Specialized in building and maintaining a high-performance application using PHP/Laravel, Vue.js. Applications according to SEO best practices. Proficient at integrating 3rd party API’s, managing CI/CD pipelines, and ensuring robust API documentation.
 <br /><br />
-Programming is my passion as you can see by the many projects I've worked on: lots of projects in different languages. I love experimenting which is why some projects are unfinished. As I see it, it's not about the destination but about the experience gained.
+In my spare time I like to work on personal and open source projects. For social activities I enjoy playing video- and board games with my friends, snowboarding and sport climbing. I love nature so on the weekends you’ll find me on the trail doing multi day hikes with my backpack, in the mountains climbing / mountaineering or camping.
+<br /><br />
+I’m passionate about open source. Contributing code, improving docs, or helping newcomers. I enjoy building tools that help other people and being part of a community that feels likewise.
+
 "
 
 # your social links
