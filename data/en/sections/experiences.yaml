@@ -11,6 +11,14 @@ section:
 # Your experiences
 experiences:
   - company:
+      name: Atlas Copco
+      url: "https://www.atlascopco.com"
+      location: Wilrijk - Antwerp
+    positions:
+      - designation: Cyber Physical System Engineer
+        start: Jun 2019
+
+  - company:
       name: Organi
       url: "https://www.organi.be"
       location: Wilrijk - Antwerp
@@ -20,7 +28,7 @@ experiences:
       - designation: Full Stack Developer e-commerce
         start: Mar 2019
         # don't provide end date if you are currently working there. It will be replaced by "Present"
-        # end: Dec 2020
+        end: Jun 2026
         # give some points about what was your responsibilities at the company.
         responsibilities:
           - Lead the development of a custom e-commerce platform built on PHP/Laravel, handling both backend and frontend development.
@@ -39,6 +47,7 @@ experiences:
 
       - designation: Software Engineer
         start: Sep 2017
+        end: Jun 2026
         responsibilities:
           - Maintaining and extending a very extensive desktop application for court bailiffs.
           - Create REST API on top of bailiffs software running on a Progress PASOE instance.
