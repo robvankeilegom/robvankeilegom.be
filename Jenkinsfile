@@ -11,16 +11,7 @@ pipeline {
             agent any
 
             steps {
-                cleanWs()
-
-                checkout([
-                    $class: 'GitSCM',
-                    branches: scm.branches,
-                    extensions: [
-                        [$class: 'SubmoduleOption', recursiveSubmodules: true]
-                    ],
-                    userRemoteConfigs: scm.userRemoteConfigs
-                ])
+                checkout scm
             }
         }
 
@@ -39,9 +30,15 @@ pipeline {
 
         stage('Deploy site') {
             agent any
+
+            when {
+                branch 'master'
+            }
+
             environment {
                 SSH_PORT = credentials('SSH_PORT_ROBVANKEILEGOM_BE')
             }
+
             steps {
                 sshagent(credentials: ['SSH_JENKINS_BOX']) {
                     sh '''
@@ -49,6 +46,12 @@ pipeline {
                     '''
                 }
             }
+        }
+    }
+
+    post {
+        always {
+            cleanWs()
         }
     }
 }
