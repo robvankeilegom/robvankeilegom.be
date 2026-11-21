@@ -13,7 +13,7 @@ section:
 skills:
 - name: Ecommerce / SEO
   logo: /images/sections/skills/cart.svg
-  summary: "Since 2019 I've been working on an in-house Ecommerce application as the lead developer. This gives me a lot of experience with SEO best practices and analytics integration."
+  summary: "For the first decade of my career I've been working on an in-house E-commerce application as the lead developer. This gives me a lot of experience with SEO best practices and analytics integration."
 
 - name: Laravel
   logo: /images/sections/skills/laravel.png

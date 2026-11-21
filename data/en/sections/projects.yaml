@@ -21,6 +21,13 @@ buttons:
 
 # your projects
 projects:
+- name: Quiz
+  role: Owner
+  image: /images/sections/projects/quiz.png
+  url: "https://quiz.robvankeilegom.be"
+  summary: "A real-time quiz platform for hosting team quiz nights. Manage games and teams from an admin interface while a live TV display follows five timed, scored rounds, including video and image questions. Built with Laravel, Vue.js and Socket.IO."
+  tags: ["Laravel", "Vue.JS", "Socket.IO", "Hobby"]
+
 - name: landelijkegildeliezele.be
   role: Owner
   image: /images/sections/projects/landelijkegildeliezele_be.png

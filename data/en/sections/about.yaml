@@ -8,7 +8,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Full Stack Developer
+designation: DevOps Engineer
 # your company information
 company:
   name: Atlas Copco
@@ -19,15 +19,20 @@ resume: "files/resume-rob-van-keilegom.pdf"
 
 # a summary about you
 summary: "
-I'm 30 year old. I graduated in June 2017 with a bachelor's degree in Networks, Systems and Security. Currently I work as a Cyber Physical System Engineer
- at Atlas Copco (Wilrijk, Belgium).
+I'm 31 year old. I graduated in June 2017 with a bachelor's degree in Networks, Systems and Security.
+Currently I work as a Cyber Physical System Engineer at Atlas Copco (Wilrijk, Belgium).
 <br /><br />
-Experienced full stack engineer with over 6 years of expertise in e-commerce application development. Specialized in building and maintaining a high-performance application using PHP/Laravel, Vue.js. Applications according to SEO best practices. Proficient at integrating 3rd party API’s, managing CI/CD pipelines, and ensuring robust API documentation.
+Experienced full stack engineer with over 9 years of expertise in e-commerce application development.
+Specialized in building and maintaining a high-performance application using PHP/Laravel, Vue.js.
+Applications according to SEO best practices.
+Proficient at integrating 3rd party API’s, managing CI/CD pipelines, and ensuring robust API documentation.
 <br /><br />
-In my spare time I like to work on personal and open source projects. For social activities I enjoy playing video- and board games with my friends, snowboarding and sport climbing. I love nature so on the weekends you’ll find me on the trail doing multi day hikes with my backpack, in the mountains climbing / mountaineering or camping.
+In my spare time I like to work on personal and open source projects.
+For social activities I enjoy playing video- and board games with my friends, snowboarding and sport climbing.
+I love nature so on the weekends you’ll find me on the trail doing multi day hikes with my backpack, in the mountains climbing / mountaineering or camping.
 <br /><br />
-I’m passionate about open source. Contributing code, improving docs, or helping newcomers. I enjoy building tools that help other people and being part of a community that feels likewise.
-
+I’m passionate about open source. Contributing code, improving docs, or helping newcomers.
+I enjoy building tools that help other people and being part of a community that feels likewise.
 "
 
 # your social links
